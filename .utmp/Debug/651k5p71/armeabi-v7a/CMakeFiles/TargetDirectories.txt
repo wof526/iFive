@@ -1,0 +1,8 @@
+/Users/jeong-yura/iFive/.utmp/Debug/651k5p71/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/jeong-yura/iFive/.utmp/Debug/651k5p71/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/jeong-yura/iFive/.utmp/Debug/651k5p71/armeabi-v7a/GameActivity/CMakeFiles/game.dir
+/Users/jeong-yura/iFive/.utmp/Debug/651k5p71/armeabi-v7a/GameActivity/CMakeFiles/edit_cache.dir
+/Users/jeong-yura/iFive/.utmp/Debug/651k5p71/armeabi-v7a/GameActivity/CMakeFiles/rebuild_cache.dir
+/Users/jeong-yura/iFive/.utmp/Debug/651k5p71/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+/Users/jeong-yura/iFive/.utmp/Debug/651k5p71/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+/Users/jeong-yura/iFive/.utmp/Debug/651k5p71/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir
