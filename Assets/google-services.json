@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "5990514898",
+    "project_id": "unity-battlecircuit-backend",
+    "storage_bucket": "unity-battlecircuit-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5990514898:android:caaf72c667283202546d0b",
+        "android_client_info": {
+          "package_name": "com.defaultcompany.ifive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5990514898-k4b6i7dl2hbattldoq91ghuklf3fp811.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY7C-pgZBbj_A-LLRx-uuvgADzRrBjxr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5990514898-k4b6i7dl2hbattldoq91ghuklf3fp811.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
