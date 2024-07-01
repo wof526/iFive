@@ -22,7 +22,7 @@ public class Car : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        // HP 관리
+        // HP Management
         maxHP = GameManager.Instance.CarInfo.maxHp;
         curHP = maxHP;
         SetMaxHealth(maxHP);
@@ -30,14 +30,14 @@ public class Car : MonoBehaviour
         maxSpeed = GameManager.Instance.CarInfo.maxSpeed;
     }
 
-    // HP 초기 설정
+    // HP Initial Setting
     public void SetMaxHealth(float health)
     {
         HPBar.maxValue = health;
         HPBar.value = health;
     }
 
-    // 데미지 관리
+    // Damage control
     public void GetDamaged(float damage)
     {
         float getDamagedHP = curHP - damage;
@@ -45,7 +45,7 @@ public class Car : MonoBehaviour
         HPBar.value = curHP;
     }
 
-    // HP 텍스트 관리
+    // HP Text Management
     private void UpdateHPText()
     {
         HPText.text = string.Format("{0}/{1}", (int)curHP, (int)maxHP);
@@ -57,8 +57,8 @@ public class Car : MonoBehaviour
         if (otherCar != null && collision.transform.CompareTag("Car"))
         {
             // Handle collision with another car
-            bool thisCarIsDashing = GameManager.Instance.UIManager.isDash;
-            bool otherCarIsDashing = GameManager.Instance.UIManager.isDash;
+            bool thisCarIsDashing = GameManager.Instance.dash.isDash;
+            bool otherCarIsDashing = GameManager.Instance.dash.isDash;
 
             if (thisCarIsDashing && otherCarIsDashing)
             {
@@ -93,13 +93,13 @@ public class Car : MonoBehaviour
         UpdateHPText();
         curSpeed = rb.velocity.magnitude;
 
-        // 최대 속력 지정
+        // Max Speed
         if (curSpeed >= maxSpeed)
         {
             curSpeed = maxSpeed;
         }
         
-        // 최대 HP 지정
+        // Max Hp
         if (curHP >= maxHP)
         {
             curHP = maxHP;
@@ -109,13 +109,13 @@ public class Car : MonoBehaviour
             curHP = 0;
         }
 
-        // 게임 오버
+        // Game Over
         if (curHP <= 0)
         {
             Debug.Log("Game Over");
         }
 
-        // 기울어진 차 다시 돌리기
+        // Reset Rotation
         if (Mathf.Abs(transform.eulerAngles.z) > 80 && curSpeed < 0.03)
         {
             // Reset the z rotation to 0

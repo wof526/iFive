@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public CarInfo CarInfo;
     public Car car;
-    public UIManager UIManager;
+    public Dash dash;
 
     private void Awake()
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class Dash : MonoBehaviour
 {
     public bool isDash = false;
     float maxSpeed;
@@ -26,11 +26,11 @@ public class UIManager : MonoBehaviour
         // Enable or disable the dash button based on the current speed
         if (curSpeed >= maxSpeed)
         {
-            dashButton.interactable = true;
+            //dashButton.interactable = true;
         }
         else
         {
-            dashButton.interactable = false;
+            //dashButton.interactable = false;
         }
     }
 
