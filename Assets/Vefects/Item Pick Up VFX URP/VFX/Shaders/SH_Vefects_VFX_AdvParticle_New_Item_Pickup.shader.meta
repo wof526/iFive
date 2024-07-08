@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2e33f459614bd4442a6e937acaa630ec
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 241404
+  packageName: Item Pickup VFX - URP
+  packageVersion: 1.0.0
+  assetPath: Assets/Vefects/Item Pick Up VFX URP/VFX/Shaders/SH_Vefects_VFX_AdvParticle_New_Item_Pickup.shader
+  uploadId: 656889
