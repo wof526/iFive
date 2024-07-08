@@ -35,26 +35,26 @@ public class GoogleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        emailField.enabled = false;
-        passwordField.enabled = false;
-        signButton.enabled = false;
+        emailField.enabled = true;
+        passwordField.enabled = true;
+        signButton.enabled = true;
 
-        loadingBar.SetActive(true);
+        loadingBar.SetActive(false);
         startButton.SetActive(false);
 
-        PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
+        /*PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
             .RequestIdToken()
             .RequestEmail()
             .Build());
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
-
+        */
         fbauth = FirebaseAuth.DefaultInstance;
 
-        TryGoogleLogin();
+        EmailLogin();
     }
 
-    public void TryGoogleLogin()
+    /*public void TryGoogleLogin()
     {
         PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (success) =>
         {
@@ -74,9 +74,9 @@ public class GoogleManager : MonoBehaviour
                 EmailLogin();
             }
         });
-    }
+    }*/
 
-    IEnumerator TryFirebaseLogin()
+    /*IEnumerator TryFirebaseLogin()
     {
         while (string.IsNullOrEmpty(((PlayGamesLocalUser)Social.localUser).GetIdToken()))
         {
@@ -104,7 +104,7 @@ public class GoogleManager : MonoBehaviour
 
         loadingBar.SetActive(false);
         startButton.SetActive(true);
-    }
+    }*/
 
     public void GameStartButton()
     {
@@ -112,14 +112,14 @@ public class GoogleManager : MonoBehaviour
     }
 
 
-    public void TryGoggleLogout()
+    /*public void TryGoggleLogout()
     {
         if (Social.localUser.authenticated)
         {
             PlayGamesPlatform.Instance.SignOut();
             fbauth.SignOut();
         }
-    }
+    }*/
 
     void EmailLogin() // 이메일 방법으로 로그인 기반 작업
     {
