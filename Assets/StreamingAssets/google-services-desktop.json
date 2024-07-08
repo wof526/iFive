@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "5990514898",
+    "firebase_url": "https://unity-battlecircuit-backend-default-rtdb.firebaseio.com",
     "project_id": "unity-battlecircuit-backend",
     "storage_bucket": "unity-battlecircuit-backend.appspot.com"
   },
@@ -14,7 +15,23 @@
       },
       "oauth_client": [
         {
-          "client_id": "5990514898-k4b6i7dl2hbattldoq91ghuklf3fp811.apps.googleusercontent.com",
+          "client_id": "5990514898-6sd1dga9e4mv2evli7m574efueuvgqgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.defaultcompany.ifive",
+            "certificate_hash": "c7f03186cd701ea77b99e04353234ecb819e6f54"
+          }
+        },
+        {
+          "client_id": "5990514898-mnqh1o8lo259rbgask27i9vouvj8r8k9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.defaultcompany.ifive",
+            "certificate_hash": "84f97928bdd95b44868caad42e2f2aff9c7bfb96"
+          }
+        },
+        {
+          "client_id": "5990514898-611q26vjpts3noedtufhfl1b3n0fvded.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +44,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "5990514898-k4b6i7dl2hbattldoq91ghuklf3fp811.apps.googleusercontent.com",
+              "client_id": "5990514898-3j34r0pf8fgqjg4cg5a6so0d80s6f221.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
