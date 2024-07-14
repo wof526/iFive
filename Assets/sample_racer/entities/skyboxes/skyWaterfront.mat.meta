@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: b6b3cb744db667d48b2cb3540112cae1
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/skyboxes/skyWaterfront.mat
+  uploadId: 119464

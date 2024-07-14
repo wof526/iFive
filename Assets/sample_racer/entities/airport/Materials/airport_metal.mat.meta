@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4b8b02078ff019c48a71f4e29e2eb3e1
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_metal.mat
+  uploadId: 119464

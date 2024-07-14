@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4244b618d2b9918459892e68e9d02688
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/stadium/Materials/stadium_net.mat
+  uploadId: 119464

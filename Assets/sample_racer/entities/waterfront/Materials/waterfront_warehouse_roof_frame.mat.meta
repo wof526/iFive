@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c79831bfe137c934daf678408e9cfe4d
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/waterfront_warehouse_roof_frame.mat
+  uploadId: 119464

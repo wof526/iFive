@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e5a84a3ad70a93b4db32cc88ff9fc3a7
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_pinboard.mat
+  uploadId: 119464

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 55b9e0570edc47e4f8dce751ee747e11
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/waterfront_crane.mat
+  uploadId: 119464

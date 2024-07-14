@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7891c363b2cd558418581240a280b37c
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_stairs_conc.mat
+  uploadId: 119464

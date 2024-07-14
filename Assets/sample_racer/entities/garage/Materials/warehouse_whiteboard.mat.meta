@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3de4f1dffbd7ae0409d656026eb9d39c
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_whiteboard.mat
+  uploadId: 119464

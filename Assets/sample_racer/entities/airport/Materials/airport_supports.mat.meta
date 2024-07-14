@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 34145c0307299ef44b60ac7953ffaa8e
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_supports.mat
+  uploadId: 119464

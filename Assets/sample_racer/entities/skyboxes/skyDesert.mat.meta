@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2066515a15bfcb44cb9efe4165c804b4
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/skyboxes/skyDesert.mat
+  uploadId: 119464

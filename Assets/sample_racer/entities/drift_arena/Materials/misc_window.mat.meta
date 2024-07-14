@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 71a6fecf7e8ba2944a5f8fe59536677a
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/drift_arena/Materials/misc_window.mat
+  uploadId: 119464

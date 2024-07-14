@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9f3b12d83a30d4894a86e6773592799b
+timeCreated: 1464118987
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/stadium/Materials/Pipes.mat
+  uploadId: 119464

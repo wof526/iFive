@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 108e22d002fc0934eba4b0343db00429
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/drift_arena/Materials/misc_tree_palm_b.mat
+  uploadId: 119464

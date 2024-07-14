@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 95bd7c1fcd424184bb25b288eb50bf52
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_plane.mat
+  uploadId: 119464

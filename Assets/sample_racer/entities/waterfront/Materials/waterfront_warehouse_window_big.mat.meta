@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 959be5dd8b9cc8041aae60af29e4ed55
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/waterfront_warehouse_window_big.mat
+  uploadId: 119464

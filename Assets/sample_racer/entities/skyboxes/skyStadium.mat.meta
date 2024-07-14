@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 5ca9c2b135500514092da889baaee88b
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/skyboxes/skyStadium.mat
+  uploadId: 119464

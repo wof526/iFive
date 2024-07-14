@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ba374146b81cd45408958c9c8fdbfb56
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/desert.unity
+  uploadId: 119464

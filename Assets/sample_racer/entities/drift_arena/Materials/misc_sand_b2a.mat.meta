@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0322ec6605291a14ca041af216c38caa
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/drift_arena/Materials/misc_sand_b2a.mat
+  uploadId: 119464

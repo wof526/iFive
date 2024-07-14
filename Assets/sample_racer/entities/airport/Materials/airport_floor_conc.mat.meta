@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0a8e3eb21c89d5547957e66f661df4b8
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_floor_conc.mat
+  uploadId: 119464

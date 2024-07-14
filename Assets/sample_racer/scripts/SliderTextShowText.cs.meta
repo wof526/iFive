@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a27467a95e406ec4c8b2d3e415ab2f4f
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/scripts/SliderTextShowText.cs
+  uploadId: 119464

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4e9d5c30774a94f489adc056dd939982
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/waterfront_warehouse_wall.mat
+  uploadId: 119464

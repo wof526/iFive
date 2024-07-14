@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: bdc15450a7434fb46a9df06ca55ab778
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_blocking_pole.mat
+  uploadId: 119464

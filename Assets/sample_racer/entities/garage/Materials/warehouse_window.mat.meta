@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e065a6595ae0ab14c9659ced9b5b021d
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_window.mat
+  uploadId: 119464

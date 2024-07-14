@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: aede7b51f93d5ac4e9739a5e959024d7
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/warehouse_floor_metal.mat
+  uploadId: 119464

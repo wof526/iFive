@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d15fb7be2d6234811a90b9bd604cc346
+timeCreated: 1464171959
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_wall_brick.mat
+  uploadId: 119464

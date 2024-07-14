@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: b9fdd3c852a925a4b9b61698bb51fc5a
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/stadium/Materials/stadium_logo.mat
+  uploadId: 119464

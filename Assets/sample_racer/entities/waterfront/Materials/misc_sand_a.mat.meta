@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 668d1271c078f1d4b900d00a004506ca
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/misc_sand_a.mat
+  uploadId: 119464

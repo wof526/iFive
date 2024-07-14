@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f403032e0a72b784a89e49e20acb4ec1
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_atlas_a.mat
+  uploadId: 119464

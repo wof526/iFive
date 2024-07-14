@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: b61cae82f8a101e44be98cb3e0f94e06
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/waterfront.unity
+  uploadId: 119464

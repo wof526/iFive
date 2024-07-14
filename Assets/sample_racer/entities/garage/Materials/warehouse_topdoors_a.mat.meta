@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 286581ecb5e99ac47ba556c4fc849dc8
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_topdoors_a.mat
+  uploadId: 119464

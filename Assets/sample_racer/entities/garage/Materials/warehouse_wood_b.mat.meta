@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2f8c0ee1656e43f48bbc26fc53af19d0
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_wood_b.mat
+  uploadId: 119464

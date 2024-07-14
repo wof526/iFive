@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: dd6ccde28a6c42b48ae69a0ee91a41a9
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_boarding_plates.mat
+  uploadId: 119464

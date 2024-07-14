@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7ae032261ab682a43baddf027c2f4cc4
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/airport.unity
+  uploadId: 119464

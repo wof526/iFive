@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ff6e6c2f6481004489a408f8c329e1e8
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_building_top.mat
+  uploadId: 119464

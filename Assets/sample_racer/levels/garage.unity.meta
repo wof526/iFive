@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ba4079f050246d64ea46cf66b4cf5357
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/garage.unity
+  uploadId: 119464

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e927a1db5b6cb4d69b22c71ee491b995
+timeCreated: 1464171064
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/waterfront/LightingData.asset
+  uploadId: 119464

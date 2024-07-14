@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: dcafba6f0591caf43840c01cae64ca62
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/misc_entourage.mat
+  uploadId: 119464

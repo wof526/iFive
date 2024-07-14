@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2c74137eb4003eb439eeb58b84880af0
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/misc_road_edge.mat
+  uploadId: 119464

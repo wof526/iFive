@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7bfb67274306c5b4f96bb91f4637cd82
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/stadium/Materials/stadium_top.mat
+  uploadId: 119464

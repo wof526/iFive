@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 05447d662f9bd8546a5b3e675b6f12a1
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/drift_arena/Materials/misc_wall_a.mat
+  uploadId: 119464

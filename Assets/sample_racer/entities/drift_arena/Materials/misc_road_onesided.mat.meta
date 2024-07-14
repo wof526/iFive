@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 37aad237c6ea5494e880f8c2f2927e15
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/drift_arena/Materials/misc_road_onesided.mat
+  uploadId: 119464

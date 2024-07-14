@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e81f56adf6a18484bbff39b417f9e384
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/drift_arena.unity
+  uploadId: 119464

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 82adf9626f1de4498bef573f457dae65
+timeCreated: 1464122330
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/stadium/LightingData.asset
+  uploadId: 119464

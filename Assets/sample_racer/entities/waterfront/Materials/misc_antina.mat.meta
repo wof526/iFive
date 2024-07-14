@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4c1ba3a8ec8be1f46aca5dfcbb38c6b7
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/misc_antina.mat
+  uploadId: 119464

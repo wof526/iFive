@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d892aa8dbf03a2a408193f99c0789943
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/stadium/Materials/stadium_lawn.mat
+  uploadId: 119464

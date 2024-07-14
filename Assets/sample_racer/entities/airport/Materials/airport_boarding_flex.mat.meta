@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 33c969aaacba85e4a8c33bff7a749d8e
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_boarding_flex.mat
+  uploadId: 119464

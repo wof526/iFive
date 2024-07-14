@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 9af9f3c6cf60cd74499f3035b6898106
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/stadium/Materials/stadium_chairs.mat
+  uploadId: 119464

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4ef13e7d9ec67ea42aabd5e13e3ea132
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/misc/Materials/misc_fance_wire.mat
+  uploadId: 119464

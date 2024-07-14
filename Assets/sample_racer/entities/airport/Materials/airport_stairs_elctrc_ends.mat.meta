@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 46f2c772fc4ad77419d6edf6d10ae574
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_stairs_elctrc_ends.mat
+  uploadId: 119464

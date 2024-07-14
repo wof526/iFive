@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 37658596bc4f5e14b8393ca09c55e957
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/misc/Materials/misc_fance_wire_horiz.mat
+  uploadId: 119464

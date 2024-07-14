@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 96f112dec7cf6f6488be10402f78f8a9
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/drift_arena/Materials/misc_asphalt.mat
+  uploadId: 119464

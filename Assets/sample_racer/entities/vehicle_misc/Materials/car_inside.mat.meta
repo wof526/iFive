@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 292620003de2b9c4989ef20f2878cc28
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/vehicle_misc/Materials/car_inside.mat
+  uploadId: 119464

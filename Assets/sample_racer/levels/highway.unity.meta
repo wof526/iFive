@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: baeb88d89975bbd4d84a3bbf60dc3cf2
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/highway.unity
+  uploadId: 119464

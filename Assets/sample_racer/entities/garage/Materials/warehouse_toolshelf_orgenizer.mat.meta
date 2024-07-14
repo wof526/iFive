@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 168355c6d638483458a0e797454332d8
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_toolshelf_orgenizer.mat
+  uploadId: 119464

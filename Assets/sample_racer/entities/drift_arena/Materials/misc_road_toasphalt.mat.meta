@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 18a52a2bf0443b247b8060648eefbfa7
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/drift_arena/Materials/misc_road_toasphalt.mat
+  uploadId: 119464

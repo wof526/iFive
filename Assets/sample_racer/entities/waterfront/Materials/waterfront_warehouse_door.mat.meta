@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 66f495244e266e34788f7ec8af0c5701
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/waterfront_warehouse_door.mat
+  uploadId: 119464

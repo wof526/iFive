@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 101c67dabe6fa1a47a12a2a5ef7e8e77
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/waterfront_warehouse_roof_sides.mat
+  uploadId: 119464

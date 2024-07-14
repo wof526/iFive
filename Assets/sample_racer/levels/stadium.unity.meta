@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4fdbb6b494b13b04badfda28198acf63
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/stadium.unity
+  uploadId: 119464

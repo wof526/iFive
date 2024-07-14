@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6f2b6039944964a0ab8960bbcc029340
+timeCreated: 1464172428
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_toostorage 1.mat
+  uploadId: 119464

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: fb2ab9826e7e4184287cf749f55f6102
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/airport_building_glass.mat
+  uploadId: 119464

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c13c801b3469897438b46faf8827d508
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/airport/Materials/misc_roadblock.mat
+  uploadId: 119464

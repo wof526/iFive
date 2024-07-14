@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 03199a3f69e5956429656fe0564b6536
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/waterfront_warehouse_concrete_e.mat
+  uploadId: 119464

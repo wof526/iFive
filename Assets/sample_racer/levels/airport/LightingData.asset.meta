@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c24d7aeeca86a45dea70c8d2c860ebb5
+timeCreated: 1464187213
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/levels/airport/LightingData.asset
+  uploadId: 119464

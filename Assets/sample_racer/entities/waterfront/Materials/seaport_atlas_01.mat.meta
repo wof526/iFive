@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 82c48d76d8856449783a6521738c2341
+timeCreated: 1464157542
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/waterfront/Materials/seaport_atlas_01.mat
+  uploadId: 119464

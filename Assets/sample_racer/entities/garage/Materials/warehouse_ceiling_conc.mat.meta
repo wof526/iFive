@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 74bc8b63c8b6497429f09cb0bfb5542d
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/garage/Materials/warehouse_ceiling_conc.mat
+  uploadId: 119464

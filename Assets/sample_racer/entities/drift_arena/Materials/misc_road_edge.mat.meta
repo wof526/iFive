@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 6ce8f4009ddcace449d1bc20a6bc4a21
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63641
+  packageName: Sample Racer Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/sample_racer/entities/drift_arena/Materials/misc_road_edge.mat
+  uploadId: 119464
