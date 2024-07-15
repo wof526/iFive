@@ -35,27 +35,30 @@ public class GoogleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        emailField.enabled = true;
-        passwordField.enabled = true;
-        signButton.enabled = true;
+        emailField.gameObject.SetActive(false);
+        passwordField.gameObject.SetActive(false);
+        signButton.gameObject.SetActive(false);
 
         loadingBar.SetActive(false);
         startButton.SetActive(false);
 
-        /*PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
+        PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
             .RequestIdToken()
             .RequestEmail()
             .Build());
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
-        */
+        
         fbauth = FirebaseAuth.DefaultInstance;
 
-        EmailLogin();
+        TryGoogleLogin();
+
+        
     }
 
-    /*public void TryGoogleLogin()
+    public void TryGoogleLogin()
     {
+        loadingBar.SetActive(true);
         PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (success) =>
         {
             if (success == SignInStatus.Success)
@@ -67,16 +70,13 @@ public class GoogleManager : MonoBehaviour
             else
             {
                 googleLog.text = "google Failure";
-                loadingBar.SetActive(false);
-                emailField.enabled = true;
-                passwordField.enabled = true;
-                signButton.enabled = true;
                 EmailLogin();
+                
             }
         });
-    }*/
+    }
 
-    /*IEnumerator TryFirebaseLogin()
+    IEnumerator TryFirebaseLogin()
     {
         while (string.IsNullOrEmpty(((PlayGamesLocalUser)Social.localUser).GetIdToken()))
         {
@@ -96,34 +96,39 @@ public class GoogleManager : MonoBehaviour
             else
             {
                 firebaseLog.text = "Firebase success";
-                User = task.Result;
+                User = task.Result; //check later..
                 string userstring = User.ToString();
                 firebaseLog.text = (userstring);
             }
         });
+        
 
         loadingBar.SetActive(false);
         startButton.SetActive(true);
-    }*/
+    }
 
     public void GameStartButton()
     {
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("lobbySampleScene");
     }
 
 
-    /*public void TryGoggleLogout()
+    public void TryGoggleLogout()
     {
         if (Social.localUser.authenticated)
         {
             PlayGamesPlatform.Instance.SignOut();
             fbauth.SignOut();
         }
-    }*/
+    }
 
     void EmailLogin() // 이메일 방법으로 로그인 기반 작업
     {
-        signButton.interactable = false;
+        //signButton.interactable = false;
+        loadingBar.SetActive(false);
+        emailField.gameObject.SetActive(true);
+        passwordField.gameObject.SetActive(true);
+        signButton.gameObject.SetActive(true);
 
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
         {
@@ -176,7 +181,7 @@ public class GoogleManager : MonoBehaviour
                 User = task.Result.User;
                 Debug.Log("로그인 성공");
                 Debug.Log(User.Email);
-                SceneManager.LoadScene("Lobby");
+                SceneManager.LoadScene("lobbySampleScene");
                 
 
             }
