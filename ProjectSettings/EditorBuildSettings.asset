@@ -12,19 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/jiyun/Matching.unity
     guid: 97fcd82391b94114e8f6b4cdf7bb15b2
   - enabled: 1
-    path: Assets/Scenes/jiyun/jyLoading.unity
-    guid: a35fb7f5890aeee47b315bacefb3215b
-  - enabled: 1
     path: Assets/Scenes/jiyun/Driving.unity
     guid: 5e3ba60f9563a514687d1d9c6928cc09
-  - enabled: 0
-    path: Assets/Scenes/yura/googleScene.unity
-    guid: ea9638d76b924d045bbf160ec7405ab2
-  - enabled: 0
-    path: Assets/Scenes/yura/lobbySampleScene.unity
-    guid: 8e08274e53e1e43bea990ec926847e28
-  - enabled: 0
-    path: Assets/Scenes/yura/yuraDrivingScene.unity
-    guid: 06567cf2ff45340e1b5c1059bbed5ccb
+  - enabled: 1
+    path: Assets/Scenes/GaEun/Lobby.unity
+    guid: ce7786f9b09b2704c98ddb23d2cd15fb
+  - enabled: 1
+    path: Assets/Scenes/GaEun/MatchLoading.unity
+    guid: bf29218eb88b9ed4890706e4683afbf9
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

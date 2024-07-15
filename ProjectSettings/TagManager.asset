@@ -5,22 +5,21 @@ TagManager:
   serializedVersion: 2
   tags:
   - Car
-
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - 3D Object
   - Water
   - UI
   - 
   - 
-  - Car
-  - Road
-  - BrakingGround
-  - Metal
-  - Rubber
-  - FinishZone
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

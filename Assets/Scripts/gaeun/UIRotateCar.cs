@@ -8,7 +8,7 @@ public class UIRotateCar : MonoBehaviour
 {
 
     public Vector3 targetRot;
-    public float RotTime = 5.0f;
+    public float RotTime = 30f;
 
     // Start is called before the first frame update
     void Start()
