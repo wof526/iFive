@@ -19,13 +19,14 @@ public class Making : MonoBehaviourPunCallbacks
             Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
             Match.username = "jiyunkim";
             PhotonNetwork.AutomaticallySyncScene = true;
-            PhotonNetwork.LoadLevel("Driving");
-            /*if(PhotonNetwork.CurrentRoom.PlayerCount == 2){
-                 //같은 씬을 자동 동기화 함.
-            }*/
         }
         else{
             Debug.Log("Not in room..");
+        }
+    }
+    public override void OnPlayerEnteredRoom(Player newPlayer){
+        if(PhotonNetwork.CurrentRoom.PlayerCount == 2){
+            PhotonNetwork.LoadLevel("Driving"); //같은 씬을 자동 동기화 함.
         }
     }
 }
