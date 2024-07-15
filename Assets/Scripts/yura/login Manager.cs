@@ -78,7 +78,6 @@ public class loginManager : MonoBehaviour
                 User = task.Result.User;
                 Debug.Log("로그인 성공");
                 Debug.Log(User.Email);
-
             }
         });
     }

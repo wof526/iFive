@@ -1,26 +1,50 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Firebase.Auth;
 
 public class Car : MonoBehaviour
 {
     [SerializeField] private Slider HPBar;
     [SerializeField] private TMP_Text HPText;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private TMP_Text gameOverTxt;
 
-    public GameObject fire;
+    public GameObject fire;   // 불방구 용
+    public GameObject smoke;  // 게임 오버 용
 
+    // Hp, Speed
     float maxHP;
     public float curHP;
     public float curSpeed;
     float maxSpeed;
 
+    // GameOver
+    int countdown = 10;  // 게임 오버 시 재시작
+    private bool isGameOver = false;
+    private bool countdownStarted = false;
+
+    // Script
+    DatabaseManager databaseManager;
+    Drive drive;
+    Dash dash;
+
+    [SerializeField] private Button Skill;
+    [SerializeField] private Button Break;
+
+    private FirebaseAuth auth;
     private Rigidbody rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        auth = FirebaseAuth.DefaultInstance;
+
+        // Script
+        databaseManager = GameManager.Instance.databaseManager;
+        drive = GameManager.Instance.drive;
+        dash = GameManager.Instance.dash;
 
         // HP Management
         maxHP = GameManager.Instance.CarInfo.maxHp;
@@ -91,7 +115,7 @@ public class Car : MonoBehaviour
         {
             curSpeed = maxSpeed;
         }
-        
+
         // Max Hp
         if (curHP >= maxHP)
         {
@@ -103,9 +127,11 @@ public class Car : MonoBehaviour
         }
 
         // Game Over
-        if (curHP <= 0)
+        if (curHP <= 0 && !isGameOver)
         {
             Debug.Log("Game Over");
+            isGameOver = true;
+            GameOver();
         }
 
         // Reset Rotation
@@ -116,5 +142,80 @@ public class Car : MonoBehaviour
             newRotation.z = 0;
             transform.eulerAngles = newRotation;
         }
+    }
+
+    private void GameOver()
+    {
+        curSpeed = 0;
+        smoke.SetActive(true);
+        gameOverPanel.SetActive(true);
+        if (!countdownStarted)
+        {
+            countdownStarted = true;
+            StartCoroutine(RestartCountdown());
+        }
+    }
+
+    private IEnumerator RestartCountdown()
+    {
+        Skill.interactable = false;
+        Break.interactable = false;
+        dash.dashButton.interactable = false;
+        Joystick.isFree = false;
+
+
+        while (countdown > 0)
+        {
+            gameOverTxt.text = $"Restart in {countdown} seconds";
+            yield return new WaitForSeconds(1f);  // Wait for 1 second
+            countdown--;
+        }
+
+        // Game Over Panel off
+        gameOverPanel.SetActive(false);
+
+        string userId = auth.CurrentUser?.UserId;
+
+        if (userId != null)
+        {
+            // 리스폰 지역 불러와서 리스폰 처리
+            databaseManager.GetUserTeam(userId, team =>
+            {
+                if (!string.IsNullOrEmpty(team))
+                {
+                    databaseManager.GetTeamRespawnArea(team, respawnArea =>
+                    {
+                        GameManager.Instance.RespawnUser(userId, respawnArea);
+
+                        // 속도 및 회전 속도 초기화
+                        rb.velocity = Vector3.zero;
+                        rb.angularVelocity = Vector3.zero;
+
+                        // 위치 및 회전 초기화
+                        transform.position = respawnArea;
+                        transform.rotation = Quaternion.identity;
+
+                        curHP = maxHP;
+                        isGameOver = false;
+                        countdownStarted = false;
+                    });
+                }
+                else
+                {
+                    Debug.LogError("User team not found.");
+                }
+            });
+        }
+        else
+        {
+            Debug.LogError("User is not logged in.");
+        }
+
+        Skill.interactable = true;
+        Break.interactable = true;
+        dash.dashButton.interactable = true;
+        Joystick.isFree = true;
+
+        yield return null;
     }
 }
