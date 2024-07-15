@@ -41,7 +41,7 @@ public class yuraMatch : MonoBehaviourPunCallbacks //포톤의 event 감지 가�
         if (PhotonNetwork.IsConnected)
         {
             PhotonNetwork.JoinRandomRoom();
-            
+
         }
         else
         {
@@ -65,7 +65,7 @@ public class yuraMatch : MonoBehaviourPunCallbacks //포톤의 event 감지 가�
 
         PhotonNetwork.ConnectUsingSettings(); // 접속 실패 시 재접속 시도
     }
-    
+
 
     // 룸에 성공적으로 참여했을 때 호출되는 콜백
     public override void OnJoinedRoom()

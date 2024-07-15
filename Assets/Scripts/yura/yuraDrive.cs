@@ -1,8 +1,9 @@
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class yuraDrive : MonoBehaviour
+public class yuraDrive : MonoBehaviourPunCallbacks
 {
     
     public float rotationspeed = 180f;  // 회전 속도
@@ -22,6 +23,8 @@ public class yuraDrive : MonoBehaviour
 
     void Update()
     {
+        if (!photonView.IsMine) return;
+
         if (Mathf.Abs(yuraTrack.js.Horizontal) < deadzone && Mathf.Abs(yuraTrack.js.Vertical) < deadzone)
         {   // 조이스틱을 어느정도 움직여야 이동
             return;
