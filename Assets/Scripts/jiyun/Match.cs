@@ -1,49 +1,67 @@
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class Match : MonoBehaviourPunCallbacks{
+using UnityEngine.UI;
+using TMPro;
+public class Match : MonoBehaviourPunCallbacks //포톤의 event 감지 가능..
+{
     public static string username;
+    public Button joinButton; // 입장 버튼 
+    public TextMeshProUGUI connectionInfoText; //버튼 내 텍스트 
+    public int Max = 2; // 4명으로 제한
+
     void Start()
     {
-        PhotonNetwork.ConnectUsingSettings();
-    }
+        PhotonNetwork.ConnectUsingSettings(); //설정 정보를 가지고 마스터 서버에 연결 시도
 
-    // 마스터 서버에 연결되었을 때 호출되는 콜백
+        joinButton.interactable = false;
+    }
+    // 마스터 서버에 연결되었을 때 자동 호출되는 콜백
     public override void OnConnectedToMaster()
     {
+        joinButton.interactable = true;
+        connectionInfoText.text = "Online!";
+
         Debug.Log("Connected to master server");
-        PhotonNetwork.JoinLobby();
     }
-
-    // 로비에 참여했을 때 호출되는 콜백
-    public override void OnJoinedLobby()
-    {
+    public override void OnJoinedLobby(){   // 로딩씬으로 이동
         Debug.Log("Joined lobby");
+        PhotonNetwork.LoadLevel("jyLoading");
+        CheckLobby();
     }
-
-    public void StartMatch(){
-        if(PhotonNetwork.IsConnectedAndReady){
-            PhotonNetwork.JoinRandomOrCreateRoom();
+    public void CheckLobby(){
+        Debug.Log("gma");
+        if(PhotonNetwork.InLobby){
+            PhotonNetwork.JoinRandomRoom();
+            Debug.Log("join room!");
+        }
+        else{
+            Debug.Log("뭐징..");
         }
     }
-    // 연결 실패 시 호출되는 콜백
-    public override void OnDisconnected(DisconnectCause cause)
-    {
-        Debug.LogError("Disconnected: " + cause);
+    public void StartMatch(){   // 게임 스타트 버튼 클릭 시 로비로 들어감
+        joinButton.interactable = false;
+        if (PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.JoinLobby();
+        }
+        else
+        {
+            PhotonNetwork.ConnectUsingSettings();
+        }
     }
+    
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
         // 랜덤 방 참가에 실패하면 새 방을 생성
-        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = 4 });
+        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = Max });
+        Debug.Log("create a new Room");
     }
-
-    // 룸에 성공적으로 참여했을 때 호출되는 콜백
-    public override void OnJoinedRoom()
+    public override void OnDisconnected(DisconnectCause cause)
     {
-        Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
-        username = "jiyunkim";
-        SceneManager.LoadScene("Driving");
+        joinButton.interactable = false; //접속버튼 비활성화
+        Debug.LogError("Disconnected: " + cause);
+
+        PhotonNetwork.ConnectUsingSettings(); // 접속 실패 시 재접속 시도
     }
 }
