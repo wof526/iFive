@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.UI;
+using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 
@@ -35,8 +35,8 @@ public class UIManager : MonoBehaviour
     public void Gagebar()
     {
         // if tag or objectname = gagebar -> setactivefalse;
-        // ÇÏ³ª¾¿ setactive true
-        // max°ª ÀÚ·á¿¡¼­ º¸±â
+        // ï¿½Ï³ï¿½ï¿½ï¿½ setactive true
+        // maxï¿½ï¿½ ï¿½Ú·á¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 
     public void ChangeMatchScene()
