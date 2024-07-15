@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     Vector2 targetPos;
     private RectTransform rectTransform;
     bool IsGageActive = false;
-
+    carData cardata;
+    carDic cardic;
 
     // Start is called before the first frame update
     void Start()
@@ -35,5 +37,10 @@ public class UIManager : MonoBehaviour
         // if tag or objectname = gagebar -> setactivefalse;
         // 하나씩 setactive true
         // max값 자료에서 보기
+    }
+
+    public void ChangeMatchScene()
+    {
+        SceneManager.LoadScene("MatchLoading");
     }
 }
