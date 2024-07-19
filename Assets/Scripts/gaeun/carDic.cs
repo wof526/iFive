@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.Burst.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class carDic : MonoBehaviour
 {
     carData cardata;
     public Dictionary<string, carData> carList; // new dictionary
 
-    
 
     public void Start()
     {
@@ -27,7 +29,7 @@ public class carDic : MonoBehaviour
 
         name = "Titan-3";
         carList.Add(name, new carData(name, 0, 60f, 4.5f, 800f, 30f,
-            "111111 "));
+            "Defense with 1/3 damage, increased hp + 200."));
 
         name = "M1 Abrams";
         carList.Add(name, new carData(name, 1, 50f, 5.0f, 1000f, 25f,
@@ -83,8 +85,7 @@ public class carDic : MonoBehaviour
                 cardata = carList["Titan-3"]; // change cardata.this
                 cardata.ShowData(); // show data
                 cardata.ShowCar(); // show car
-
-                // change gage value
+                cardata.GageManager(); // change gage value
                 break;
 
 
@@ -93,6 +94,7 @@ public class carDic : MonoBehaviour
                 cardata = carList["M1 Abrams"];
                 cardata.ShowData();
                 cardata.ShowCar();
+                cardata.GageManager();
                 break;
 
             case "JuggerBtn":
@@ -100,6 +102,7 @@ public class carDic : MonoBehaviour
                 cardata = carList["Juggernaut"];
                 cardata.ShowData();
                 cardata.ShowCar();
+                cardata.GageManager();
                 break;
 
             case "RhinoBtn":
@@ -107,6 +110,7 @@ public class carDic : MonoBehaviour
                 cardata = carList["Rhino"];
                 cardata.ShowData();
                 cardata.ShowCar();
+                cardata.GageManager();
                 break;
 
             case "BuggyBtn":
@@ -114,6 +118,7 @@ public class carDic : MonoBehaviour
                 cardata = carList["Buggy-0"];
                 cardata.ShowData();
                 cardata.ShowCar();
+                cardata.GageManager();
                 break;
 
             case "AcidBtn":
@@ -121,6 +126,7 @@ public class carDic : MonoBehaviour
                 cardata = carList["Acid Bike"];
                 cardata.ShowData();
                 cardata.ShowCar();
+                cardata.GageManager();
                 break;
 
             case "SepiaBtn":
@@ -128,6 +134,7 @@ public class carDic : MonoBehaviour
                 cardata = carList["Sepia"];
                 cardata.ShowData();
                 cardata.ShowCar();
+                cardata.GageManager();
                 break;
 
             case "HoneyBeeBtn":
@@ -135,6 +142,7 @@ public class carDic : MonoBehaviour
                 cardata = carList["HoneyBee"];
                 cardata.ShowData();
                 cardata.ShowCar();
+                cardata.GageManager();
                 break;
         }
     }

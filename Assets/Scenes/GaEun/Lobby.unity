@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 82299767}
   - component: {fileID: 82299770}
   - component: {fileID: 82299771}
+  - component: {fileID: 82299772}
   m_Layer: 5
   m_Name: SepiaBtn
   m_TagString: Untagged
@@ -508,6 +509,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4828901431384409d109dac2941a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &82299772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82299765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dd44cdf14f76646bdd3939f962958b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &86764037
@@ -1841,7 +1854,7 @@ GameObject:
   - component: {fileID: 410989139}
   - component: {fileID: 410989140}
   m_Layer: 5
-  m_Name: ATK
+  m_Name: ATK Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1934,7 +1947,7 @@ GameObject:
   - component: {fileID: 420730792}
   - component: {fileID: 420730791}
   m_Layer: 5
-  m_Name: MaxSpeed
+  m_Name: MaxSpeedTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2353,6 +2366,7 @@ GameObject:
   - component: {fileID: 667117042}
   - component: {fileID: 667117045}
   - component: {fileID: 667117046}
+  - component: {fileID: 667117047}
   m_Layer: 5
   m_Name: HoneyBeeBtn
   m_TagString: Untagged
@@ -2594,6 +2608,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4828901431384409d109dac2941a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &667117047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667117040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dd44cdf14f76646bdd3939f962958b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &669770518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,7 +2836,7 @@ GameObject:
   - component: {fileID: 837431199}
   - component: {fileID: 837431198}
   m_Layer: 5
-  m_Name: DASH Speed
+  m_Name: DASH Speed Txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3177,6 +3203,7 @@ GameObject:
   - component: {fileID: 914953328}
   - component: {fileID: 914953331}
   - component: {fileID: 914953332}
+  - component: {fileID: 914953333}
   m_Layer: 5
   m_Name: AcidBtn
   m_TagString: Untagged
@@ -3416,6 +3443,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4828901431384409d109dac2941a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &914953333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914953326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dd44cdf14f76646bdd3939f962958b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &923818987
@@ -4210,6 +4249,7 @@ GameObject:
   - component: {fileID: 1160882854}
   - component: {fileID: 1160882857}
   - component: {fileID: 1160882858}
+  - component: {fileID: 1160882859}
   m_Layer: 5
   m_Name: BuggyBtn
   m_TagString: Untagged
@@ -4451,6 +4491,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4828901431384409d109dac2941a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1160882859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160882852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dd44cdf14f76646bdd3939f962958b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1177177642
 GameObject:
   m_ObjectHideFlags: 0
@@ -4462,7 +4514,7 @@ GameObject:
   - component: {fileID: 1177177643}
   - component: {fileID: 1177177644}
   m_Layer: 5
-  m_Name: MaxSpeed
+  m_Name: MaxSpeed Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4776,18 +4828,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1200063170}
-        m_TargetAssemblyTypeName: SliderController, Assembly-CSharp
-        m_MethodName: OnclickButtonA
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1200063166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4859,13 +4899,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1200063163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01f0b31471f32246b202378541dfd07, type: 3}
+  m_Script: {fileID: 11500000, guid: 01dd44cdf14f76646bdd3939f962958b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderA: {fileID: 1177177644}
-  sliderB: {fileID: 410989140}
-  sliderC: {fileID: 2111492933}
-  sliderD: {fileID: 1920568710}
 --- !u!1 &1269621250
 GameObject:
   m_ObjectHideFlags: 0
@@ -5016,6 +5052,7 @@ GameObject:
   - component: {fileID: 1270364307}
   - component: {fileID: 1270364310}
   - component: {fileID: 1270364311}
+  - component: {fileID: 1270364312}
   m_Layer: 5
   m_Name: M1Btn
   m_TagString: Untagged
@@ -5255,6 +5292,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4828901431384409d109dac2941a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1270364312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270364305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dd44cdf14f76646bdd3939f962958b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1281744314
@@ -5972,6 +6021,7 @@ GameObject:
   - component: {fileID: 1480994632}
   - component: {fileID: 1480994635}
   - component: {fileID: 1480994636}
+  - component: {fileID: 1480994637}
   m_Layer: 5
   m_Name: RhinoBtn
   m_TagString: Untagged
@@ -6211,6 +6261,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4828901431384409d109dac2941a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1480994637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480994630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dd44cdf14f76646bdd3939f962958b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1486245366
@@ -7137,7 +7199,7 @@ GameObject:
   - component: {fileID: 1661415308}
   - component: {fileID: 1661415307}
   m_Layer: 5
-  m_Name: HP
+  m_Name: hpTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7216,7 +7278,7 @@ GameObject:
   - component: {fileID: 1676529863}
   - component: {fileID: 1676529862}
   m_Layer: 5
-  m_Name: ATK
+  m_Name: atkTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8065,7 +8127,7 @@ GameObject:
   - component: {fileID: 1920568709}
   - component: {fileID: 1920568710}
   m_Layer: 5
-  m_Name: DASH Speed
+  m_Name: DASH Speed Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8312,6 +8374,7 @@ GameObject:
   - component: {fileID: 2004378395}
   - component: {fileID: 2004378398}
   - component: {fileID: 2004378399}
+  - component: {fileID: 2004378400}
   m_Layer: 5
   m_Name: JuggerBtn
   m_TagString: Untagged
@@ -8553,6 +8616,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4828901431384409d109dac2941a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2004378400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004378393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dd44cdf14f76646bdd3939f962958b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2028655889
 GameObject:
   m_ObjectHideFlags: 0
@@ -8674,7 +8749,7 @@ GameObject:
   - component: {fileID: 2111492932}
   - component: {fileID: 2111492933}
   m_Layer: 5
-  m_Name: HP
+  m_Name: HP Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

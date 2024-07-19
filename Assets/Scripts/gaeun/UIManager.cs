@@ -9,7 +9,6 @@ public class UIManager : MonoBehaviour
 {
     Vector2 targetPos;
     private RectTransform rectTransform;
-    bool IsGageActive = false;
     carData cardata;
     carDic cardic;
 
