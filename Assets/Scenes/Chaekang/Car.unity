@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 172013079}
   - component: {fileID: 172013078}
   m_Layer: 5
-  m_Name: Break
+  m_Name: BreakBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -789,7 +789,7 @@ GameObject:
   - component: {fileID: 619046793}
   - component: {fileID: 619046792}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: HPText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1221,7 +1221,7 @@ GameObject:
   - component: {fileID: 979107794}
   - component: {fileID: 979107793}
   m_Layer: 5
-  m_Name: Skill
+  m_Name: SkillBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1502,7 +1502,7 @@ GameObject:
   - component: {fileID: 1186069108}
   - component: {fileID: 1186069107}
   m_Layer: 5
-  m_Name: Dash
+  m_Name: DashBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2565,12 +2565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18032e5f5e0fcc4da0e41c4d0145e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  js: {fileID: 2144011338}
   rotationspeed: 180
   deadzone: 0.1
-  speedbar: {fileID: 1293516037}
-  speed_text: {fileID: 1784134973}
-  startinfo: {fileID: 2125871452}
 --- !u!4 &2089108105
 Transform:
   m_ObjectHideFlags: 0
@@ -2895,6 +2891,10 @@ PrefabInstance:
     - target: {fileID: 165178, guid: 7973d81b61b491640b7a0d00c9de83d3, type: 3}
       propertyPath: m_Name
       value: Joystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 165178, guid: 7973d81b61b491640b7a0d00c9de83d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11467636, guid: 7973d81b61b491640b7a0d00c9de83d3, type: 3}
       propertyPath: Radio
