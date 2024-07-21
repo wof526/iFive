@@ -863,7 +863,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomNumText: {fileID: 1953567049}
-  playerPrefabName: Player jy
   jsInstance: {fileID: 1055908585}
   speed_textInstance: {fileID: 2099786351}
   speedbarInstance: {fileID: 55896913}

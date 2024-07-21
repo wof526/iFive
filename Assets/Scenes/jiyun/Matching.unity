@@ -895,7 +895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joinButton: {fileID: 949172302}
   connectionInfoText: {fileID: 963396983}
-  Max: 4
+  Max: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
