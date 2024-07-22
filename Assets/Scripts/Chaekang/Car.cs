@@ -6,10 +6,13 @@ using Firebase.Auth;
 
 public class Car : MonoBehaviour
 {
-    [SerializeField] private Slider HPBar;
-    [SerializeField] private TMP_Text HPText;
-    [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private TMP_Text gameOverTxt;
+    private Slider HPBar;
+    private TMP_Text HPText;
+    private GameObject gameOverPanel;
+    private TMP_Text gameOverTxt;
+    private Button Skill;
+    private Button Break;
+    private GameObject joyStick;
 
     public GameObject fire;   // 불방구 용
     public GameObject smoke;  // 게임 오버 용
@@ -30,9 +33,6 @@ public class Car : MonoBehaviour
     Drive drive;
     Dash dash;
 
-    [SerializeField] private Button Skill;
-    [SerializeField] private Button Break;
-
     private FirebaseAuth auth;
     private Rigidbody rb;
 
@@ -46,12 +46,57 @@ public class Car : MonoBehaviour
         drive = GameManager.Instance.drive;
         dash = GameManager.Instance.dash;
 
+        // Find and assign UI components
+        HPBar = FindInActiveObjectByName("HPBar")?.GetComponent<Slider>();
+        if (HPBar != null) Debug.Log("HPBar found and assigned.");
+        else Debug.LogError("HPBar not found!");
+
+        HPText = FindInActiveObjectByName("HPText")?.GetComponent<TMP_Text>();
+        if (HPText != null) Debug.Log("HPText found and assigned.");
+        else Debug.LogError("HPText not found!");
+
+        gameOverPanel = FindInActiveObjectByName("GameOverPanel");
+        if (gameOverPanel != null)
+        {
+            Debug.Log("gameOverPanel found and assigned.");
+            gameOverTxt = gameOverPanel.transform.Find("GameOverTxt")?.GetComponent<TMP_Text>();
+            if (gameOverTxt != null) Debug.Log("gameOverTxt found and assigned.");
+            else Debug.LogError("gameOverTxt not found!");
+        }
+        else Debug.LogError("gameOverPanel not found!");
+
+        Skill = FindInActiveObjectByName("SkillBtn")?.GetComponent<Button>();
+        if (Skill != null) Debug.Log("Skill found and assigned.");
+        else Debug.LogError("Skill not found!");
+
+        Break = FindInActiveObjectByName("BreakBtn")?.GetComponent<Button>();
+        if (Break != null) Debug.Log("Break found and assigned.");
+        else Debug.LogError("Break not found!");
+
+        joyStick = FindInActiveObjectByName("Joystick");
+        if (joyStick != null) Debug.Log("Joystick found and assigned.");
+        else Debug.LogError("Joystick not found!");
+
         // HP Management
         maxHP = GameManager.Instance.CarInfo.maxHp;
         curHP = maxHP;
         SetMaxHealth(maxHP);
 
         maxSpeed = GameManager.Instance.CarInfo.maxSpeed;
+    }
+
+    // Method to find inactive GameObject by name
+    private GameObject FindInActiveObjectByName(string name)
+    {
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++)
+        {
+            if (objs[i].hideFlags == HideFlags.None && objs[i].name == name)
+            {
+                return objs[i].gameObject;
+            }
+        }
+        return null;
     }
 
     // HP Initial Setting
@@ -158,11 +203,10 @@ public class Car : MonoBehaviour
 
     private IEnumerator RestartCountdown()
     {
-        Skill.interactable = false;
-        Break.interactable = false;
-        dash.dashButton.interactable = false;
-        Joystick.isFree = false;
-
+        Skill.gameObject.SetActive(false);
+        Break.gameObject.SetActive(false);
+        dash.dashButton.gameObject.SetActive(false);
+        joyStick.gameObject.SetActive(false);
 
         while (countdown > 0)
         {
@@ -211,10 +255,10 @@ public class Car : MonoBehaviour
             Debug.LogError("User is not logged in.");
         }
 
-        Skill.interactable = true;
-        Break.interactable = true;
-        dash.dashButton.interactable = true;
-        Joystick.isFree = true;
+        Skill.gameObject.SetActive(true);
+        Break.gameObject.SetActive(true);
+        dash.dashButton.gameObject.SetActive(true);
+        joyStick.gameObject.SetActive(true);
 
         yield return null;
     }
