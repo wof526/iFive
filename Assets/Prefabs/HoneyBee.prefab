@@ -204,12 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18032e5f5e0fcc4da0e41c4d0145e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  js: {fileID: 0}
   rotationspeed: 360
   deadzone: 0.1
-  speedbar: {fileID: 0}
-  speed_text: {fileID: 0}
-  startinfo: {fileID: 0}
 --- !u!114 &5603788665741473503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,10 +218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b532cdc8558b243addcd01fe7d0b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HPBar: {fileID: 0}
-  HPText: {fileID: 0}
   fire: {fileID: 726856530397547608}
-  smoke: {fileID: 0}
+  smoke: {fileID: 6033951534612111290}
   curHP: 0
   curSpeed: 0
 --- !u!114 &1506561481594442430
@@ -5531,7 +5525,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 126656, guid: 7a59dbad522a0e443afbd995ada3fa01, type: 3}
       propertyPath: m_Name
-      value: Sprays_01
+      value: BulBanggu
       objectReference: {fileID: 0}
     - target: {fileID: 126656, guid: 7a59dbad522a0e443afbd995ada3fa01, type: 3}
       propertyPath: m_IsActive
@@ -5713,7 +5707,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1150934714579380, guid: 779aa8c25fbd0e1488637639c9fff976, type: 3}
       propertyPath: m_Name
-      value: Explosion_A
+      value: GameOver_Explosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150934714579380, guid: 779aa8c25fbd0e1488637639c9fff976, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4164528543026860, guid: 779aa8c25fbd0e1488637639c9fff976, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5793,6 +5791,12 @@ PrefabInstance:
 --- !u!4 &6032074354771028130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4164528543026860, guid: 779aa8c25fbd0e1488637639c9fff976,
+    type: 3}
+  m_PrefabInstance: {fileID: 6032835821129180686}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6033951534612111290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1150934714579380, guid: 779aa8c25fbd0e1488637639c9fff976,
     type: 3}
   m_PrefabInstance: {fileID: 6032835821129180686}
   m_PrefabAsset: {fileID: 0}
