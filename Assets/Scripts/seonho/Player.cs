@@ -35,7 +35,7 @@ public class Player : MonoBehaviourPunCallbacks
         {
             target.GetComponent<Player>().hp += 10;
             // Firebase 업데이트
-            FirebaseManager.Instance.UpdatePlayerHP(target.Owner.UserId, target.GetComponent<Player>().hp);
+            FirebaseManager1.Instance.UpdatePlayerHP(target.Owner.UserId, target.GetComponent<Player>().hp);
         }
     }
 }
