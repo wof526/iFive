@@ -32,7 +32,6 @@ public class Drive : MonoBehaviour
                 speed = 0;
             }
 
-            Debug.Log(speed);
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;  // 조이스틱의 방향에 따라 회전
 
             float angle = Mathf.LerpAngle(transform.eulerAngles.y, targetAngle, rotationspeed * Time.deltaTime);

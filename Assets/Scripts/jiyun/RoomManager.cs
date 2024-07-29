@@ -10,6 +10,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public TMP_InputField roomName_input; // 방 이름 설정
     public Transform content;
     public GameObject roomListingPrefab; // 방 리스트 prefab
+    public static string roomName;  // 방 이름
 
     void Start()
     {
@@ -35,7 +36,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     }
 
     public void SetRoom(){  // 버튼 클릭 시 방 생성
-        string roomName = roomName_input.text;
+        roomName = roomName_input.text;
         if(!string.IsNullOrEmpty(roomName)){
             RoomOptions roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 4;
@@ -77,7 +78,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
             // 방 새로 추가
             GameObject roomListing = Instantiate(roomListingPrefab, content);
             TextMeshProUGUI roomText = roomListing.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-               
+            
             if(roomText != null){
                 roomText.text = room.Name;
             }    
@@ -98,18 +99,27 @@ public class RoomManager : MonoBehaviourPunCallbacks
         }
     }
 
-        public void OnClickJoinRoom(string roomName)
+    public void OnClickJoinRoom(string roomName)
     {
         PhotonNetwork.JoinRoom(roomName);
-    }
-
-    public override void OnJoinedRoom()
-    {
-        Debug.Log("Joined Room: " + PhotonNetwork.CurrentRoom.Name);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
         Debug.Log("Join room failed: " + message);
+    }
+
+    public override void OnLeftRoom()
+    {
+        Debug.Log("방을 떠났습니다.");
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        if (PhotonNetwork.IsMasterClient){
+            PhotonNetwork.CurrentRoom.IsOpen = false;
+            PhotonNetwork.CurrentRoom.IsVisible = false;
+            PhotonNetwork.LeaveRoom();
+        }
     }
 }
