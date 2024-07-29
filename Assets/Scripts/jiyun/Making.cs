@@ -19,29 +19,11 @@ public class Making : MonoBehaviourPunCallbacks
             Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
             Match.username = "jiyunkim";
             PhotonNetwork.AutomaticallySyncScene = true;
-            //MakeTeams();
         }
         else{
             Debug.Log("Not in room..");
         }
     }
-
-    private void MakeTeams(){   // 팀 나누기
-        Player[] players = PhotonNetwork.PlayerList;
-        ExitGames.Client.Photon.Hashtable teamProperties = new ExitGames.Client.Photon.Hashtable();
-        for(int i = 0; i < players.Length; i++){
-            if(i % 2 == 0){ // 아군
-                teamProperties["Team"] = "Our";
-            }
-            else{   // 적군
-                teamProperties["Team"] = "Enemy";
-            }
-            players[i].SetCustomProperties(teamProperties);
-        }
-    }
-
-    
-
     public override void OnPlayerEnteredRoom(Player newPlayer){
         if(PhotonNetwork.CurrentRoom.PlayerCount == 2){
             PhotonNetwork.LoadLevel("Driving"); //같은 씬을 자동 동기화 함.
