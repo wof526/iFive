@@ -42,13 +42,13 @@ public class GoogleManager : MonoBehaviour
         loadingBar.SetActive(false);
         startButton.SetActive(false);
 
-        /*PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
+        PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
             .RequestIdToken()
             .RequestEmail()
             .Build());
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
-        */
+        
         fbauth = FirebaseAuth.DefaultInstance;
 
         TryGoogleLogin();
@@ -59,7 +59,7 @@ public class GoogleManager : MonoBehaviour
     public void TryGoogleLogin()
     {
         loadingBar.SetActive(true);
-        /*PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (success) =>
+        PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (success) =>
         {
             if (success == SignInStatus.Success)
             {
@@ -73,17 +73,17 @@ public class GoogleManager : MonoBehaviour
                 EmailLogin();
                 
             }
-        });*/
+        });
     }
 
-    /*IEnumerator TryFirebaseLogin()
+    IEnumerator TryFirebaseLogin()
     {
         while (string.IsNullOrEmpty(((PlayGamesLocalUser)Social.localUser).GetIdToken()))
         {
             yield return null;
         }
 
-        //string idToken = ((PlayGamesLocalUser)Social.localUser).GetIdToken();
+        string idToken = ((PlayGamesLocalUser)Social.localUser).GetIdToken();
 
         Credential credential = GoogleAuthProvider.GetCredential(idToken, null);
 
@@ -105,11 +105,11 @@ public class GoogleManager : MonoBehaviour
 
         loadingBar.SetActive(false);
         startButton.SetActive(true);
-    }*/
+    }
 
     public void GameStartButton()
     {
-        SceneManager.LoadScene("lobbySampleScene");
+        SceneManager.LoadScene("Lobby");
     }
 
 
@@ -181,7 +181,7 @@ public class GoogleManager : MonoBehaviour
                 User = task.Result.User;
                 Debug.Log("로그인 성공");
                 Debug.Log(User.Email);
-                SceneManager.LoadScene("lobbySampleScene");
+                SceneManager.LoadScene("Lobby");
                 
 
             }

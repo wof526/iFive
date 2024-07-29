@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+
     Vector2 targetPos;
     private RectTransform rectTransform;
     bool IsGageActive = false;
@@ -19,7 +20,7 @@ public class UIManager : MonoBehaviour
         DOTween.Init();
         rectTransform = GetComponent<RectTransform>();
         targetPos = rectTransform.anchoredPosition;
-        //Debug.Log(targetPos);
+        //Debug.Log(targetPos);       
     }
 
     public void BtnMoveFoward()
