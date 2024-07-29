@@ -508,7 +508,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365804158}
   m_CullTransparentMesh: 1
-
 --- !u!1 &428158783
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +524,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
-
+--- !u!4 &428158784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428158783}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &489809900
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,9 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomNumText: {fileID: 1953567049}
-
   spawnPoint: {fileID: 1819579783}
-
   jsInstance: {fileID: 1055908585}
   speed_textInstance: {fileID: 2099786351}
   speedbarInstance: {fileID: 55896913}
@@ -1344,13 +1355,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455363663}
   serializedVersion: 2
-
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -759, y: 0, z: -2870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1554922667}
+  m_Father: {fileID: 616675131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1554922666
 GameObject:
@@ -1376,13 +1386,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554922666}
   serializedVersion: 2
-
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.9, y: 0, z: 105}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 616675131}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1638300277 stripped
 RectTransform:
@@ -1697,12 +1706,10 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 428158784}
   - {fileID: 705507995}
-
   - {fileID: 1819579783}
   - {fileID: 1554922667}
-  - {fileID: 428158784}
-
   - {fileID: 108129035}
   - {fileID: 616675131}
   - {fileID: 489809902}
