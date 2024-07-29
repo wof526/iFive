@@ -291,8 +291,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 659691140}
   m_HandleRect: {fileID: 659691139}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.613926
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -442,8 +442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 120}
+  m_AnchoredPosition: {x: -0.0000038146973, y: 0.0000083222985}
+  m_SizeDelta: {x: 0, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &516863427
 GameObject:
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 150328566}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomName_input: {fileID: 1360131972}
   content: {fileID: 493973252}
-  roomListingPrefab: {fileID: 4609288343107035326, guid: 484423b2523a46749884d49c2771ddc9,
+  roomListingPrefab: {fileID: 8909537899277433616, guid: 5c9e38bf3fc315445a03d6efeb967a98,
     type: 3}
 --- !u!1 &1678070431
 GameObject:

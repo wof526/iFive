@@ -35,7 +35,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         string roomName = roomName_input.text;
         if(!string.IsNullOrEmpty(roomName)){
             RoomOptions roomOptions = new RoomOptions();
-            roomOptions.MaxPlayers = 2;
+            roomOptions.MaxPlayers = 4;
             PhotonNetwork.CreateRoom(roomName, roomOptions);
         }
     }

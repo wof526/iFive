@@ -26,8 +26,6 @@ public class Track : MonoBehaviourPunCallbacks
         speed_text = speed_textInstance;
         speedbar = speedbarInstance;
 
-        if(PhotonNetwork.IsConnectedAndReady){
-            GameObject player = PhotonNetwork.Instantiate("Player jy", spawnPoint.position, spawnPoint.rotation);
-        }
+        GameObject player = PhotonNetwork.Instantiate("Player jy", spawnPoint.position, spawnPoint.rotation);
     }
 }
