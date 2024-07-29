@@ -113,10 +113,4 @@ public class RoomManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("Join room failed: " + message);
     }
-
-    public override void OnPlayerEnteredRoom(Player newPlayer){
-        if(PhotonNetwork.CurrentRoom.PlayerCount == 2){
-            PhotonNetwork.LoadLevel("Driving"); //같은 씬을 자동 동기화 함.
-        }
-    }
 }

@@ -26,7 +26,7 @@ public class Making : MonoBehaviourPunCallbacks
         }
     }
     public override void OnPlayerEnteredRoom(Player newPlayer){
-        if(PhotonNetwork.CurrentRoom.PlayerCount == 2){
+        if(PhotonNetwork.CurrentRoom.PlayerCount == 3){
             PhotonNetwork.LoadLevel("Driving"); //같은 씬을 자동 동기화 함.
         }
     }
