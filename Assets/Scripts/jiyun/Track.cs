@@ -2,9 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
-using Photon.Realtime;
-using System.Collections.Generic;
-using System.Collections;
 
 public class Track : MonoBehaviourPunCallbacks
 {
@@ -18,14 +15,11 @@ public class Track : MonoBehaviourPunCallbacks
     public static TextMeshProUGUI speed_text;
     public static Image speedbar;
 
-    //public PhotonView photonView;
-
     void Start()
     {
         js = jsInstance;
         speed_text = speed_textInstance;
         speedbar = speedbarInstance;
-
-        GameObject player = PhotonNetwork.Instantiate("Player jy", spawnPoint.position, spawnPoint.rotation);
-    }
+        GameObject player = PhotonNetwork.Instantiate("Player jy", spawnPoint.position, spawnPoint.rotation)
+       }
 }
