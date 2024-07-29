@@ -42,6 +42,6 @@ public class UIManager : MonoBehaviour
 
     public void ChangeMatchScene()
     {
-        SceneManager.LoadScene("MatchLoading");
+        SceneManager.LoadScene("CreateRoom");
     }
 }

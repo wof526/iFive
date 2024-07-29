@@ -105,7 +105,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         if(PhotonNetwork.IsMasterClient){
-            PhotonNetwork.LoadLevel("jyLoading"); // 씬 전환
+            PhotonNetwork.LoadLevel("MatchLoading"); // 씬 전환
         }     
     }
 

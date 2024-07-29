@@ -42,24 +42,30 @@ public class GoogleManager : MonoBehaviour
         loadingBar.SetActive(false);
         startButton.SetActive(false);
 
-        PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
+        /*PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
             .RequestIdToken()
             .RequestEmail()
             .Build());
         PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
+        PlayGamesPlatform.Activate();*/
         
         fbauth = FirebaseAuth.DefaultInstance;
 
-        TryGoogleLogin();
+        //TryGoogleLogin();
+
+        loadingBar.SetActive(true); //새로 추가. 구글로그인시 시작되면 없애기
+        EmailLogin();
 
         
     }
 
     public void TryGoogleLogin()
     {
-        loadingBar.SetActive(true);
-        PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (success) =>
+        
+
+       loadingBar.SetActive(true);
+
+        /*PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (success) =>
         {
             if (success == SignInStatus.Success)
             {
@@ -70,13 +76,13 @@ public class GoogleManager : MonoBehaviour
             else
             {
                 googleLog.text = "google Failure";
-                EmailLogin();
+               
                 
             }
-        });
+        });*/
     }
 
-    IEnumerator TryFirebaseLogin()
+    /*IEnumerator TryFirebaseLogin()
     {
         while (string.IsNullOrEmpty(((PlayGamesLocalUser)Social.localUser).GetIdToken()))
         {
@@ -105,7 +111,7 @@ public class GoogleManager : MonoBehaviour
 
         loadingBar.SetActive(false);
         startButton.SetActive(true);
-    }
+    }*/
 
     public void GameStartButton()
     {

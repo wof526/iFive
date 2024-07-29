@@ -21,11 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/GaEun/Lobby.unity
     guid: ce7786f9b09b2704c98ddb23d2cd15fb
   - enabled: 1
-    path: Assets/Scenes/GaEun/MatchLoading.unity
-    guid: bf29218eb88b9ed4890706e4683afbf9
-  - enabled: 1
     path: Assets/Scenes/jiyun/CreateRoom.unity
     guid: 7dff077d987d06142ad9c3cc0e3f0f6a
+  - enabled: 1
+    path: Assets/Scenes/GaEun/MatchLoading.unity
+    guid: bf29218eb88b9ed4890706e4683afbf9
   - enabled: 1
     path: Assets/Scenes/jiyun/Driving.unity
     guid: 5e3ba60f9563a514687d1d9c6928cc09
