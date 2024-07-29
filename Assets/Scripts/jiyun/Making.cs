@@ -19,6 +19,7 @@ public class Making : MonoBehaviourPunCallbacks
             Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
             Match.username = "jiyunkim";
             PhotonNetwork.AutomaticallySyncScene = true;
+
         }
         else{
             Debug.Log("Not in room..");

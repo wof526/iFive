@@ -36,7 +36,7 @@ public class Match : MonoBehaviourPunCallbacks //포톤의 event 감지 가능..
             Debug.Log("join room!");
         }
         else{
-            Debug.Log("뭐징..");
+            Debug.Log("can't join room!");
         }
     }
     public void StartMatch(){   // 게임 스타트 버튼 클릭 시 로비로 들어감

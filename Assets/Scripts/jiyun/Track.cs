@@ -3,12 +3,10 @@ using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 
-public class Track : MonoBehaviour
+public class Track : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI roomNumText; // 룸 이름   
     public Transform spawnPoint;    // 스폰 지점
-    public string playerPrefabName = "Player jy";  // 자동차 프리팹
-
     public Joystick jsInstance;
     public TextMeshProUGUI speed_textInstance;
     public Image speedbarInstance;
@@ -22,9 +20,6 @@ public class Track : MonoBehaviour
         js = jsInstance;
         speed_text = speed_textInstance;
         speedbar = speedbarInstance;
-
-        roomNumText.text = PhotonNetwork.CurrentRoom.Name;
-
-        GameObject player = PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation, 0);
-    }
+        GameObject player = PhotonNetwork.Instantiate("Player jy", spawnPoint.position, spawnPoint.rotation)
+       }
 }
