@@ -12,7 +12,10 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public GameObject roomListingPrefab; // 방 리스트 prefab
 
     void Start()
-    {   
+    {
+        // 지역 설정 (예: 아시아 지역)
+        PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = "asia";
+
         // 서버에 연결
         PhotonNetwork.ConnectUsingSettings();
 
@@ -36,8 +39,15 @@ public class RoomManager : MonoBehaviourPunCallbacks
         if(!string.IsNullOrEmpty(roomName)){
             RoomOptions roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 4;
+            roomOptions.IsVisible = true;
+            roomOptions.IsOpen = true;
             PhotonNetwork.CreateRoom(roomName, roomOptions);
         }
+    }
+
+    public override void OnCreateRoomFailed(short returnCode, string message)
+    {
+        Debug.Log("방 생성 실패: " + message);
     }
 
     public override void OnCreatedRoom()
@@ -48,13 +58,10 @@ public class RoomManager : MonoBehaviourPunCallbacks
         }        
     }
 
-    public override void OnCreateRoomFailed(short returnCode, string message)
-    {
-        Debug.Log("Failed: " + message);
-    }
-
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
+        Debug.Log("방 목록 업데이트됨. 방 수: " + roomList.Count);
+
         foreach (Transform child in content)
         {
             Destroy(child.gameObject); // 기존 방 목록 삭제
@@ -79,16 +86,19 @@ public class RoomManager : MonoBehaviourPunCallbacks
             }
 
             Button roomButton = roomListing.GetComponent<Button>();
-            if(roomButton != null){ // 방 목록으로 뜨는 버튼
+            if(roomButton != null) // 방 목록으로 뜨는 버튼
+            { 
+                string roomName = room.Name;
                 roomButton.onClick.AddListener(() => OnClickJoinRoom(room.Name));
             }
-            else{
+            else
+            {
                 Debug.Log("no btn!");
             }
         }
     }
 
-    public void OnClickJoinRoom(string roomName)
+        public void OnClickJoinRoom(string roomName)
     {
         PhotonNetwork.JoinRoom(roomName);
     }
