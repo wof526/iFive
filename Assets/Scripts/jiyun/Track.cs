@@ -19,9 +19,7 @@ public class Track : MonoBehaviourPunCallbacks
     {
         js = jsInstance;
         speed_text = speed_textInstance;
-        speedbar = speedbarInstance;    
-
-        PhotonNetwork.Instantiate("Player jy", spawnPoint.position, spawnPoint.rotation);
-   
-    }
+        speedbar = speedbarInstance;
+        GameObject player = PhotonNetwork.Instantiate("Sephia", spawnPoint.position, spawnPoint.rotation);
+       }
 }
