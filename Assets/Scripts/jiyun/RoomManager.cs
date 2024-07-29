@@ -4,12 +4,14 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using JetBrains.Annotations;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
     public TMP_InputField roomName_input; // 방 이름 설정
     public Transform content;
     public GameObject roomListingPrefab; // 방 리스트 prefab
+    public static string roomName;  // 방 이름
 
     void Start()
     {
@@ -35,13 +37,33 @@ public class RoomManager : MonoBehaviourPunCallbacks
     }
 
     public void SetRoom(){  // 버튼 클릭 시 방 생성
-        string roomName = roomName_input.text;
+        roomName = roomName_input.text;
         if(!string.IsNullOrEmpty(roomName)){
-            RoomOptions roomOptions = new RoomOptions();
-            roomOptions.MaxPlayers = 4;
-            roomOptions.IsVisible = true;
-            roomOptions.IsOpen = true;
-            PhotonNetwork.CreateRoom(roomName, roomOptions);
+            CreateRoomListing(roomName);
+        }
+    }
+
+    private void CreateRoomListing(string roomName) {   // 방 목록 생성
+        GameObject roomListing = Instantiate(roomListingPrefab, content);
+        TextMeshProUGUI roomText = roomListing.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+
+        if (roomText != null)
+        {
+            roomText.text = roomName;
+        }
+        else
+        {
+            Debug.Log("error!");
+        }
+
+        Button roomButton = roomListing.GetComponent<Button>();
+        if (roomButton != null)
+        {
+            roomButton.onClick.AddListener(() => OnClickJoinRoom(roomName));
+        }
+        else
+        {
+            Debug.Log("no btn!");
         }
     }
 
@@ -52,10 +74,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public override void OnCreatedRoom()
     {
-        Debug.Log("방 이름: " + PhotonNetwork.CurrentRoom.Name);
-        if(PhotonNetwork.IsMasterClient){
-            PhotonNetwork.LoadLevel("Driving"); // 씬 전환
-        }        
+        Debug.Log("방 이름: " + PhotonNetwork.CurrentRoom.Name);   
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
@@ -74,38 +93,20 @@ public class RoomManager : MonoBehaviourPunCallbacks
                 continue; // 제거된 방은 리스트에 표시하지 않음
             }
 
-            // 방 새로 추가
-            GameObject roomListing = Instantiate(roomListingPrefab, content);
-            TextMeshProUGUI roomText = roomListing.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-               
-            if(roomText != null){
-                roomText.text = room.Name;
-            }    
-            else{
-                Debug.Log("error!");
-            }
-
-            Button roomButton = roomListing.GetComponent<Button>();
-            if(roomButton != null) // 방 목록으로 뜨는 버튼
-            { 
-                string roomName = room.Name;
-                roomButton.onClick.AddListener(() => OnClickJoinRoom(room.Name));
-            }
-            else
-            {
-                Debug.Log("no btn!");
-            }
+            CreateRoomListing(room.Name);
         }
     }
 
-        public void OnClickJoinRoom(string roomName)
-    {
-        PhotonNetwork.JoinRoom(roomName);
+    public void OnClickJoinRoom(string roomName)
+    {   // 방 누르면 들어가짐
+        PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions{ MaxPlayers = 4, IsVisible = true, IsOpen = true}, TypedLobby.Default);
     }
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("Joined Room: " + PhotonNetwork.CurrentRoom.Name);
+        if(PhotonNetwork.IsMasterClient){
+            PhotonNetwork.LoadLevel("jyLoading"); // 씬 전환
+        }     
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
