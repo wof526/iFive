@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-//using UnityEngine.UIElements;
 
 public class carData : MonoBehaviour
 {
@@ -23,11 +22,6 @@ public class carData : MonoBehaviour
     private float hp;
     private float dashSpeed;
     private string skill;
-
-    Slider sliderA;
-    Slider sliderB;
-    Slider sliderC;
-    Slider sliderD;
 
     private void Awake()
     {
@@ -110,49 +104,16 @@ public class carData : MonoBehaviour
     }
 
 
-    public void GageManager()
+
+    public void Show()
     {
-        int maxSpeedMin = 50;
-        int maxSpeedFull = 160;
-
-        float atkMin = 3.0f;
-        float atkFull = 7.0f;
-
-        int hpMin = 150;
-        int hpFull = 1000;
-
-        int dashSpeedMin = 25;
-        int dashSpeedFull = 120;
-
-        // NullReferenceException - Object Reset
-        sliderA = GameObject.Find("MaxSpeed Slider").GetComponent<Slider>();
-        sliderB = GameObject.Find("ATK Slider").GetComponent<Slider>();
-        sliderC = GameObject.Find("HP Slider").GetComponent<Slider>();
-        sliderD = GameObject.Find("DASH Speed Slider").GetComponent<Slider>();
-
-        sliderA.minValue = maxSpeedMin;
-        sliderA.maxValue = maxSpeedFull;
-        sliderA.value = maxSpeedFull - (this.maxSpeed - maxSpeedMin);
-
-        sliderB.minValue = atkMin;
-        sliderB.maxValue = atkFull;
-        sliderB.value = atkFull - (this.atk - atkMin);
-
-        sliderC.minValue = hpMin;
-        sliderC.maxValue = hpFull;
-        sliderC.value = hpFull - (this.hp - hpMin);
-
-        sliderD.minValue = dashSpeedMin;
-        sliderD.maxValue = dashSpeedFull;
-        sliderD.value = dashSpeedFull - (this.dashSpeed - dashSpeedMin);
-
+        Debug.Log(this.carName);
+        Debug.Log(this.carNum);
         Debug.Log(this.maxSpeed);
         Debug.Log(this.atk);
         Debug.Log(this.hp);
         Debug.Log(this.dashSpeed);
+        Debug.Log(this.skill);
     }
-
-
-
 }
 
