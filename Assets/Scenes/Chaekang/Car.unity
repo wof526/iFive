@@ -2565,12 +2565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18032e5f5e0fcc4da0e41c4d0145e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  js: {fileID: 2144011338}
   rotationspeed: 180
   deadzone: 0.1
-  speedbar: {fileID: 1293516037}
-  speed_text: {fileID: 1784134973}
-  startinfo: {fileID: 2125871452}
 --- !u!4 &2089108105
 Transform:
   m_ObjectHideFlags: 0
