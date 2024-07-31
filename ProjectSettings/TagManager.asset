@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Car
+  - Team Blue
+  - Team Red
   layers:
   - Default
   - TransparentFX
