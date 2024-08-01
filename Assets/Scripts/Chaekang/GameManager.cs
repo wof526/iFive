@@ -8,11 +8,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public DatabaseManager databaseManager;
-    public CarInfo CarInfo;
-    public Car car;
+    public FirestoreManager firestoreManager;
     public Dash dash;
     public Drive drive;
 
+    private Car car;
     private FirebaseAuth auth;
 
     private void Awake()
@@ -27,12 +27,17 @@ public class GameManager : MonoBehaviour
     {
         auth = FirebaseAuth.DefaultInstance;
 
-        // 데이터베이스 초기화
-        //databaseManager.ResetDatabase();
-
         // 팀 리스폰 지역 설정
-        databaseManager.SaveTeamRespawnArea("teamA", new Vector3(0, 3, 0));
-        databaseManager.SaveTeamRespawnArea("teamB", new Vector3(10, 3, 0));
+        //databaseManager.SaveTeamRespawnArea("teamA", new Vector3(175, 0, 0));
+        //databaseManager.SaveTeamRespawnArea("teamB", new Vector3(10, 3, 0));
+
+        // 필드를 Find 메서드를 사용하여 초기화
+        car = GameObject.FindFirstObjectByType<Car>();
+
+        if (car == null)
+        {
+            Debug.LogError("Car object not found!");
+        }
 
         string userId = auth.CurrentUser?.UserId;
 
@@ -42,8 +47,11 @@ public class GameManager : MonoBehaviour
 
     public void RespawnUser(string userId, Vector3 respawnArea)
     {
-        GameManager.Instance.car.curSpeed = 0;
-        // 유저 리스폰 로직 (예: 유저의 위치를 리스폰 지역으로 이동)
+        if (car != null)
+        {
+            car.curSpeed = 0;
+        }
+
         Debug.Log($"Respawning user {userId} at {respawnArea}");
 
         // 실제 유저 오브젝트 이동 로직 구현
@@ -71,5 +79,11 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Local player object not found!");
             return null;
         }
+    }
+
+    // Public 메서드를 통해 Car 객체를 가져오기
+    public Car GetCar()
+    {
+        return car;
     }
 }

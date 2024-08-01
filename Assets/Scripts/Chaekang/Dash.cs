@@ -12,13 +12,23 @@ public class Dash : MonoBehaviour
     GameObject fire;
     public Button dashButton; // Unity UI Button reference
 
+    // Script
+    Car car;
+    FirestoreManager firestoreManager;
+
+    private void Awake()
+    {
+        car = GameManager.Instance.GetCar();
+        firestoreManager = GameManager.Instance.firestoreManager;
+    }
+
     private void Start()
     {
-        maxSpeed = GameManager.Instance.CarInfo.maxSpeed;
-        curSpeed = GameManager.Instance.car.curSpeed;
-        zeroBaek = GameManager.Instance.CarInfo.zeroBaek;
+        maxSpeed = firestoreManager.MaxSpeed;
+        curSpeed = car.curSpeed;
+        zeroBaek = firestoreManager.ZeroBaek;
 
-        fire = GameManager.Instance.car.fire;
+        fire = car.fire;
     }
 
     void Update()
