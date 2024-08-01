@@ -39,17 +39,18 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public void SetRoom(){  // 버튼 클릭 시 방 생성
         roomName = roomName_input.text;
         if(!string.IsNullOrEmpty(roomName)){
-            CreateRoomListing(roomName);
+            CreateRoomListing(roomName, 0);
+            PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = 4, IsVisible = true, IsOpen = true });
         }
     }
 
-    private void CreateRoomListing(string roomName) {   // 방 목록 생성
+    private void CreateRoomListing(string roomName, int playerCount) {   // 방 목록 생성
         GameObject roomListing = Instantiate(roomListingPrefab, content);
         TextMeshProUGUI roomText = roomListing.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 
         if (roomText != null)
         {
-            roomText.text = roomName;
+            roomText.text = $"{roomName} ({playerCount}/4)";
         }
         else
         {
@@ -93,7 +94,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
                 continue; // 제거된 방은 리스트에 표시하지 않음
             }
 
-            CreateRoomListing(room.Name);
+            CreateRoomListing(room.Name, room.PlayerCount);
         }
     }
 
