@@ -28,7 +28,6 @@ public class Car : MonoBehaviourPunCallbacks
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
-    DatabaseManager databaseManager;
     Drive drive;
     Dash dash;
     FirestoreManager firestoreManager;
@@ -46,7 +45,6 @@ public class Car : MonoBehaviourPunCallbacks
         rb = GetComponent<Rigidbody>();
         auth = FirebaseAuth.DefaultInstance;
 
-        databaseManager = GameManager.Instance.databaseManager;
         drive = GameManager.Instance.drive;
         dash = GameManager.Instance.dash;
         firestoreManager = GameManager.Instance.firestoreManager;
@@ -261,7 +259,7 @@ public class Car : MonoBehaviourPunCallbacks
 
         if (userId != null)
         {
-            databaseManager.GetUserTeam(userId, team =>
+            /*databaseManager.GetUserTeam(userId, team =>
             {
                 if (!string.IsNullOrEmpty(team))
                 {
@@ -281,7 +279,7 @@ public class Car : MonoBehaviourPunCallbacks
                 {
                     Debug.LogError("User team not found.");
                 }
-            });
+            });*/
         }
         else
         {

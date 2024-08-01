@@ -7,7 +7,6 @@ using Firebase.Auth;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public DatabaseManager databaseManager;
     public FirestoreManager firestoreManager;
     public Dash dash;
     public Drive drive;
@@ -27,10 +26,6 @@ public class GameManager : MonoBehaviour
     {
         auth = FirebaseAuth.DefaultInstance;
 
-        // 팀 리스폰 지역 설정
-        //databaseManager.SaveTeamRespawnArea("teamA", new Vector3(175, 0, 0));
-        //databaseManager.SaveTeamRespawnArea("teamB", new Vector3(10, 3, 0));
-
         // 필드를 Find 메서드를 사용하여 초기화
         car = GameObject.FindFirstObjectByType<Car>();
 
@@ -40,9 +35,6 @@ public class GameManager : MonoBehaviour
         }
 
         string userId = auth.CurrentUser?.UserId;
-
-        // 유저 팀 배정 및 리스폰 지역 불러오기
-        databaseManager.SaveUserData(userId, "teamA");
     }
 
     public void RespawnUser(string userId, Vector3 respawnArea)

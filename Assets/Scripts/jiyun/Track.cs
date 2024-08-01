@@ -7,7 +7,6 @@ using System.Collections.Generic;
 
 public class Track : MonoBehaviourPunCallbacks
 {
-    public TextMeshProUGUI roomNumText; // 룸 이름   
     public Joystick jsInstance;
     public TextMeshProUGUI speed_textInstance;
     public Image speedbarInstance;
