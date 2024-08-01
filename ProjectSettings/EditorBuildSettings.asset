@@ -32,5 +32,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/seonho/Driving-proto.unity
     guid: fc0f5b575f3c6f4428911f442920b6d9
+  - enabled: 0
+    path: Assets/Scenes/Chaekang/DrivingCK.unity
+    guid: b82f3926320a28a449b4f9e2b0cd2bf3
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
