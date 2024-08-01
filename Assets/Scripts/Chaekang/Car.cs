@@ -14,8 +14,8 @@ public class Car : MonoBehaviour
     private Button Break;
     private GameObject joyStick;
 
-    public GameObject fire;   // ºÒ¹æ±¸ ¿ë
-    public GameObject smoke;  // °ÔÀÓ ¿À¹ö ¿ë
+    public GameObject fire;   // ï¿½Ò¹æ±¸ ï¿½ï¿½
+    public GameObject smoke;  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 
     // Hp, Speed
     float maxHP;
@@ -24,7 +24,7 @@ public class Car : MonoBehaviour
     float maxSpeed;
 
     // GameOver
-    int countdown = 10;  // °ÔÀÓ ¿À¹ö ½Ã Àç½ÃÀÛ
+    int countdown = 10;  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
@@ -122,28 +122,28 @@ public class Car : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Car otherCar = collision.transform.GetComponent<Car>();  // »ó´ë Â÷
+        Car otherCar = collision.transform.GetComponent<Car>();  // ï¿½ï¿½ï¿½ ï¿½ï¿½
 
         // Handle collision with another car
-        bool thisCarIsDashing = GameManager.Instance.dash.isDash; // ³» Â÷ÀÇ ´ë½Ã »óÅÂ
+        bool thisCarIsDashing = GameManager.Instance.dash.isDash; // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-        if (thisCarIsDashing)  // ³» Â÷°¡ ´ë½¬ »óÅÂ¶ó¸é
+        if (thisCarIsDashing)  // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ë½¬ ï¿½ï¿½ï¿½Â¶ï¿½ï¿½
         {
             Debug.Log("dash");
-            return;   // µ¥¹ÌÁö ¾øÀ½
+            return;   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         }
         else
         {
-            // Â÷¿Í Ãæµ¹ÇÑ µ¥¹ÌÁö
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½æµ¹ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             if (otherCar != null && collision.transform.CompareTag("Car"))
             {
                 Debug.Log("car accident");
-                GetDamaged(collision.relativeVelocity.magnitude * 3);   // »ó´ë Â÷ÀÇ ¼Ó·Â¸¸Å­ µ¥¹ÌÁö
+                GetDamaged(collision.relativeVelocity.magnitude * 3);   // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ó·Â¸ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             }
             else
             {
                 Debug.Log("non car accident");
-                // Â÷°¡ ¾Æ´Ñ ¹°Ã¼¿¡ ´ëÇØ¼­ µ¥¹ÌÁö ¹Þ±â
+                // ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ±ï¿½
                 GetDamaged(curSpeed * 3);
             }
         }
@@ -151,7 +151,7 @@ public class Car : MonoBehaviour
 
     private void Update()
     {
-        HPBar.value = curHP;
+        //HPBar.value = curHP;
         UpdateHPText();
         curSpeed = rb.velocity.magnitude;
 
@@ -222,7 +222,7 @@ public class Car : MonoBehaviour
 
         if (userId != null)
         {
-            // ¸®½ºÆù Áö¿ª ºÒ·¯¿Í¼­ ¸®½ºÆù Ã³¸®
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½Í¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
             databaseManager.GetUserTeam(userId, team =>
             {
                 if (!string.IsNullOrEmpty(team))
@@ -231,11 +231,11 @@ public class Car : MonoBehaviour
                     {
                         GameManager.Instance.RespawnUser(userId, respawnArea);
 
-                        // ¼Óµµ ¹× È¸Àü ¼Óµµ ÃÊ±âÈ­
+                        // ï¿½Óµï¿½ ï¿½ï¿½ È¸ï¿½ï¿½ ï¿½Óµï¿½ ï¿½Ê±ï¿½È­
                         rb.velocity = Vector3.zero;
                         rb.angularVelocity = Vector3.zero;
 
-                        // À§Ä¡ ¹× È¸Àü ÃÊ±âÈ­
+                        // ï¿½ï¿½Ä¡ ï¿½ï¿½ È¸ï¿½ï¿½ ï¿½Ê±ï¿½È­
                         transform.position = respawnArea;
                         transform.rotation = Quaternion.identity;
 
