@@ -15,10 +15,10 @@ public class yuraDrive : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        if (Match.username != null)
+        /*if (Match.username != null)
         {
             //startinfo.text = Match.username + " has entered";
-        }
+        }*/
     }
 
     void Update()

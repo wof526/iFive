@@ -193,7 +193,7 @@ public class Car : MonoBehaviourPunCallbacks
 
         HPBar.value = curHP;
         UpdateHPText();
-        curSpeed = rb.velocity.magnitude;
+        curSpeed = Drive.speed;
 
         if (curSpeed >= maxSpeed)
         {
