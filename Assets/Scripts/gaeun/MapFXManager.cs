@@ -5,19 +5,31 @@ using UnityEngine;
 
 public class MapFXManager : MonoBehaviour
 {
-    public GameObject mapFX;
+    //public GameObject mapFX01;
+    //public GameObject mapFX02;
+    public GameObject[] areas;
+    public GameObject[] Minimap_areas;
+
+
     public float presentime;
-    public GameObject quad;
+    public GameObject[] quads;
 
     public Material areaYellow;
     public Material areaBlue;
     public Material areaRed;
 
+    int randomNum;
+
 
 
     void Start()
-    {
-        mapFX.SetActive(false);
+    {        
+        areas[0].SetActive(false);
+        areas[1].SetActive(false);
+        Minimap_areas[0].SetActive(false);
+        Minimap_areas[1].SetActive(false);
+        randomNum = Random.Range(0, 2);
+        Debug.Log(randomNum);
     }
 
 
@@ -27,51 +39,35 @@ public class MapFXManager : MonoBehaviour
 
         if(Time.time > 10.0f)
         {
-            mapFX.SetActive(true);
+            RandomArea();
+            //mapFX.SetActive(true);
         }
 
         
     }
 
-    /*
-    private void OnTriggerStay(Collider collider)
-    {
-        mapFX.GetComponent<CapsuleCollider>();
+    void RandomArea()
+    {        
+        areas[randomNum].SetActive(true);
+        Minimap_areas[randomNum].SetActive(true);
+    }
 
 
-        switch (collider.gameObject.tag)
-        {
-            case "Team Blue":
-                FXchangerBlue();
-                Debug.Log("case Blue");
-                break;
-
-            case "Team Red":
-                FXchangerRed();
-                Debug.Log("case Red");
-                break;
-
-            default:
-                FXchangerYellow();
-                Debug.Log("case Yellow");
-                break;
-        }
-    }*/
 
     public void FXchangerBlue()
     {
-        quad.GetComponent<MeshRenderer>().material = areaBlue;
+        quads[randomNum].GetComponent<MeshRenderer>().material = areaBlue;
         Debug.Log("change blue");
     }
     public void FXchangerRed()
     {
-        quad.GetComponent<MeshRenderer>().material = areaRed;
+        quads[randomNum].GetComponent<MeshRenderer>().material = areaRed;
         Debug.Log("change red");
 
     }
     public void FXchangerYellow()
     {
-        quad.GetComponent<MeshRenderer>().material = areaYellow;
+        quads[randomNum].GetComponent<MeshRenderer>().material = areaYellow;
         Debug.Log("change yellow");
 
     }

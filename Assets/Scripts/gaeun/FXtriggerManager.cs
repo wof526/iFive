@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FXtriggerManager : MonoBehaviour
 {
-    public MapFXManager mapFXManager;    
+    public MapFXManager mapFXManager;
+
 
     private void OnTriggerStay(Collider collider)
     {
@@ -12,19 +13,38 @@ public class FXtriggerManager : MonoBehaviour
         switch (collider.gameObject.tag)
         {
             case "Team Blue":
-                mapFXManager.FXchangerBlue();
-                Debug.Log("case Blue");
+                switch (collider.gameObject.tag)
+                {
+                    case "Team Red":
+                        mapFXManager.FXchangerYellow();
+                        Debug.Log("case Blue");
+                        break;
+
+                    default:
+                        mapFXManager.FXchangerBlue();
+                        break;
+                }
                 break;
 
+
             case "Team Red":
-                mapFXManager.FXchangerRed();
-                Debug.Log("case Red");
+                switch (collider.gameObject.tag)
+                {
+                    case "Team Blue":
+                        mapFXManager.FXchangerYellow();
+                        Debug.Log("case Blue");
+                        break;
+
+                    default:
+                        mapFXManager.FXchangerRed();
+                        break;
+                }
                 break;
 
             default:
-                mapFXManager.FXchangerYellow();
+                //mapFXManager.FXchangerYellow();
                 Debug.Log("case Yellow");
-                break;
+                break;       
         }
     }
 }
