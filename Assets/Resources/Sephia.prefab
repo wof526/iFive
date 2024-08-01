@@ -535,7 +535,6 @@ GameObject:
   - component: {fileID: 6208214143754555455}
   - component: {fileID: 4235630491235957535}
   - component: {fileID: 2008171697089463528}
-  - component: {fileID: 3206838050637470946}
   - component: {fileID: 5195977656571903609}
   - component: {fileID: 6399509184570799559}
   - component: {fileID: 1561989742090129375}
@@ -628,22 +627,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3206838050637470946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7033053164854165987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9251435c18c70174b949da38735e9fda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomNumText: {fileID: 0}
-  jsInstance: {fileID: 0}
-  speed_textInstance: {fileID: 0}
-  speedbarInstance: {fileID: 0}
 --- !u!114 &5195977656571903609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,7 +783,7 @@ MonoBehaviour:
   Group: 0
   prefixField: -1
   Synchronization: 3
-  OwnershipTransfer: 0
+  OwnershipTransfer: 1
   observableSearch: 0
   ObservedComponents:
   - {fileID: 5854121060778418690}
