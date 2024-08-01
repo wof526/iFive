@@ -19,7 +19,7 @@ MonoBehaviour:
     AppIdVoice: 
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: 
+    FixedRegion: asia
     Server: 
     Port: 0
     ProxyServer: 
@@ -39,8 +39,9 @@ MonoBehaviour:
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
+  - MakeTeam
+  - AssignSpawnPoints
+  - ReceiveSpawnPoints
   DisableAutoOpenWizard: 1
-
-  ShowSettings: 1
-  DevRegionSetOnce: 1
-
+  ShowSettings: 0
+  DevRegionSetOnce: 0

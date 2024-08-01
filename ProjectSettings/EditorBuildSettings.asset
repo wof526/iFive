@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/jiyun/jyLoading.unity
     guid: a35fb7f5890aeee47b315bacefb3215b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/yura/googleScene.unity
     guid: ea9638d76b924d045bbf160ec7405ab2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GaEun/Lobby.unity
     guid: ce7786f9b09b2704c98ddb23d2cd15fb
   - enabled: 1
