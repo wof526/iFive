@@ -35,5 +35,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chaekang/DrivingCK.unity
     guid: b82f3926320a28a449b4f9e2b0cd2bf3
+  - enabled: 1
+    path: Assets/Scenes/Chaekang/Driving_Temp.unity
+    guid: 162600f64c240d943b38a47d00c40044
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

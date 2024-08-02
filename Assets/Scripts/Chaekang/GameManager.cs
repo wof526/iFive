@@ -25,16 +25,50 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         auth = FirebaseAuth.DefaultInstance;
-
-        // 필드를 Find 메서드를 사용하여 초기화
-        car = GameObject.FindFirstObjectByType<Car>();
-
-        if (car == null)
-        {
-            Debug.LogError("Car object not found!");
-        }
+        StartCoroutine(FindAndAssignCar());
 
         string userId = auth.CurrentUser?.UserId;
+    }
+
+    IEnumerator FindAndAssignCar()
+    {
+        while (car == null)
+        {
+            car = FindLocalPlayerCar();
+            if (car == null)
+            {
+                Debug.LogWarning("Car object not found. Retrying...");
+                yield return new WaitForSeconds(0.1f); // 1초 후에 다시 시도
+            }
+            else
+            {
+                Debug.Log("Car object found and assigned.");
+            }
+        }
+    }
+
+    Car FindLocalPlayerCar()
+    {
+        GameObject localPlayerObject = FindLocalPlayerObject();
+        if (localPlayerObject != null)
+        {
+            return localPlayerObject.GetComponent<Car>();
+        }
+        return null;
+    }
+
+    GameObject FindLocalPlayerObject()
+    {
+        foreach (GameObject carObject in GameObject.FindGameObjectsWithTag("Car"))
+        {
+            PhotonView photonView = carObject.GetComponent<PhotonView>();
+            if (photonView != null && photonView.IsMine)
+            {
+                Debug.Log("Local player object found: " + carObject);
+                return carObject;
+            }
+        }
+        return null;
     }
 
     public void RespawnUser(string userId, Vector3 respawnArea)
@@ -55,21 +89,6 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.LogError("User object not found!");
-        }
-    }
-
-    GameObject FindLocalPlayerObject()
-    {
-        GameObject localPlayerObject = GameObject.FindGameObjectWithTag("Car");
-        if (localPlayerObject != null)
-        {
-            Debug.Log("Local player object found: " + localPlayerObject);
-            return localPlayerObject;
-        }
-        else
-        {
-            Debug.LogError("Local player object not found!");
-            return null;
         }
     }
 
