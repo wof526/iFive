@@ -104,7 +104,6 @@ GameObject:
   - component: {fileID: 2400812622000807720}
   - component: {fileID: 2262378869688349037}
   - component: {fileID: 8440990570721238676}
-  - component: {fileID: 3899311714100923032}
   - component: {fileID: 8601399894699054971}
   - component: {fileID: 7141007571921635535}
   - component: {fileID: 8536685252155868578}
@@ -208,22 +207,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 9065052822408892656}
   smoke: {fileID: 5099259974518945050}
+  maxHP: 0
   curHP: 0
   curSpeed: 0
---- !u!114 &3899311714100923032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123921112333708976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d18032e5f5e0fcc4da0e41c4d0145e9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationspeed: 180
-  deadzone: 0.1
 --- !u!64 &8601399894699054971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -285,6 +271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6930d8d032e40fd8f8161ef7a6d293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationspeed: 180
+  deadzone: 0.1
+  speedSmoothTime: 1
   localCam: {fileID: 400214853533962019}
 --- !u!114 &4838127959919850710
 MonoBehaviour:

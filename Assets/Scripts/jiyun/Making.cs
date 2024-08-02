@@ -6,7 +6,7 @@ public class Making : MonoBehaviourPunCallbacks
 {
     public override void OnJoinRandomFailed(short returnCode, string message){
         // 랜덤 방 참가에 실패하면 새 방을 생성
-        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = 2 });
+        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = 4 });
         Debug.Log("create a new Room");
     }
     public override void OnDisconnected(DisconnectCause cause){
@@ -33,7 +33,7 @@ public class Making : MonoBehaviourPunCallbacks
     }
 
     private void LoadDriving(){
-        PhotonNetwork.LoadLevel("Driving");
+        PhotonNetwork.LoadLevel("Minimapj");
     }
 
     private void MakeTeams(){   // 팀 나누기
