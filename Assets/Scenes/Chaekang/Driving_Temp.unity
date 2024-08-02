@@ -18886,6 +18886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jsInstance: {fileID: 1055908585}
   speed_textInstance: {fileID: 2099786351}
+  Team_name: {fileID: 0}
   speedbarInstance: {fileID: 55896913}
 --- !u!1 &794054129
 GameObject:
@@ -55128,7 +55129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d22d687b23921443942897fbb152e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1228996403432007806, guid: 27004c353cb8972489662db7d8fbe72a,
+  playerPrefab: {fileID: 1228996403432007806, guid: 33f0d607d0535744d9c62475e95bfd7b,
     type: 3}
 --- !u!4 &1948908138
 Transform:

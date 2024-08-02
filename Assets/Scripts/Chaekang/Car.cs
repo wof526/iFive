@@ -7,7 +7,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using Firebase.Auth;
 
-public class Car : MonoBehaviourPunCallbacks
+public class Car : MonoBehaviourPunCallbacks, IPunObservable
 {
     private Slider HPBar;
     private TMP_Text HPText;
@@ -28,7 +28,7 @@ public class Car : MonoBehaviourPunCallbacks
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
-    NetworkPlayer drive;
+    Drive drive;
     Dash dash;
     FirestoreManager firestoreManager;
 
@@ -175,7 +175,6 @@ public class Car : MonoBehaviourPunCallbacks
                 otherPhotonView.RPC("ReduceHP", RpcTarget.All, curSpeed);
             }
         }
-        // �浹�� ������Ʈ�� Car �±װ� �ƴ� ��
         else
         {
             Debug.Log($"Collided with a non-Car object.");
@@ -195,7 +194,7 @@ public class Car : MonoBehaviourPunCallbacks
 
         HPBar.value = curHP;
         UpdateHPText();
-        curSpeed = NetworkPlayer.speed;
+        curSpeed = rb.velocity.magnitude;
 
         if (curSpeed >= maxSpeed)
         {
@@ -299,5 +298,10 @@ public class Car : MonoBehaviourPunCallbacks
 
         countdownCoroutine = null;
         yield return null;
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        
     }
 }
