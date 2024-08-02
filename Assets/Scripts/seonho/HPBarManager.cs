@@ -7,7 +7,7 @@ using TMPro;
 
 public class HPBarManager : MonoBehaviour
 {
-    public GameObject hpBarPrefab; // Ã¼·Â¹Ù ÇÁ¸®ÆÕ
+    public GameObject hpBarPrefab; // Ã¼ï¿½Â¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private HPBarController hpBarController;
     private GameObject hpBarInstance;
     private Transform cameraTransform;
@@ -21,17 +21,17 @@ public class HPBarManager : MonoBehaviour
         photonView = GetComponent<PhotonView>();
         carScript = GetComponent<Car>();
 
-        // Ã¼·Â¹Ù ÇÁ¸®ÆÕÀ» ÀÎ½ºÅÏ½ºÈ­ÇÏ°í ÇÃ·¹ÀÌ¾îÀÇ ¸Ó¸® À§¿¡ ¹èÄ¡
+        // Ã¼ï¿½Â¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½È­ï¿½Ï°ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ ï¿½Ó¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡
         if (hpBarPrefab != null)
         {
             hpBarInstance = Instantiate(hpBarPrefab, transform.position + new Vector3(0, 2, 0), Quaternion.identity, transform);
-            hpBarInstance.transform.localPosition = new Vector3(0, 2, 0); // ¸Ó¸® À§¿¡ À§Ä¡ÇÏµµ·Ï Á¶Á¤
+            hpBarInstance.transform.localPosition = new Vector3(0, 2, 0); // ï¿½Ó¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             hpBarController = hpBarInstance.GetComponent<HPBarController>();
 
-            // ÃÊ±â Ã¼·Â ¼³Á¤
+            // ï¿½Ê±ï¿½ Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             if (carScript != null)
             {
-                hpBarController.SetMaxHealth(carScript.maxHP);
+                //hpBarController.SetMaxHealth(carScript.maxHP);
                 hpBarController.SetCurrentHealth(carScript.curHP);
             }
         }
@@ -43,7 +43,7 @@ public class HPBarManager : MonoBehaviour
 
     private void Update()
     {
-        // Ã¼·Â¹ÙÀÇ À§Ä¡¸¦ Ä«¸Þ¶ó¿¡ ¸Â°Ô Á¶Á¤
+        // Ã¼ï¿½Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½ ï¿½Â°ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (hpBarInstance != null)
         {
             Vector3 hpBarPosition = transform.position + new Vector3(0, 2, 0);
@@ -51,7 +51,7 @@ public class HPBarManager : MonoBehaviour
         }
     }
 
-    // Ã¼·Â ¾÷µ¥ÀÌÆ® ¸Þ¼­µå
+    // Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Þ¼ï¿½ï¿½ï¿½
     public void UpdateHealth(float newHealth)
     {
         if (hpBarController != null)
@@ -64,7 +64,7 @@ public class HPBarManager : MonoBehaviour
         }
     }
 
-    // ³×Æ®¿öÅ©·ÎºÎÅÍ Ã¼·Â ¾÷µ¥ÀÌÆ®¸¦ ¹Þ´Â ¸Þ¼­µå
+    // ï¿½ï¿½Æ®ï¿½ï¿½Å©ï¿½Îºï¿½ï¿½ï¿½ Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½
     [PunRPC]
     public void UpdateHealthFromRPC(float newHealth)
     {
