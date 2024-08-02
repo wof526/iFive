@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Photon.Pun;
 
-public class MapFXManager : MonoBehaviour
+public class MapFXManager : MonoBehaviourPunCallbacks
 {
     //public GameObject mapFX01;
     //public GameObject mapFX02;
@@ -18,42 +19,64 @@ public class MapFXManager : MonoBehaviour
     public Material areaBlue;
     public Material areaRed;
 
+    private float startTime;
+    bool timeover = true;
+
     int randomNum;
 
 
 
     void Start()
-    {        
+    {
+        startTime = Time.time;
         areas[0].SetActive(false);
         areas[1].SetActive(false);
         Minimap_areas[0].SetActive(false);
         Minimap_areas[1].SetActive(false);
-        randomNum = Random.Range(0, 2);
-        Debug.Log(randomNum);
     }
 
 
-    void Update()
+    void Update() //마스터 클라이언트가 대신 실행
     {
-        presentime = Time.time;
+       
+        checktime();
 
-        if(Time.time > 10.0f)
+    }
+
+    void checktime()
+    {
+        if (!PhotonNetwork.IsMasterClient)
         {
+            return;
+        }
+
+        presentime = Time.time - startTime;
+        if (presentime > 10.0f && timeover)
+        {
+            timeover = false;
             RandomArea();
             //mapFX.SetActive(true);
         }
-
-        
     }
 
-    void RandomArea()
+    void RandomArea() //마스터 클라이언트면? -> 둘중 하나 실행 
     {
-        areas[0].SetActive(true);
-        Minimap_areas[0].SetActive(true);
+        randomNum = Random.Range(0, 2);
+        Debug.Log(randomNum);
+
         //areas[randomNum].SetActive(true);
         //Minimap_areas[randomNum].SetActive(true);
+        photonView.RPC("RPCUpdateArea", RpcTarget.All, randomNum);
+
     }
 
+    [PunRPC]
+    private void RPCUpdateArea(int randomNum)
+    {
+        Debug.Log("punRPC Activated");
+        areas[randomNum].SetActive(true);
+        Minimap_areas[randomNum].SetActive(true);
+    }
 
 
     public void FXchangerBlue()

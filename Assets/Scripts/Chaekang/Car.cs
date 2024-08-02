@@ -28,7 +28,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
-    Drive drive;
+    NetworkPlayer drive;
     Dash dash;
     FirestoreManager firestoreManager;
 
@@ -45,8 +45,8 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         rb = GetComponent<Rigidbody>();
         auth = FirebaseAuth.DefaultInstance;
 
-        drive = GameManager.Instance.drive;
-        dash = GameManager.Instance.dash;
+        //drive = GameManager.Instance.drive;
+        //dash = GameManager.Instance.dash;
         firestoreManager = GameManager.Instance.firestoreManager;
 
         HPBar = FindInActiveObjectByName("HPBar")?.GetComponent<Slider>();

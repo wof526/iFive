@@ -1108,6 +1108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 8925044070766856861}
   smoke: {fileID: 3684809637622189955}
+  maxHP: 0
   curHP: 0
   curSpeed: 0
 --- !u!54 &8995212324363549710
@@ -1172,9 +1173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6930d8d032e40fd8f8161ef7a6d293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationspeed: 180
-  deadzone: 0.1
-  speedSmoothTime: 1
   localCam: {fileID: 7125889506989816606}
 --- !u!1 &4586878493191067437
 GameObject:
