@@ -6,7 +6,7 @@ public class Making : MonoBehaviourPunCallbacks
 {
     public override void OnJoinRandomFailed(short returnCode, string message){
         // 랜덤 방 참가에 실패하면 새 방을 생성
-        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = 6 });
+        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = 2 });
         Debug.Log("create a new Room");
     }
     public override void OnDisconnected(DisconnectCause cause){
@@ -25,7 +25,7 @@ public class Making : MonoBehaviourPunCallbacks
         }
     }
     public override void OnPlayerEnteredRoom(Player newPlayer){
-        if(PhotonNetwork.CurrentRoom.PlayerCount == 6){
+        if(PhotonNetwork.CurrentRoom.PlayerCount == 2){
             //PhotonNetwork.LoadLevel("Driving"); //같은 씬을 자동 동기화 함.    
             MakeTeams();
             Invoke("LoadDriving", 2.0f);
@@ -37,7 +37,7 @@ public class Making : MonoBehaviourPunCallbacks
     }
 
     private void MakeTeams(){   // 팀 나누기
-        if(PhotonNetwork.CurrentRoom.PlayerCount == 6){
+        if(PhotonNetwork.CurrentRoom.PlayerCount == 2){
             Player[] players = PhotonNetwork.PlayerList;
             ExitGames.Client.Photon.Hashtable teamProperties = new ExitGames.Client.Photon.Hashtable();
 
