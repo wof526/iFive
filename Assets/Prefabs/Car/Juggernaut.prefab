@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 7923103947616003684}
   m_Layer: 0
   m_Name: Juggernaut
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -589,6 +589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 414584592949380323}
   smoke: {fileID: 3512778862062887282}
+  maxHP: 0
   curHP: 0
   curSpeed: 0
 --- !u!54 &7923103947616003684

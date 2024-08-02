@@ -489,6 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 2979559203151692822}
   smoke: {fileID: 1168294887924253222}
+  maxHP: 0
   curHP: 0
   curSpeed: 0
 --- !u!64 &1242325527528258546
