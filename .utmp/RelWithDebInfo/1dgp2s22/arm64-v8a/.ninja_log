@@ -1,9 +1,17 @@
 # ninja log v5
-2	790	1720794929990294959	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2e43e4d5eb09fedb
-1	809	1720794930009701493	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	67fe874c6973c5a3
-2	834	1720794930034891312	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	1984943de9961b2b
-3	914	1720794930113849205	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	fedea625c9b67ac
+0	1191	1720794930392487055	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e42b3ad7804848c3
 1	954	1720794930153951031	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	644dff28b516fca1
 2	1125	1720794930325008647	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	313a57c942776503
-0	1191	1720794930392487055	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e42b3ad7804848c3
+3	914	1720794930113849205	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	fedea625c9b67ac
 1191	1312	1720794930484726237	/Users/jeong-yura/iFive/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1dgp2s22/obj/arm64-v8a/libgame.so	afed928c2ed91ca5
+2	834	1720794930034891312	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	1984943de9961b2b
+1	809	1720794930009701493	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	67fe874c6973c5a3
+2	790	1720794929990294959	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2e43e4d5eb09fedb
+3	2356	1722580843515175571	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2e43e4d5eb09fedb
+2	2357	1722580843519511028	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	67fe874c6973c5a3
+4	2401	1722580843564177752	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	1984943de9961b2b
+5	2535	1722580843695174161	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	fedea625c9b67ac
+1	2655	1722580843815390302	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	644dff28b516fca1
+2	2953	1722580844113245557	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	313a57c942776503
+0	3118	1722580844279249952	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e42b3ad7804848c3
+3118	3470	1722580844586253866	/Users/jeong-yura/iFive/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1dgp2s22/obj/arm64-v8a/libgame.so	afed928c2ed91ca5
