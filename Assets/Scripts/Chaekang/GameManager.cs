@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public FirestoreManager firestoreManager;
     public Dash dash;
-    public Drive drive;
+    public NetworkPlayer drive;
 
     private Car car;
     private FirebaseAuth auth;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
             if (car == null)
             {
                 Debug.LogWarning("Car object not found. Retrying...");
-                yield return new WaitForSeconds(0.1f); // 1ÃÊ ÈÄ¿¡ ´Ù½Ã ½Ãµµ
+                yield return new WaitForSeconds(0.1f); // 1ï¿½ï¿½ ï¿½Ä¿ï¿½ ï¿½Ù½ï¿½ ï¿½Ãµï¿½
             }
             else
             {
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log($"Respawning user {userId} at {respawnArea}");
 
-        // ½ÇÁ¦ À¯Àú ¿ÀºêÁ§Æ® ÀÌµ¿ ·ÎÁ÷ ±¸Çö
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         GameObject userObject = FindLocalPlayerObject();
         if (userObject != null)
         {
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Public ¸Þ¼­µå¸¦ ÅëÇØ Car °´Ã¼¸¦ °¡Á®¿À±â
+    // Public ï¿½Þ¼ï¿½ï¿½å¸¦ ï¿½ï¿½ï¿½ï¿½ Car ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public Car GetCar()
     {
         return car;

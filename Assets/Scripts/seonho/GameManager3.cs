@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
@@ -29,7 +27,10 @@ public class GameManager3 : MonoBehaviourPunCallbacks
 
         if (spawnPoint != null)
         {
-            PhotonNetwork.Instantiate(playerPrefab.name, spawnPoint.position, spawnPoint.rotation, 0);
+            GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, spawnPoint.position, spawnPoint.rotation, 0);
+            PhotonNetwork.LocalPlayer.TagObject = player;   // 생성된 객체를 tagobject에 저장
+            Track.isfind = true;    // 오브젝트 찾음
+            Debug.Log($"Player object instantiated and TagObject set: {player.name}");
         }
         else
         {

@@ -28,7 +28,7 @@ public class Car : MonoBehaviourPunCallbacks
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
-    Drive drive;
+    NetworkPlayer drive;
     Dash dash;
     FirestoreManager firestoreManager;
 
@@ -175,7 +175,7 @@ public class Car : MonoBehaviourPunCallbacks
                 otherPhotonView.RPC("ReduceHP", RpcTarget.All, curSpeed);
             }
         }
-        // Ãæµ¹ÇÑ ¿ÀºêÁ§Æ®°¡ Car ÅÂ±×°¡ ¾Æ´Ò ¶§
+        // ï¿½æµ¹ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ Car ï¿½Â±×°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½
         else
         {
             Debug.Log($"Collided with a non-Car object.");
@@ -195,7 +195,7 @@ public class Car : MonoBehaviourPunCallbacks
 
         HPBar.value = curHP;
         UpdateHPText();
-        curSpeed = Drive.speed;
+        curSpeed = NetworkPlayer.speed;
 
         if (curSpeed >= maxSpeed)
         {
