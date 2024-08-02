@@ -351,7 +351,6 @@ GameObject:
   - component: {fileID: 3132459579822146451}
   - component: {fileID: 6039709505310623255}
   - component: {fileID: 8420092733580621225}
-  - component: {fileID: 5511958978646483192}
   - component: {fileID: 1483231580208693561}
   - component: {fileID: 1242325527528258546}
   - component: {fileID: 4555430320289881602}
@@ -374,7 +373,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3, y: 2, z: 13}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.38, y: 0.38, z: 0.38}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5563188691896749781}
@@ -443,22 +442,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5511958978646483192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1228996403432007806}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88c1722933565244af0ec491fc2eef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 800
-  maxSpeed: 60
-  dashSpeed: 30
-  zeroBaek: 4.5
+
 --- !u!114 &1483231580208693561
 MonoBehaviour:
   m_ObjectHideFlags: 0
