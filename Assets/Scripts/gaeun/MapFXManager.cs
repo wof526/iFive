@@ -47,27 +47,29 @@ public class MapFXManager : MonoBehaviour
     }
 
     void RandomArea()
-    {        
-        areas[randomNum].SetActive(true);
-        Minimap_areas[randomNum].SetActive(true);
+    {
+        areas[0].SetActive(true);
+        Minimap_areas[0].SetActive(true);
+        //areas[randomNum].SetActive(true);
+        //Minimap_areas[randomNum].SetActive(true);
     }
 
 
 
     public void FXchangerBlue()
     {
-        quads[randomNum].GetComponent<MeshRenderer>().material = areaBlue;
+        quads[0].GetComponent<MeshRenderer>().material = areaBlue;
         Debug.Log("change blue");
     }
     public void FXchangerRed()
     {
-        quads[randomNum].GetComponent<MeshRenderer>().material = areaRed;
+        quads[0].GetComponent<MeshRenderer>().material = areaRed;
         Debug.Log("change red");
 
     }
     public void FXchangerYellow()
     {
-        quads[randomNum].GetComponent<MeshRenderer>().material = areaYellow;
+        quads[0].GetComponent<MeshRenderer>().material = areaYellow;
         Debug.Log("change yellow");
 
     }
