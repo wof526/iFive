@@ -64,7 +64,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
 
     public void OnPointerDown(PointerEventData data)
     {
-        Drive.isBreak = false;  // 다시 조이스틱을 움직이기 시작할때
+        NetworkPlayer.isBreak = false;  // 다시 조이스틱을 움직이기 시작할때
         if (lastId == -2)
         {
             lastId = data.pointerId;

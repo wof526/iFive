@@ -16,6 +16,8 @@ public class Track : MonoBehaviourPunCallbacks
     public static Image speedbar;
 
     private bool hasSpawned = false;    // 스폰되었는가?
+    public static string team;  // 팀 이름
+    public static bool isfind = false;    // 오브젝트가 찾아졌나?
 
     void Start()
     {
@@ -23,12 +25,10 @@ public class Track : MonoBehaviourPunCallbacks
         speed_text = speed_textInstance;
         speedbar = speedbarInstance;
 
-        string team = PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Team") 
+        team = PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Team") 
             ? (string)PhotonNetwork.LocalPlayer.CustomProperties["Team"] 
             : "Unknown";
         Debug.Log($"Local player team: {team}");
-
-        Team_name.text = team;
 
         // 서버가 스폰 지점을 결정하도록 요청
         if (PhotonNetwork.IsMasterClient)
@@ -36,6 +36,23 @@ public class Track : MonoBehaviourPunCallbacks
             Debug.Log("master");
         }
     }
+
+    private void Update() {
+        if(PhotonNetwork.LocalPlayer.TagObject != null && isfind){
+            if(PhotonNetwork.LocalPlayer.TagObject is GameObject player){
+                Debug.Log("들어왔나...?");
+                if(team == "Our"){
+                    player.tag = "Team Blue";
+                }
+                else if(team == "Enemy"){
+                    player.tag = "Team Red";
+                }
+                Team_name.text = player.tag;
+                isfind = false;
+            }    
+        }                
+    }
+
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
     {
         // 커스텀 속성이 업데이트된 플레이어가 로컬 플레이어인지 확인
@@ -44,6 +61,25 @@ public class Track : MonoBehaviourPunCallbacks
             if (!hasSpawned && AllPlayersHaveTeamProperty())
             {
                 Debug.Log("All players have the Team property. Spawning player...");
+
+                /*if(PhotonNetwork.LocalPlayer.TagObject == null){
+                    Debug.Log("tagobject is null");
+                }
+                else{
+                    Debug.Log("not null");
+                }
+
+                if(PhotonNetwork.LocalPlayer.TagObject is GameObject player){
+                    Debug.Log("들어왔나...?");
+                    if(team == "Our"){
+                        player.tag = "Team Blue";
+                    }
+                    else if(team == "Enemy"){
+                        player.tag = "Team Red";
+                    }
+                    Team_name.text = player.tag;
+                    Debug.Log($"플레이어 {PhotonNetwork.LocalPlayer.NickName}의 태그: {player.tag}");
+                }*/
             }
         }
     }
