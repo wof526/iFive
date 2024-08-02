@@ -38,7 +38,20 @@ public class Track : MonoBehaviourPunCallbacks
             Debug.Log("master");
         }
 
-        //UpdatePlayerTeam();
+
+    private void Update() {
+        if(PhotonNetwork.LocalPlayer.TagObject != null && isfind){
+            if(PhotonNetwork.LocalPlayer.TagObject is GameObject player){
+                if(team == "Our"){
+                    player.tag = "Team Blue";
+                }
+                else if(team == "Enemy"){
+                    player.tag = "Team Red";
+                }
+                //Team_name.text = player.tag;
+                isfind = false;
+            }    
+        }                
     }
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
     {

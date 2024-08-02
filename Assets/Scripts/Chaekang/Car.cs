@@ -7,7 +7,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using Firebase.Auth;
 
-public class Car : MonoBehaviourPunCallbacks
+public class Car : MonoBehaviourPunCallbacks, IPunObservable
 {
     private Slider HPBar;
     private TMP_Text HPText;
@@ -175,7 +175,6 @@ public class Car : MonoBehaviourPunCallbacks
                 otherPhotonView.RPC("ReduceHP", RpcTarget.All, curSpeed);
             }
         }
-        // 충돌한 오브젝트가 Car 태그가 아닐 때
         else
         {
             Debug.Log($"Collided with a non-Car object.");
@@ -299,5 +298,10 @@ public class Car : MonoBehaviourPunCallbacks
 
         countdownCoroutine = null;
         yield return null;
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        
     }
 }
