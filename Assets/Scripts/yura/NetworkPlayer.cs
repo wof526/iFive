@@ -28,17 +28,17 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
 // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>(); //rigidbody 컴포넌트 찾아옴 
         rb.interpolation = RigidbodyInterpolation.Interpolate;
 
-        photonView = GetComponent<PhotonView>();
+        photonView = GetComponent<PhotonView>(); //포톤뷰 컴포넌트 찾아옴
 
-        if (photonView == null)
+        if (photonView == null) // 포톤뷰 못찾아왔을때 대비
         {
             Debug.LogError("PhotonView not found in networkPlayer!");
         }
 
-        if (!photonView.IsMine)
+        if (!photonView.IsMine) //타 플레이어면 해당 카메라 &스크립트 비활성화
         {
             localCam.SetActive(false);
 
@@ -60,7 +60,7 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
     void Update()
     {
         
-        if (photonView.IsMine)
+        if (photonView.IsMine) //내 포톤뷰면-> 이동 로직 시행
         {
             float horizontal = Track.js.Horizontal;//조이스틱의 수평값을 가져온다
             float vertical = Track.js.Vertical; //조이스틱의 수직값을 가져온다
@@ -109,7 +109,7 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
             Track.speedbar.fillAmount = speed / 100;
             Track.speed_text.text = (int)speed + "km/h";
         }
-        else
+        else //내 포톤뷰가 아니면 포지션 가져오기, lerp로 부드럽게
         {
             float lerpSpeed = 5f;
 
@@ -121,49 +121,7 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
     }
 
 
-        /*
-        if (photonView.IsMine)
-        {
-            if (Mathf.Abs(Track.js.Horizontal) < deadzone && Mathf.Abs(Track.js.Vertical) < deadzone)
-            {   // 조이스틱을 어느정도 움직여야 이동
-                return;
-            }
-
-            if (!isBreak)
-            {
-                // 조이스틱의 입력을 받아와서 방향 벡터 설정
-                Vector3 direction = new Vector3(Track.js.Horizontal, 0, Track.js.Vertical).normalized;
-                float magnitude = new Vector3(Track.js.Horizontal, 0, Track.js.Vertical).magnitude;
-                speed = magnitude; // 차종마다 magnitude에 곱해주는 값 다르게 하면 될 듯
-
-                if (magnitude < 0.2)
-                {    // 조이스틱을 놓을때에도 magnitude가 미미하게(?) 생기므로 무시하게 함
-                    speed = 0;
-                }
-
-                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;  // 조이스틱의 방향에 따라 회전
-
-                float angle = Mathf.LerpAngle(transform.eulerAngles.y, targetAngle, rotationspeed * Time.deltaTime);
-
-                transform.rotation = Quaternion.Euler(0, angle, 0);
-                transform.position += direction * speed * Time.deltaTime;
-                
-
-                
-            }
        
-        }
-        else
-        {
-            float lerpSpeed = 5f;
-
-            transform.position = Vector3.Lerp(transform.position, networkPosition, Time.deltaTime * lerpSpeed);
-            transform.rotation = Quaternion.Lerp(transform.rotation, networkRotation, Time.deltaTime * lerpSpeed);
-
-
-        }
-    }
-        */
 
 
     public void Break()
@@ -174,14 +132,15 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
     }
 
 
+    //타 클라이언트로 이동 및 회전 동기화. send & writing
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        if (stream.IsWriting)
+        if (stream.IsWriting) //위치, 회전 보내기
         {
             stream.SendNext(transform.position);
             stream.SendNext(transform.rotation);
         }
-        else
+        else // 타 플레이어의 위치, 회전 받기
         {
             networkPosition = (Vector3)stream.ReceiveNext();
             networkRotation = (Quaternion)stream.ReceiveNext();
