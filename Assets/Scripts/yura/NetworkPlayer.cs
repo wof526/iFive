@@ -55,6 +55,16 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
 
         networkPosition = transform.position;
         networkRotation = transform.rotation;
+
+        // 자신의 플레이어 캐릭터가 가진 캔버스를 찾아서 삭제
+        if (photonView.IsMine)
+        {
+            GameObject canvasObject = GameObject.Find("bghpbar"); // 오브젝트 이름으로 찾기
+            if (canvasObject != null)
+            {
+                Destroy(canvasObject);
+            }
+        }
     }
 
     void Update()
