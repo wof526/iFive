@@ -10,6 +10,8 @@ public class GameManager3 : MonoBehaviourPunCallbacks
 
     void Start()
     {
+        PhotonNetwork.SerializationRate = 30;
+        PhotonNetwork.SendRate = 30;
         if (playerPrefab != null)
         {
             SpawnPlayer();
@@ -22,7 +24,7 @@ public class GameManager3 : MonoBehaviourPunCallbacks
 
     void SpawnPlayer()
     {
-        int spawnIndex = PhotonNetwork.LocalPlayer.ActorNumber - 1; // ActorNumber´Â 1ºÎÅÍ ½ÃÀÛ
+        int spawnIndex = PhotonNetwork.LocalPlayer.ActorNumber - 1; // ActorNumberï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         Transform spawnPoint = SpawnManager.Instance.GetSpawnPoint(spawnIndex);
 
         if (spawnPoint != null)
