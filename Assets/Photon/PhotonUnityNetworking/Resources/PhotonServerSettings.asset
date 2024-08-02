@@ -46,6 +46,7 @@ MonoBehaviour:
   - UpdateCarPosition
   - UpdateAllPlayersSpawn
   - ReduceHP
+  - UpdateHealthFromRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0
