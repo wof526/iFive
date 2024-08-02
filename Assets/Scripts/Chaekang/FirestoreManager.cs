@@ -1,15 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Firebase;
-using Firebase.Firestore;
+using Firebase.Database;
 using Firebase.Extensions;
 
 public class FirestoreManager : MonoBehaviour
 {
-    // 파이어스토어 인스턴스
-    FirebaseFirestore db;
+    // Realtime Database 인스턴스
+    DatabaseReference dbRef;
 
     // 변수 선언
     public float Dash;
@@ -22,47 +20,52 @@ public class FirestoreManager : MonoBehaviour
     void Start()
     {
         // Firebase 초기화
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
-            FirebaseApp app = FirebaseApp.DefaultInstance;
-            db = FirebaseFirestore.DefaultInstance;
-
-            // Sepia 데이터 가져오기
-            GetCarData("Sepia");
+        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.Result == DependencyStatus.Available)
+            {
+                dbRef = FirebaseDatabase.DefaultInstance.RootReference;
+                // 차 데이터 가져오기
+                GetCarData("Titan-3");
+            }
+            else
+            {
+                Debug.LogError($"Could not resolve all Firebase dependencies: {task.Result}");
+            }
         });
     }
 
     void GetCarData(string carName)
     {
-        DocumentReference docRef = db.Collection("carInfo").Document(carName);
-        docRef.GetSnapshotAsync().ContinueWithOnMainThread(task =>
+        DatabaseReference carRef = dbRef.Child("carInfo").Child(carName);
+        carRef.GetValueAsync().ContinueWithOnMainThread(task =>
         {
-            if (task.IsCompleted)
+            if (task.IsFaulted)
             {
-                DocumentSnapshot snapshot = task.Result;
-                if (snapshot.Exists)
-                {
-                    Debug.Log($"Document data for {carName} retrieved successfully!");
+                Debug.LogError("Failed to retrieve document: " + task.Exception);
+                return;
+            }
 
-                    // 데이터를 float로 변환하여 할당
-                    Dash = snapshot.GetValue<float>("Dash");
-                    Hp = snapshot.GetValue<float>("Hp");
-                    MaxSpeed = snapshot.GetValue<float>("MaxSpeed");
-                    ZeroBaek = snapshot.GetValue<float>("ZeroBaek");
+            DataSnapshot snapshot = task.Result;
+            if (snapshot.Exists)
+            {
+                Debug.Log($"Document data for {carName} retrieved successfully!");
 
-                    // 데이터 확인
-                    Debug.Log($"Dash: {Dash}, Hp: {Hp}, MaxSpeed: {MaxSpeed}, ZeroBaek: {ZeroBaek}");
+                // 데이터를 float로 변환하여 할당
+                Dash = snapshot.Child("Dash").Value != null ? Convert.ToSingle(snapshot.Child("Dash").Value) : 0;
+                Hp = snapshot.Child("hp").Value != null ? Convert.ToSingle(snapshot.Child("hp").Value) : 0;
+                MaxSpeed = snapshot.Child("MaxSpeed").Value != null ? Convert.ToSingle(snapshot.Child("MaxSpeed").Value) : 0;
+                ZeroBaek = snapshot.Child("ZeroBaek").Value != null ? Convert.ToSingle(snapshot.Child("ZeroBaek").Value) : 0;
 
-                    // 데이터가 준비되었음을 알림
-                    OnDataReady?.Invoke();
-                }
-                else
-                {
-                    Debug.Log($"No such document in {carName}!");
-                }
+                // 데이터 확인
+                Debug.Log($"Dash: {Dash}, Hp: {Hp}, MaxSpeed: {MaxSpeed}, ZeroBaek: {ZeroBaek}");
+
+                // 데이터가 준비되었음을 알림
+                OnDataReady?.Invoke();
             }
             else
             {
-                Debug.LogError("Failed to retrieve document: " + task.Exception);
+                Debug.Log($"No such document in {carName}!");
             }
         });
     }

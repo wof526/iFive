@@ -19,7 +19,7 @@ public class Car : MonoBehaviourPunCallbacks
     public GameObject fire;
     public GameObject smoke;
 
-    float maxHP;
+    public float maxHP;
     public float curHP;
     public float curSpeed;
     float maxSpeed;
@@ -120,8 +120,6 @@ public class Car : MonoBehaviourPunCallbacks
         }
         else
         {
-            Debug.LogError("GetDamaged: HPBar is null - this may indicate the object was destroyed or deactivated.");
-
             HPBar = FindInActiveObjectByName("HPBar")?.GetComponent<Slider>();
             if (HPBar == null)
             {
@@ -129,7 +127,6 @@ public class Car : MonoBehaviourPunCallbacks
             }
             else
             {
-                Debug.Log("GetDamaged: Successfully reassigned HPBar.");
                 HPBar.value = curHP;
             }
         }
@@ -174,8 +171,15 @@ public class Car : MonoBehaviourPunCallbacks
             if (otherPhotonView != null && otherPhotonViewID != myPhotonViewID)
             {
                 // Call the RPC on the car we collided with
+                Debug.Log("RPC ReduceHP");
                 otherPhotonView.RPC("ReduceHP", RpcTarget.All, curSpeed);
             }
+        }
+        // 충돌한 오브젝트가 Car 태그가 아닐 때
+        else
+        {
+            Debug.Log($"Collided with a non-Car object.");
+            GetDamaged(curSpeed);
         }
     }
 
