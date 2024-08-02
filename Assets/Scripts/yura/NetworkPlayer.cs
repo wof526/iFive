@@ -6,14 +6,14 @@ using UnityEngine;
 
 public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
 {
-    public float rotationspeed = 180f;  // 회전 속도
-    public float deadzone = 0.1f;   // 무감도 범위
+    private float rotationspeed = 180f;  // 회전 속도
+    private float deadzone = 0.1f;   // 무감도 범위
     public static float speed;    // 속력
     public static bool isBreak = false; // 브레이크 버튼을 눌렀는가?
     private Rigidbody rb;
     private Vector3 lastDirection = Vector3.zero;   // 회전하고 마지막 방향 저장
     private float targetSpeed;  // 목표 속도
-    public float speedSmoothTime = 1f;    // 속도 전환을 스무스하게 하기 위한 시간
+    private float speedSmoothTime = 0.3f;    // 속도 전환을 스무스하게 하기 위한 시간
     private float turnSmoothVelocity, speedSmoothVelocity;   // 회전과 속도변화를 스무스하게 하기 위한 속도
 
 
@@ -120,10 +120,6 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
         }
     }
 
-
-       
-
-
     public void Break()
     {
         isBreak = true;
@@ -166,7 +162,5 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
                 transform.rotation = Quaternion.Lerp(transform.rotation, networkRotation, Time.deltaTime * 10);
             }
         }
-
-
     }
 }

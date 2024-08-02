@@ -40,7 +40,6 @@ public class Track : MonoBehaviourPunCallbacks
     private void Update() {
         if(PhotonNetwork.LocalPlayer.TagObject != null && isfind){
             if(PhotonNetwork.LocalPlayer.TagObject is GameObject player){
-                Debug.Log("들어왔나...?");
                 if(team == "Our"){
                     player.tag = "Team Blue";
                 }
@@ -61,25 +60,6 @@ public class Track : MonoBehaviourPunCallbacks
             if (!hasSpawned && AllPlayersHaveTeamProperty())
             {
                 Debug.Log("All players have the Team property. Spawning player...");
-
-                /*if(PhotonNetwork.LocalPlayer.TagObject == null){
-                    Debug.Log("tagobject is null");
-                }
-                else{
-                    Debug.Log("not null");
-                }
-
-                if(PhotonNetwork.LocalPlayer.TagObject is GameObject player){
-                    Debug.Log("들어왔나...?");
-                    if(team == "Our"){
-                        player.tag = "Team Blue";
-                    }
-                    else if(team == "Enemy"){
-                        player.tag = "Team Red";
-                    }
-                    Team_name.text = player.tag;
-                    Debug.Log($"플레이어 {PhotonNetwork.LocalPlayer.NickName}의 태그: {player.tag}");
-                }*/
             }
         }
     }
