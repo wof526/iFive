@@ -9,7 +9,7 @@ public class MapFXManager : MonoBehaviourPunCallbacks
     //public GameObject mapFX01;
     //public GameObject mapFX02;
     public GameObject[] areas;
-    public GameObject[] Minimap_areas;
+    //public GameObject[] Minimap_areas;
 
 
     public float presentime;
@@ -31,8 +31,8 @@ public class MapFXManager : MonoBehaviourPunCallbacks
         startTime = Time.time;
         areas[0].SetActive(false);
         areas[1].SetActive(false);
-        Minimap_areas[0].SetActive(false);
-        Minimap_areas[1].SetActive(false);
+        //Minimap_areas[0].SetActive(false);
+        //Minimap_areas[1].SetActive(false);
     }
 
 
@@ -75,7 +75,7 @@ public class MapFXManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("punRPC Activated");
         areas[randomNum].SetActive(true);
-        Minimap_areas[randomNum].SetActive(true);
+        //Minimap_areas[randomNum].SetActive(true);
     }
 
 
