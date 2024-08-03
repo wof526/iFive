@@ -33,7 +33,7 @@ public class Making : MonoBehaviourPunCallbacks
     }
 
     private void LoadDriving(){
-        PhotonNetwork.LoadLevel("Driving");
+        PhotonNetwork.LoadLevel("Driving_Temp");
     }
 
     private void MakeTeams(){   // 팀 나누기

@@ -6,27 +6,27 @@ using Firebase.Extensions;
 
 public class FirestoreManager : MonoBehaviour
 {
-    // Realtime Database ÀÎ½ºÅÏ½º
+    // Realtime Database ï¿½Î½ï¿½ï¿½Ï½ï¿½
     DatabaseReference dbRef;
 
-    // º¯¼ö ¼±¾ð
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public float Dash;
     public float Hp;
     public float MaxSpeed;
     public float ZeroBaek;
 
-    public event Action OnDataReady; // µ¥ÀÌÅÍ°¡ ÁØºñµÇ¾úÀ½À» ¾Ë¸®´Â ÀÌº¥Æ®
+    public event Action OnDataReady; // ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½Øºï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¸ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 
     void Start()
     {
-        // Firebase ÃÊ±âÈ­
+        // Firebase ï¿½Ê±ï¿½È­
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
         {
             if (task.Result == DependencyStatus.Available)
             {
                 dbRef = FirebaseDatabase.DefaultInstance.RootReference;
-                // Â÷ µ¥ÀÌÅÍ °¡Á®¿À±â
-                GetCarData("Titan-3");
+                // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                GetCarData(carData.carString);
             }
             else
             {
@@ -49,16 +49,16 @@ public class FirestoreManager : MonoBehaviour
             DataSnapshot snapshot = task.Result;
             if (snapshot.Exists)
             {
-                // µ¥ÀÌÅÍ¸¦ float·Î º¯È¯ÇÏ¿© ÇÒ´ç
+                // ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ floatï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï¿ï¿½ ï¿½Ò´ï¿½
                 Dash = snapshot.Child("Dash").Value != null ? Convert.ToSingle(snapshot.Child("Dash").Value) : 0;
                 Hp = snapshot.Child("hp").Value != null ? Convert.ToSingle(snapshot.Child("hp").Value) : 0;
                 MaxSpeed = snapshot.Child("MaxSpeed").Value != null ? Convert.ToSingle(snapshot.Child("MaxSpeed").Value) : 0;
                 ZeroBaek = snapshot.Child("ZeroBaek").Value != null ? Convert.ToSingle(snapshot.Child("ZeroBaek").Value) : 0;
 
-                // µ¥ÀÌÅÍ È®ÀÎ
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
                 Debug.Log($"Dash: {Dash}, Hp: {Hp}, MaxSpeed: {MaxSpeed}, ZeroBaek: {ZeroBaek}");
 
-                // µ¥ÀÌÅÍ°¡ ÁØºñµÇ¾úÀ½À» ¾Ë¸²
+                // ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½Øºï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¸ï¿½
                 OnDataReady?.Invoke();
             }
             else
