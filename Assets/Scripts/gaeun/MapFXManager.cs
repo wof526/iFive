@@ -22,7 +22,7 @@ public class MapFXManager : MonoBehaviourPunCallbacks
     private float startTime;
     bool timeover = true;
 
-    int randomNum;
+    static public int randomNum;
 
 
 
@@ -38,7 +38,7 @@ public class MapFXManager : MonoBehaviourPunCallbacks
 
     void Update() //마스터 클라이언트가 대신 실행
     {
-       
+
         checktime();
 
     }
