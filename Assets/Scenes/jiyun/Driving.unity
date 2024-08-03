@@ -43805,12 +43805,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82bc3b84bcab0042a8744a6a8a39540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areas:
+  - {fileID: 1773551173}
+  - {fileID: 1928832292}
   bluecount: {fileID: 699810930}
   redcount: {fileID: 321034754}
   teamCircle: {fileID: 1916337768}
   mapFXManager: {fileID: 303092109}
   areaSecBlue: 60
   areaSecRed: 60
+  areaYellow: {fileID: 2100000, guid: bc1d70edeb0d241439ab438e062aa23f, type: 2}
+  areaBlue: {fileID: 2100000, guid: 3864dbc8b68901a46b3548e3f02258d1, type: 2}
+  areaRed: {fileID: 2100000, guid: cc76433e14751db49801d416a19fa292, type: 2}
 --- !u!54 &1773551177
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57385,12 +57391,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82bc3b84bcab0042a8744a6a8a39540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areas:
+  - {fileID: 1773551173}
+  - {fileID: 1928832292}
   bluecount: {fileID: 699810930}
   redcount: {fileID: 321034754}
   teamCircle: {fileID: 1916337768}
   mapFXManager: {fileID: 303092109}
   areaSecBlue: 60
   areaSecRed: 60
+  areaYellow: {fileID: 2100000, guid: bc1d70edeb0d241439ab438e062aa23f, type: 2}
+  areaBlue: {fileID: 2100000, guid: 3864dbc8b68901a46b3548e3f02258d1, type: 2}
+  areaRed: {fileID: 2100000, guid: cc76433e14751db49801d416a19fa292, type: 2}
 --- !u!54 &1928832295
 Rigidbody:
   m_ObjectHideFlags: 0

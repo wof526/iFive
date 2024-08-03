@@ -7,6 +7,8 @@ using Photon.Pun;
 
 public class CaptureZone : MonoBehaviourPunCallbacks
 {
+    public GameObject[] areas;
+
     public TextMeshProUGUI bluecount;
     public TextMeshProUGUI redcount;
     public Image teamCircle;
@@ -20,13 +22,20 @@ public class CaptureZone : MonoBehaviourPunCallbacks
     private List<GameObject> redObjects = new List<GameObject>();
     private List<GameObject> blueObjects = new List<GameObject>();
 
+    public Material areaYellow;
+    public Material areaBlue;
+    public Material areaRed;
+
+    static bool bluewin;
+
     void Update()
     {
 
         checkCountdown();
     }
 
-    void checkCountdown(){
+    void checkCountdown()
+    {
 
         if (!PhotonNetwork.IsMasterClient)
         {
@@ -37,23 +46,39 @@ public class CaptureZone : MonoBehaviourPunCallbacks
         {
             areaSecRed -= Time.deltaTime;
             photonView.RPC("UpdateRedCountdown", RpcTarget.All, areaSecRed);
-            
+
+            if (areaSecRed <= 0)
+            {
+                bluewin = false;
+                photonView.RPC("LoadNextScene", RpcTarget.All); // "RedWinsScene"을 원하는 씬 이름으로 교체
+            }
+
         }
-        else if(nowColor == "Blue")
+        else if (nowColor == "Blue")
         {
-            
+
             areaSecBlue -= Time.deltaTime;
             photonView.RPC("UpdateBlueCountdown", RpcTarget.All, areaSecBlue);
+            if (areaSecBlue <= 0)
+            {
+                bluewin = true;
+                photonView.RPC("LoadNextScene", RpcTarget.All); // "BlueWinsScene"을 원하는 씬 이름으로 교체
+            }
         }
-        
+
     }
 
     [PunRPC]
+    private void LoadNextScene(string sceneName)
+    {
+        PhotonNetwork.LoadLevel("GameoverScene");
+    }
+    [PunRPC]
     void UpdateBlueCountdown(float areaSecBlue)
     {
-        areaSecBlue= Mathf.Floor(areaSecBlue * 100f) / 100f;
+        areaSecBlue = Mathf.Floor(areaSecBlue * 100f) / 100f;
         bluecount.text = areaSecBlue.ToString();
-        
+
     }
 
     [PunRPC]
@@ -63,7 +88,7 @@ public class CaptureZone : MonoBehaviourPunCallbacks
         redcount.text = areaSecRed.ToString();
 
     }
-    
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -71,7 +96,7 @@ public class CaptureZone : MonoBehaviourPunCallbacks
         {
             return;
         }
-        
+
         if (other.CompareTag("Team Red"))
         {
             redObjects.Add(other.gameObject);
@@ -81,7 +106,7 @@ public class CaptureZone : MonoBehaviourPunCallbacks
             blueObjects.Add(other.gameObject);
         }
 
-        photonView.RPC("UpdateZoneColor",RpcTarget.All, redObjects.Count,blueObjects.Count);
+        photonView.RPC("UpdateZoneColor", RpcTarget.All, redObjects.Count, blueObjects.Count, MapFXManager.randomNum);
     }
 
     void OnTriggerExit(Collider other)
@@ -100,36 +125,38 @@ public class CaptureZone : MonoBehaviourPunCallbacks
             blueObjects.Remove(other.gameObject);
         }
 
-        photonView.RPC("UpdateZoneColor", RpcTarget.All, redObjects.Count, blueObjects.Count);
+        photonView.RPC("UpdateZoneColor", RpcTarget.All, redObjects.Count, blueObjects.Count, MapFXManager.randomNum);
     }
 
     [PunRPC]
-    private void UpdateZoneColor(int redObjects, int blueObjects)
+    private void UpdateZoneColor(int redObjects, int blueObjects, int randomNum)
     {
+
         if (redObjects > 0 && blueObjects > 0)
         {
-            mapFXManager.FXchangerYellow();  // 두 색상이 모두 있을 때 노란색
+            areas[randomNum].GetComponent<MeshRenderer>().material = areaYellow; ;  // 두 색상이 모두 있을 때 노란색
             teamCircle.color = Color.yellow;
             nowColor = "Yellow";
         }
         else if (redObjects > 0)
         {
-            mapFXManager.FXchangerRed();  // 빨간색 오브젝트만 있을 때 빨간색
+            areas[randomNum].GetComponent<MeshRenderer>().material = areaRed; ;  // 빨간색 오브젝트만 있을 때 빨간색
             teamCircle.color = Color.red;
             nowColor = "Red";
         }
         else if (blueObjects > 0)
         {
-            mapFXManager.FXchangerBlue();  // 파란색 오브젝트만 있을 때 파란색
+            areas[randomNum].GetComponent<MeshRenderer>().material = areaBlue;  // 파란색 오브젝트만 있을 때 파란색
             teamCircle.color = Color.blue;
             nowColor = "Blue";
         }
         else
         {
-            mapFXManager.FXchangerYellow();  // 아무도 없을 때 노란색
+            areas[randomNum].GetComponent<MeshRenderer>().material = areaYellow;  // 아무도 없을 때 노란색
             teamCircle.color = Color.yellow;
             nowColor = "Yellow";
         }
     }
+
 }
 
