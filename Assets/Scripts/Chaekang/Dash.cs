@@ -11,7 +11,7 @@ public class Dash : MonoBehaviour
     float curSpeed;
     float zeroBaek;
     GameObject fire;
-    public Button dashButton; // Unity UI Button reference
+    Button dashButton; // Unity UI Button reference
 
     // Script
     FirestoreManager firestoreManager;
@@ -24,6 +24,17 @@ public class Dash : MonoBehaviour
         maxSpeed = firestoreManager.MaxSpeed;
         curSpeed = NetworkPlayer.speed;
         zeroBaek = firestoreManager.ZeroBaek;
+
+        // Find the dash button by its name
+        GameObject dashButtonObject = GameObject.Find("Dash");
+        if (dashButtonObject != null)
+        {
+            dashButton = dashButtonObject.GetComponent<Button>();
+        }
+        else
+        {
+            Debug.LogError("Dash button not found!");
+        }
 
         // Start the coroutine to find the car script
         StartCoroutine(FindCarScript());
@@ -54,13 +65,9 @@ public class Dash : MonoBehaviour
     void Update()
     {
         // Enable or disable the dash button based on the current speed
-        if (curSpeed >= maxSpeed)
+        if (dashButton != null)
         {
-            dashButton.interactable = true;
-        }
-        else
-        {
-            dashButton.interactable = false;
+            dashButton.interactable = curSpeed >= maxSpeed;
         }
 
         if (!isDash)
@@ -79,11 +86,23 @@ public class Dash : MonoBehaviour
     private IEnumerator ResetDashAfterDelay()
     {
         Debug.Log("Start Dash Coroutine");
-        fire.SetActive(true);
-        dashButton.interactable = false;
+        if (fire != null)
+        {
+            fire.SetActive(true);
+        }
+        if (dashButton != null)
+        {
+            dashButton.interactable = false;
+        }
         yield return new WaitForSeconds(5f);
-        dashButton.interactable = true;
-        fire.SetActive(false);
+        if (dashButton != null)
+        {
+            dashButton.interactable = true;
+        }
+        if (fire != null)
+        {
+            fire.SetActive(false);
+        }
         isDash = false;
     }
 }
