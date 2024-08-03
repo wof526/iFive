@@ -178,6 +178,9 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
             int myPhotonViewID = myPhotonView != null ? myPhotonView.ViewID : -1;
             int otherPhotonViewID = otherPhotonView != null ? otherPhotonView.ViewID : -1;
 
+            // Play SFX
+            AudioManager.instance.PlaySfx(AudioManager.Sfx.StartBtn);
+
             if (otherPhotonView != null && otherPhotonViewID != myPhotonViewID)
             {
                 float damage = curSpeed * 3;

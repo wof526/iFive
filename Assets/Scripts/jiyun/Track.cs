@@ -21,6 +21,9 @@ public class Track : MonoBehaviourPunCallbacks
 
     void Start()
     {
+        // Play BGM
+        AudioManager.instance.PlayBgm(true);
+
         js = jsInstance;
         speed_text = speed_textInstance;
         speedbar = speedBar;
