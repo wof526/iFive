@@ -76,6 +76,11 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
             Debug.LogError("Joystick not found or inactive.");
         }
 
+        if (HPText == null)
+        {
+            Debug.LogError("HPText not found or inactive.");
+        }
+
         actionQueue.Enqueue(() => {
             maxHP = firestoreManager.Hp;
             curHP = maxHP;
