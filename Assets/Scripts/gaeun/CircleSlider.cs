@@ -12,12 +12,21 @@ public class CircleSlider : MonoBehaviour
     public float exValue = 60.0f; // 0 - 100, dont use int
     public TextMeshProUGUI exvalTxt;
 
+    public TextMeshProUGUI winText;
     float circleTime = 1.0f;
     public float presentTime = 0.0f;
 
 
     void Start()
     {
+        if (CaptureZone.bluewin)
+        {
+            winText.text = "Blue win";
+        }
+        else
+        {
+            winText.text = "Red win";
+        }
         AudioManager.instance.PlaySfx(AudioManager.Sfx.Win);
 
         circleSlider.fillAmount = 0.0f;

@@ -26,7 +26,7 @@ public class CaptureZone : MonoBehaviourPunCallbacks
     public Material areaBlue;
     public Material areaRed;
 
-    static bool bluewin;
+    static public bool bluewin;
 
     void Update()
     {
@@ -69,9 +69,9 @@ public class CaptureZone : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    private void LoadNextScene(string sceneName)
+    private void LoadNextScene()
     {
-        PhotonNetwork.LoadLevel("GameoverScene");
+        PhotonNetwork.LoadLevel("GameOver");
     }
     [PunRPC]
     void UpdateBlueCountdown(float areaSecBlue)
