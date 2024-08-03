@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 8542223169018721073}
   smoke: {fileID: 2600377248037175505}
+  maxHP: 0
   curHP: 0
   curSpeed: 0
 --- !u!114 &7006577872277516481
@@ -172,11 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6930d8d032e40fd8f8161ef7a6d293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationspeed: 180
-  deadzone: 0.1
-  speedSmoothTime: 1
-  localCam: {fileID: 1459463209861296722, guid: 27004c353cb8972489662db7d8fbe72a,
-    type: 3}
+  localCam: {fileID: 6726364253170399670}
 --- !u!114 &-2787454225833478664
 MonoBehaviour:
   m_ObjectHideFlags: 0
