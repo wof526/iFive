@@ -910,7 +910,7 @@ Transform:
   m_GameObject: {fileID: 40562036}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -63.22, y: 13, z: -218.74}
+  m_LocalPosition: {x: -28.6, y: 13, z: -223.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1218,7 +1218,7 @@ PrefabInstance:
     - target: {fileID: 1801783112273183434, guid: 9bbe2d8903ad11741a0ffc4238f65f03,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 181
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1801783112273183434, guid: 9bbe2d8903ad11741a0ffc4238f65f03,
         type: 3}
@@ -1228,7 +1228,7 @@ PrefabInstance:
     - target: {fileID: 1801783112273183434, guid: 9bbe2d8903ad11741a0ffc4238f65f03,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -62.3
+      value: -219.1
       objectReference: {fileID: 0}
     - target: {fileID: 1801783112273183434, guid: 9bbe2d8903ad11741a0ffc4238f65f03,
         type: 3}
@@ -1342,6 +1342,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2015512598}
+    - targetCorrespondingSourceObject: {fileID: 1801783112273183433, guid: 9bbe2d8903ad11741a0ffc4238f65f03,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2015512601}
   m_SourcePrefab: {fileID: 100100000, guid: 9bbe2d8903ad11741a0ffc4238f65f03, type: 3}
 --- !u!1 &62661729
 GameObject:
@@ -15893,8 +15897,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d22d687b23921443942897fbb152e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 4326185676170411602, guid: af583047d38da1a4fbc5839f5b345a7b,
-    type: 3}
 --- !u!4 &498612755
 Transform:
   m_ObjectHideFlags: 0
@@ -22973,7 +22975,7 @@ Transform:
   m_GameObject: {fileID: 774804189}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -23.22, y: 13, z: -221.86}
+  m_LocalPosition: {x: -15.9, y: 13, z: -221.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24420,9 +24422,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82bc3b84bcab0042a8744a6a8a39540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bluecount: {fileID: 571345251}
+  redcount: {fileID: 1708698399}
+  teamCircle: {fileID: 354131800}
   mapFXManager: {fileID: 570751817}
   areaSecBlue: 60
   areaSecRed: 60
+--- !u!114 &822017708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822017703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &829997143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26179,6 +26206,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 822017707}
+    - targetCorrespondingSourceObject: {fileID: 1801783112273183433, guid: 9bbe2d8903ad11741a0ffc4238f65f03,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 822017708}
   m_SourcePrefab: {fileID: 100100000, guid: 9bbe2d8903ad11741a0ffc4238f65f03, type: 3}
 --- !u!1 &915858335
 GameObject:
@@ -27797,7 +27828,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jsInstance: {fileID: 658561714}
   speed_textInstance: {fileID: 588258621}
-  Team_name: {fileID: 1912400968}
   speedbarInstance: {fileID: 1816466046}
 --- !u!114 &1006593719
 MonoBehaviour:
@@ -57725,6 +57755,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82bc3b84bcab0042a8744a6a8a39540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bluecount: {fileID: 571345251}
+  redcount: {fileID: 1708698399}
+  teamCircle: {fileID: 354131800}
   mapFXManager: {fileID: 570751817}
   areaSecBlue: 60
   areaSecRed: 60
@@ -57778,6 +57811,28 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2015512601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015512597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 3
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &2016927571
 GameObject:
   m_ObjectHideFlags: 0

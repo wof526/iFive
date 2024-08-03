@@ -49,7 +49,7 @@ public class CaptureZone : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    void UpdateBlueCountdown()
+    void UpdateBlueCountdown(float areaSecBlue)
     {
         areaSecBlue= Mathf.Floor(areaSecBlue * 100f) / 100f;
         bluecount.text = areaSecBlue.ToString();
@@ -57,7 +57,7 @@ public class CaptureZone : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    void UpdateRedCountdown()
+    void UpdateRedCountdown(float areaSecRed)
     {
         areaSecRed = Mathf.Floor(areaSecRed * 100f) / 100f;
         redcount.text = areaSecRed.ToString();
@@ -81,7 +81,7 @@ public class CaptureZone : MonoBehaviourPunCallbacks
             blueObjects.Add(other.gameObject);
         }
 
-        photonView.RPC("UpdateZoneColor",RpcTarget.All, redObjects,blueObjects);
+        photonView.RPC("UpdateZoneColor",RpcTarget.All, redObjects.Count,blueObjects.Count);
     }
 
     void OnTriggerExit(Collider other)
@@ -100,25 +100,25 @@ public class CaptureZone : MonoBehaviourPunCallbacks
             blueObjects.Remove(other.gameObject);
         }
 
-        photonView.RPC("UpdateZoneColor", RpcTarget.All, redObjects, blueObjects);
+        photonView.RPC("UpdateZoneColor", RpcTarget.All, redObjects.Count, blueObjects.Count);
     }
 
     [PunRPC]
-    private void UpdateZoneColor(List<GameObject> redObjects, List<GameObject> blueObjects)
+    private void UpdateZoneColor(int redObjects, int blueObjects)
     {
-        if (redObjects.Count > 0 && blueObjects.Count > 0)
+        if (redObjects > 0 && blueObjects > 0)
         {
             mapFXManager.FXchangerYellow();  // 두 색상이 모두 있을 때 노란색
             teamCircle.color = Color.yellow;
             nowColor = "Yellow";
         }
-        else if (redObjects.Count > 0)
+        else if (redObjects > 0)
         {
             mapFXManager.FXchangerRed();  // 빨간색 오브젝트만 있을 때 빨간색
             teamCircle.color = Color.red;
             nowColor = "Red";
         }
-        else if (blueObjects.Count > 0)
+        else if (blueObjects > 0)
         {
             mapFXManager.FXchangerBlue();  // 파란색 오브젝트만 있을 때 파란색
             teamCircle.color = Color.blue;

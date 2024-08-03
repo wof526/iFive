@@ -30,18 +30,30 @@ public class Track : MonoBehaviourPunCallbacks
             : "Unknown";
     }
 
-    private void Update() {
-        if(PhotonNetwork.LocalPlayer.TagObject != null && isfind){
-            if(PhotonNetwork.LocalPlayer.TagObject is GameObject player){
-                if(team == "Our"){
-                    player.tag = "Team Blue";
+    private void Update()
+    {
+        if (PhotonNetwork.LocalPlayer.TagObject != null && isfind)
+        {
+            if (PhotonNetwork.LocalPlayer.TagObject is GameObject player)
+            {
+                if (team == "Our")
+                {
+                    photonView.RPC("ChangePlayerTag", RpcTarget.AllBuffered, player.GetPhotonView().ViewID, "Team Blue");
                 }
-                else if(team == "Enemy"){
-                    player.tag = "Team Red";
+                else if (team == "Enemy")
+                {
+                    photonView.RPC("ChangePlayerTag", RpcTarget.AllBuffered, player.GetPhotonView().ViewID, "Team Red");
                 }
                 isfind = false;
-            }    
-        }                
+            }
+        }
+    }
+
+    [PunRPC]
+    void ChangePlayerTag(int viewID, string newTag)
+    {
+        GameObject player = PhotonView.Find(viewID).gameObject;
+        player.tag = newTag;
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)

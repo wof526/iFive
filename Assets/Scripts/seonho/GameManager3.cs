@@ -25,6 +25,7 @@ public class GameManager3 : MonoBehaviourPunCallbacks
 
         if (spawnPoint != null)
         {
+            Debug.Log(carData.carString);
             GameObject player = PhotonNetwork.Instantiate(carData.carString, spawnPoint.position, spawnPoint.rotation, 0);
             PhotonNetwork.LocalPlayer.TagObject = player;   // 생성된 객체를 tagobject에 저장
             Track.isfind = true;    // 오브젝트 찾음

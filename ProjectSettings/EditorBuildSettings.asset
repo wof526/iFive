@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/jiyun/Driving.unity
     guid: 5e3ba60f9563a514687d1d9c6928cc09
   - enabled: 0
+    path: Assets/Scenes/GaEun/Minimap.unity
+    guid: 21d432cd6f832e64cb03b6b5389e7a40
+  - enabled: 0
     path: Assets/Scenes/seonho/Driving-proto.unity
     guid: fc0f5b575f3c6f4428911f442920b6d9
   - enabled: 0
