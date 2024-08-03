@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
 {
     private float rotationspeed = 180f;  // 회전 속도
-    private float deadzone = 0.1f;   // 무감도 범위
+    private float deadzone = 0.01f;   // 무감도 범위
     public static float speed;    // 속력
     private Rigidbody rb;
     private Vector3 lastDirection = Vector3.zero;   // 회전하고 마지막 방향 저장
@@ -116,7 +116,6 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
                 }
 
                 // 마지막 방향을 따라 이동
-                //transform.position += lastDirection * speed * Time.deltaTime;
                 rb.MovePosition(transform.position + lastDirection * speed * Time.deltaTime);
             }
             
@@ -129,8 +128,8 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
             }
 
             Track.speedbar.maxValue = GameManager.Instance.firestoreManager.MaxSpeed;
-            Track.speedbar.value = speed;
-            Track.speed_text.text = (int)speed + "km/h";
+            Track.speedbar.value = speed * 10;
+            Track.speed_text.text = (int)(speed * 10) + "km/h";
         }
         else //내 포톤뷰가 아니면 포지션 가져오기, lerp로 부드럽게
         {
