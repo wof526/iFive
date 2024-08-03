@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class HPBarRotation : MonoBehaviour
 {
-    public string cameraName = "Camera"; // Ã£¾Æ¾ß ÇÒ Ä«¸Þ¶óÀÇ ÀÌ¸§
+    public string cameraName = "Camera"; // Ã£ï¿½Æ¾ï¿½ ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½
 
     private Camera targetCamera;
+    private Image hpBarImage;
+
+    private Car carScript; 
+
 
     void Start()
     {
-        // ÁöÁ¤ÇÑ ÀÌ¸§À» °¡Áø Ä«¸Þ¶ó¸¦ Ã£½À´Ï´Ù.
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½ Ã£ï¿½ï¿½ï¿½Ï´ï¿½.
         GameObject cameraObject = GameObject.Find(cameraName);
         if (cameraObject != null)
         {
@@ -18,7 +24,40 @@ public class HPBarRotation : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Ä«¸Þ¶ó¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù: " + cameraName);
+            Debug.LogError("Ä«ï¿½Þ¶ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½: " + cameraName);
+        }
+
+
+        // ï¿½Ú½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ "hpbar"ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ Ã£ï¿½ï¿½
+        Transform hpBarTransform = transform.Find("hpbar");
+        if (hpBarTransform != null)
+        {
+            hpBarImage = hpBarTransform.GetComponent<Image>();
+
+            if (hpBarImage != null)
+            {
+                Debug.Log("hpbar ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ Image ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ Ã£ï¿½Ò½ï¿½ï¿½Ï´ï¿½.");
+            }
+            else
+            {
+                Debug.Log("hpbar ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ Image ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+            }
+        }
+        else
+        {
+            Debug.Log("hpbar ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.");
+        }
+
+        // ï¿½Î¸ï¿½ ï¿½Ú½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ Car ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ Ã£ï¿½ï¿½ï¿½Ï´ï¿½.
+        carScript = GetComponentInParent<Car>();
+        if (carScript == null)
+        {
+            Debug.LogError("Car ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+        }
+        else
+        {
+            Debug.Log("Car script assigned");
+            UpdateHpBar(); // HP ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
         }
     }
 
@@ -26,8 +65,23 @@ public class HPBarRotation : MonoBehaviour
     {
         if (targetCamera != null)
         {
-            // ÀÌ ¿ÀºêÁ§Æ®¸¦ ÁöÁ¤ÇÑ Ä«¸Þ¶ó ¹æÇâÀ¸·Î È¸Àü½ÃÅµ´Ï´Ù.
+            // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¸ï¿½ï¿½ï¿½ï¿½Åµï¿½Ï´ï¿½.
             transform.LookAt(targetCamera.transform);
+        }
+        UpdateHpBar();
+    }
+
+    // HP ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Þ¼ï¿½ï¿½ï¿½
+    void UpdateHpBar()
+    {
+        if (hpBarImage != null && carScript != null)
+        {
+            float curHp = carScript.curHP;
+            float maxHp = carScript.maxHP;
+            Debug.Log("curHP: " + curHp);
+            Debug.Log("maxHP: " + maxHp);
+            hpBarImage.fillAmount = curHp / maxHp;
+            Debug.Log("hpBarImage.filAmount: " + hpBarImage.fillAmount);
         }
     }
 }
