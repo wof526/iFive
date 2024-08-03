@@ -12,38 +12,6 @@ public class FXtriggerManager : MonoBehaviour
 
     private List<string> carList = new List<string>();
 
-
-    /*
-    private void OnTriggerEnter(Collider other)
-    {
-        GameObject obj = other.gameObject;
-
-        if ((filterTags?.Count ?? 0) > 0 && !filterTags.Contains(obj.tag))
-        {
-            return;
-        }
-
-        if (host)
-        {
-            host.OnTriggerEnter(other);
-        }
-
-        if (detectCounter.TryGetValue(obj, out var cnt))
-        {
-            detectCounter[obj] = ++cnt;
-        }
-        else
-        {
-            detectCounter[obj] = 1;
-            onEnter.Invoke(obj);
-        }
-    }
-    */
-
-
-
-
-
     private void OnTriggerStay(Collider collider)
     {
         string coltag = collider.gameObject.tag;
