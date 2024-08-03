@@ -29,7 +29,6 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
-    NetworkPlayer drive;
     FirestoreManager firestoreManager;
 
     private FirebaseAuth auth;
@@ -44,7 +43,6 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     {
         rb = GetComponent<Rigidbody>();
         auth = FirebaseAuth.DefaultInstance;
-        drive = GameManager.Instance.drive;
         firestoreManager = GameManager.Instance.firestoreManager;
 
         HPBar = FindInActiveObjectByName("HPBar")?.GetComponent<Slider>();
@@ -170,6 +168,8 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
 
     private void OnCollisionEnter(Collision collision)
     {
+        bool thisCarIsDashing = GameManager.Instance.dash.isDash;
+
         if (collision.transform.CompareTag("Car"))
         {
             PhotonView myPhotonView = GetComponent<PhotonView>();
@@ -180,17 +180,15 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
 
             if (otherPhotonView != null && otherPhotonViewID != myPhotonViewID)
             {
-                Debug.Log($"Collided with car. Other PhotonView ID: {otherPhotonViewID}, Damage: {curSpeed}, My PhotonView ID: {myPhotonViewID}");
-                otherPhotonView.RPC("ReduceHP", RpcTarget.All, (double)(curSpeed * 3));
+                float damage = curSpeed * 3;
+                if (thisCarIsDashing)
+                {
+                    damage *= 2;
+                }
+
+                Debug.Log($"Collided with car. Other PhotonView ID: {otherPhotonViewID}, Damage: {damage}, My PhotonView ID: {myPhotonViewID}");
+                otherPhotonView.RPC("ReduceHP", RpcTarget.All, (double)damage);
             }
-        }
-        
-        else
-        {
-            PhotonView myPhotonView = GetComponent<PhotonView>();
-            int myPhotonViewID = myPhotonView != null ? myPhotonView.ViewID : -1;
-            Debug.Log($"Collided with a non-Car object. Damage: {curSpeed}, My PhotonView ID: {myPhotonViewID}");
-            myPhotonView.RPC("ReduceHP", RpcTarget.All, (double)(curSpeed * 0.7));
         }
     }
 
@@ -204,8 +202,6 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (!isDataReady) return;
 
-        HPBar.value = curHP;
-        UpdateHPText();
         curSpeed = NetworkPlayer.speed;
 
         if (curSpeed >= maxSpeed)
@@ -221,6 +217,13 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         {
             curHP = 0;
         }
+
+        if (HPBar != null)
+        {
+            HPBar.value = curHP;
+        }
+
+        UpdateHPText();
 
         if (curHP <= 0 && !isGameOver)
         {
@@ -259,7 +262,6 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         }
     }
 
-
     private IEnumerator RestartCountdown()
     {
         Debug.Log("RestartCountdown start");
@@ -293,7 +295,6 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
 
     private void RespawnPlayer()
     {
-        // GameManager3���� �÷��̾��� ��ȯ ��ġ�� ������
         int spawnIndex = PhotonNetwork.LocalPlayer.ActorNumber - 1;
         Transform spawnPoint = SpawnManager.Instance.GetSpawnPoint(spawnIndex);
 
@@ -302,7 +303,6 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
             PhotonView photonView = GetComponent<PhotonView>();
             if (photonView != null && photonView.IsMine)
             {
-                // �ڽ��� ��ü��� ��ġ�� ���¸� �����մϴ�.
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
                 transform.position = spawnPoint.position;
@@ -312,7 +312,6 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
             }
             else
             {
-                // �ڽ��� ��ü�� �ƴ϶�� RPC ȣ���� ���� ��ġ�� ���¸� �����մϴ�.
                 photonView.RPC("ResetPlayerPosition", photonView.Owner, spawnPoint.position, spawnPoint.rotation);
             }
         }
@@ -333,19 +332,15 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         countdownStarted = false;
     }
 
-
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        
         if (stream.IsWriting)
         {
-            // ������ ����
             stream.SendNext(curHP);
             stream.SendNext(curSpeed);
         }
         else
         {
-            // ������ ����
             curHP = (float)stream.ReceiveNext();
             curSpeed = (float)stream.ReceiveNext();
         }
