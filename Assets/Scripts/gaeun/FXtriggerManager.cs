@@ -8,98 +8,65 @@ public class FXtriggerManager : MonoBehaviour
     public float areaSecBlue = 60.0f;
     public float areaSecRed = 60.0f;
 
+    private bool nowEnter = false;
+    private bool blueEnter = false;
+    private bool redEnter = false;
+
     private bool isPaused = false;
 
     private List<string> carList = new List<string>();
 
-    private void OnTriggerStay(Collider collider)
+
+
+    //ì•ˆì— ì˜¤ë¸Œì íŠ¸ê°€ ê³„ì† ìžˆì„ë•Œ ì—…ë°ì´íŠ¸ ì‹ìœ¼ë¡œ ë¶ˆëŸ¬ 
+    private void OnTriggerEnter(Collider collider)
     {
         string coltag = collider.gameObject.tag;
         Debug.Log("nowtag " + coltag);
-        // ¾î·¹ÀÌ
-        Debug.Log(carList.Count);
-        
+        // ï¿½î·¹ï¿½ï¿½
 
-        if (coltag == "Team Blue")
+        if (nowEnter = false) //ì•„ë¬´ë„ ë“¤ì–´ì˜¨ ì‚¬ëžŒì´ ì—†ì„ë–„ 
         {
-            isPaused = true;
-            mapFXManager.FXchangerBlue();
-            CountSecBlue();            
-        }
-
-        else if (coltag == "Team Red")
-        {
-            isPaused = true;
-            mapFXManager.FXchangerRed();
-            CountSecRed();
-        }
-
-        else
-        {
-            if (isPaused)
+            if (coltag == "Team Blue")//íŒŒëž€íŒ€ì´ë©´
             {
-                if (coltag == "Team Blue") // stop yellow
+                mapFXManager.FXchangerBlue();
+                blueEnter = true;
+                nowEnter = true;
+            }
+            else if (coltag == "Team Red")//ë¹¨ê°„íŒ€ì´ë©´ 
+            {
+                mapFXManager.FXchangerRed();
+                redEnter = true;
+                nowEnter = true;
+            }
+        }
+        else //ë“¤ì–´ì˜¨ ì‚¬ëžŒì´ ìžˆì„ë•Œ
+        {
+            if (blueEnter == true) //íŒŒëž€íŒ€ì´ ë“¤ì–´ì™€ ìžˆì„ë•Œ 
+            {
+                if (coltag == "Team Red") //ë¹¨ê°„íŒ€ì´ ë“¤ì–´ì˜¤ë©´ 
                 {
-                    StartCoroutine(PauseCoroutineBlue(coltag));
-                    Debug.Log("pause yellow");
-                    isPaused = false; // restart yellowFX
+                    //íŒŒëž€íŒ€ ì¹´ìš´íŒ… ë©ˆì¶¤
+                    mapFXManager.FXchangerYellow(); //ë…¸ëž€ìƒ‰ìœ¼ë¡œ ë°”ê¿ˆ
                 }
-
-                else if (coltag == "Team Red") // stop yellow
+            }
+            else if (redEnter == true) //ë ˆë“œíŒ€ì´ ë“¤ì–´ì™€ ìžˆì„ë•Œ
+            {
+                if (coltag == "Team Blue")
                 {
-                    StartCoroutine(PauseCoroutineRed(coltag));
-                    Debug.Log("pause yellow");
-                    isPaused = false; // restart yellowFX
+                    //ë ˆë“œíŒ€ ì¹´ìš´íŒ… ë©ˆ
+                    mapFXManager.FXchangerYellow();
                 }
-                //else if (¾î·¹ÀÌ¿¡ ¿ä¼Ò°¡ > 2) // when car >= 2
-                else if(carList.Count > 2)
-                {
-                    carList.RemoveAt(0);
-                    carList.RemoveAt(0);
-                    carList.RemoveAt(0);
-
-                    Debug.Log("in count 0");
-
-                    isPaused = false;
-                }
-
             }
 
-            else
-            {
-                mapFXManager.FXchangerYellow();
-                Debug.Log("case Yellow");
-            }
         }
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider collider)
     {
-        string coltag = other.gameObject.tag;
-
-
-        if (coltag == "Team Blue")
-        {
-            
-            // array¿¡ ÀÌ¸§Ãß°¡
-            carList.Add("Team Blue");
-            
-
-        }
-
-        else if (coltag == "Team Red")
-        {
-            carList.Add("Team Red");
-
-        }
-
+        string coltag = collider.gameObject.tag;
     }
-
-
-
-
-    //--------------------------------------------------------
 
     public void CountSecBlue()
     {
@@ -112,12 +79,97 @@ public class FXtriggerManager : MonoBehaviour
     }
 
 
+    /*
+    if (coltag == "Team Blue")
+    {
+        isPaused = true;
+        mapFXManager.FXchangerBlue();
+        CountSecBlue();
+    }
 
+    else if (coltag == "Team Red")
+    {
+        isPaused = true;
+        mapFXManager.FXchangerRed();
+        CountSecRed();
+    }
+
+    else//clotag 3ê°œ -> untagged
+    {
+        if (isPaused)
+        {
+            if (coltag == "Team Blue") // stop yellow
+            {
+                StartCoroutine(PauseCoroutineBlue(coltag));
+                Debug.Log("pause yellow");
+                isPaused = false; // restart yellowFX
+            }
+
+            else if (coltag == "Team Red") // stop yellow
+            {
+                StartCoroutine(PauseCoroutineRed(coltag));
+                Debug.Log("pause yellow");
+                isPaused = false; // restart yellowFX
+            }
+            //else if (ï¿½î·¹ï¿½Ì¿ï¿½ ï¿½ï¿½Ò°ï¿½ > 2) // when car >= 2
+            else if (carList.Count > 2)
+            {
+                carList.RemoveAt(0);
+                carList.RemoveAt(0);
+                carList.RemoveAt(0);
+
+                Debug.Log("in count 0");
+
+                isPaused = false;
+            }
+
+        }
+
+        else
+        {
+            mapFXManager.FXchangerYellow();
+            Debug.Log("case Yellow");
+        }
+    }
+}
+
+
+
+//ë‹¿ì•˜ì„ ë•Œ.
+private void OnTriggerEnter(Collider other)
+{
+    string coltag = other.gameObject.tag;
+
+
+    if (coltag == "Team Blue")
+    {
+
+        // arrayï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ß°ï¿½
+        carList.Add("Team Blue");
+
+
+    }
+
+    else if (coltag == "Team Red")
+    {
+        carList.Add("Team Red");
+
+    }
+
+}
+
+*/
+
+
+    //--------------------------------------------------------
+
+
+    /*
 
     private IEnumerator PauseCoroutineBlue(string coltag) // Coroutine : pause yellow
     {
         Debug.Log("blue - in coroutine");
-        // Á¶°ÇÀ» ¹Ù²Ù°í ½ÍÀ½
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²Ù°ï¿½ ï¿½ï¿½ï¿½ï¿½
         yield return new WaitUntil(() => coltag == "Team Blue");
     }
 
@@ -127,7 +179,34 @@ public class FXtriggerManager : MonoBehaviour
 
         yield return new WaitUntil(() => coltag == "Team Red");
     }
+    */
 
+    /*
+    private void OnTriggerEnter(Collider other)
+    {
+        GameObject obj = other.gameObject;
+
+        if ((filterTags?.Count ?? 0) > 0 && !filterTags.Contains(obj.tag))
+        {
+            return;
+        }
+
+        if (host)
+        {
+            host.OnTriggerEnter(other);
+        }
+
+        if (detectCounter.TryGetValue(obj, out var cnt))
+        {
+            detectCounter[obj] = ++cnt;
+        }
+        else
+        {
+            detectCounter[obj] = 1;
+            onEnter.Invoke(obj);
+        }
+    }
+    */
     //--------------------------------------------------------
 
     /*switch (coltag)
@@ -152,7 +231,7 @@ public class FXtriggerManager : MonoBehaviour
             break;
 
 
-        case "Untagged": // µÇ³ª?
+        case "Untagged": // ï¿½Ç³ï¿½?
 
             mapFXManager.FXchangerYellow();
             Debug.Log("case Yellow");
@@ -161,7 +240,7 @@ public class FXtriggerManager : MonoBehaviour
         default:
 
             if (isPaused) // pause yellow
-            { /// if°¡¾Æ´Ï¶ó case·Î ÇØ¾ß? ÀÏ´Ü µð¹ö±×·Î µé¾î°¡´ÂÁö È®ÀÎ
+            { /// ifï¿½ï¿½ï¿½Æ´Ï¶ï¿½ caseï¿½ï¿½ ï¿½Ø¾ï¿½? ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½×·ï¿½ ï¿½ï¿½î°¡ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
                 //Debug.Log(isPaused);
                 //Debug.Log(collider.gameObject.tag);
                 //Debug.Log(coltag);
@@ -189,13 +268,13 @@ public class FXtriggerManager : MonoBehaviour
                     default:
                         Debug.Log("Unhandled coltag value: " + collider.gameObject.tag);
                         break;
-                        // blue && red µÑ´Ù ¸¸Á·ÇÏ¸é ³ë¶õ»öÀ¸·Î Ã³¸®ÇÏ´Â ÄÉÀÌ½º Ãß°¡?
-                        // ±Ùµ¥ case°¡ Á¶°Ç¹®À¸·Î ÀÛµ¿ÇÏ´ÂÁö ¸ð¸£°Ú¾î¼­ È®ÀÎÇØº¸±â
+                        // blue && red ï¿½Ñ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ß°ï¿½?
+                        // ï¿½Ùµï¿½ caseï¿½ï¿½ ï¿½ï¿½ï¿½Ç¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ûµï¿½ï¿½Ï´ï¿½ï¿½ï¿½ ï¿½ð¸£°Ú¾î¼­ È®ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½
                 }
 
             }
 
-            else // ÀÛµ¿¾ÈÇÔ
+            else // ï¿½Ûµï¿½ï¿½ï¿½ï¿½ï¿½
             {
                 mapFXManager.FXchangerYellow();
                 Debug.Log("case Yellow");
@@ -204,7 +283,7 @@ public class FXtriggerManager : MonoBehaviour
 
 
     /*
-    private void OnTriggerExit(Collider other) // yellow º¹±Í
+    private void OnTriggerExit(Collider other) // yellow ï¿½ï¿½ï¿½ï¿½
     {
         string coltag = other.gameObject.tag;
         Debug.Log(coltag);
