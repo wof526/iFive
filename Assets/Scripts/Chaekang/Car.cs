@@ -28,7 +28,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
-    Drive drive;
+    NetworkPlayer drive;
     Dash dash;
     FirestoreManager firestoreManager;
 
@@ -113,7 +113,10 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
 
     public void GetDamaged(float damage)
     {
-        curHP -= damage;
+        curHP -= (float)damage;
+        PhotonView myPhotonView = GetComponent<PhotonView>();
+        int myPhotonViewID = myPhotonView != null ? myPhotonView.ViewID : -1;
+
         if (HPBar != null)
         {
             HPBar.value = curHP;
@@ -161,31 +164,31 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         if (collision.transform.CompareTag("Car"))
         {
             PhotonView myPhotonView = GetComponent<PhotonView>();
-            int myPhotonViewID = myPhotonView != null ? myPhotonView.ViewID : -1;
-
             PhotonView otherPhotonView = collision.transform.GetComponent<PhotonView>();
-            int otherPhotonViewID = otherPhotonView != null ? otherPhotonView.ViewID : -1;
 
-            Debug.Log($"Collided with PhotonView ID: {otherPhotonViewID}. My PhotonView ID: {myPhotonViewID}");
+            int myPhotonViewID = myPhotonView != null ? myPhotonView.ViewID : -1;
+            int otherPhotonViewID = otherPhotonView != null ? otherPhotonView.ViewID : -1;
 
             if (otherPhotonView != null && otherPhotonViewID != myPhotonViewID)
             {
-                // Call the RPC on the car we collided with
-                Debug.Log("RPC ReduceHP");
-                otherPhotonView.RPC("ReduceHP", RpcTarget.All, curSpeed);
+                Debug.Log($"Collided with car. Other PhotonView ID: {otherPhotonViewID}, Damage: {curSpeed}, My PhotonView ID: {myPhotonViewID}");
+                otherPhotonView.RPC("ReduceHP", RpcTarget.All, (double)(curSpeed * 3));
             }
         }
+        
         else
         {
-            Debug.Log($"Collided with a non-Car object.");
-            GetDamaged(curSpeed);
+            PhotonView myPhotonView = GetComponent<PhotonView>();
+            int myPhotonViewID = myPhotonView != null ? myPhotonView.ViewID : -1;
+            Debug.Log($"Collided with a non-Car object. Damage: {curSpeed}, My PhotonView ID: {myPhotonViewID}");
+            myPhotonView.RPC("ReduceHP", RpcTarget.All, (double)(curSpeed * 0.7));
         }
     }
 
     [PunRPC]
-    public void ReduceHP(float damage)
+    public void ReduceHP(double damage)
     {
-        GetDamaged(damage);
+        GetDamaged((float)damage);
     }
 
     private void Update()
@@ -303,5 +306,17 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         
+        if (stream.IsWriting)
+        {
+            // 데이터 전송
+            stream.SendNext(curHP);
+            stream.SendNext(curSpeed);
+        }
+        else
+        {
+            // 데이터 수신
+            curHP = (float)stream.ReceiveNext();
+            curSpeed = (float)stream.ReceiveNext();
+        }
     }
 }

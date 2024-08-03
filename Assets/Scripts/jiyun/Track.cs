@@ -46,7 +46,7 @@ public class Track : MonoBehaviourPunCallbacks
                 else if(team == "Enemy"){
                     player.tag = "Team Red";
                 }
-                Team_name.text = player.tag;
+                //Team_name.text = player.tag;
                 isfind = false;
             }    
         }                
