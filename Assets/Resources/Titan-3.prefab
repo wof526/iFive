@@ -536,11 +536,16 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
+<<<<<<< Updated upstream
   m_CollisionDetection: 0
 <<<<<<< Updated upstream
 --- !u!1 &1278249632609428858
 =======
 --- !u!114 &2699787265894105180
+=======
+  m_CollisionDetection: 1
+--- !u!114 &7199252778534264585
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -565,6 +570,9 @@ MonoBehaviour:
 =======
   - {fileID: 4238448903671353127}
   - {fileID: 1483231580208693561}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   sceneViewId: 0
   InstantiationId: 0
@@ -582,10 +590,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   localCam: {fileID: 7385642984231309466}
 --- !u!1 &7769521388196660766
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
   localCam: {fileID: 1459463209861296722}
 --- !u!1 &1278249632609428858
 >>>>>>> Stashed changes

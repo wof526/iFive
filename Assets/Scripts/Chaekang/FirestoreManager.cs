@@ -26,7 +26,7 @@ public class FirestoreManager : MonoBehaviour
             {
                 dbRef = FirebaseDatabase.DefaultInstance.RootReference;
                 // 차 데이터 가져오기
-                GetCarData("Titan-3");
+                GetCarData("Acid Bike");
             }
             else
             {

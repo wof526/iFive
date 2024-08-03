@@ -14,6 +14,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     private GameObject gameOverPanel;
     private TMP_Text gameOverTxt;
     private Button Break;
+    private Button DashBtn;
     private GameObject joyStick;
 
     public GameObject fire;
@@ -29,7 +30,6 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     private bool countdownStarted = false;
 
     NetworkPlayer drive;
-    Dash dash;
     FirestoreManager firestoreManager;
 
     private FirebaseAuth auth;
@@ -45,14 +45,19 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         rb = GetComponent<Rigidbody>();
         auth = FirebaseAuth.DefaultInstance;
 
+<<<<<<< Updated upstream
         drive = GameManager.Instance.drive;
         dash = GameManager.Instance.dash;
+=======
+        //drive = GameManager.Instance.drive;
+>>>>>>> Stashed changes
         firestoreManager = GameManager.Instance.firestoreManager;
 
         HPBar = FindInActiveObjectByName("HPBar")?.GetComponent<Slider>();
         HPText = FindInActiveObjectByName("HPText")?.GetComponent<TMP_Text>();
         gameOverPanel = FindInActiveObjectByName("GameOverPanel");
-        Break = FindInActiveObjectByName("BreakBtn")?.GetComponent<Button>();
+        Break = FindInActiveObjectByName("Break")?.GetComponent<Button>();
+        DashBtn = FindInActiveObjectByName("Dash")?.GetComponent<Button>();
         joyStick = FindInActiveObjectByName("Joystick");
 
         if (HPBar == null)
@@ -66,7 +71,17 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
 
         if (gameOverPanel != null)
         {
-            gameOverTxt = gameOverPanel.transform.Find("GameOverTxt")?.GetComponent<TMP_Text>();
+            gameOverTxt = gameOverPanel.transform.Find("RestartTxt")?.GetComponent<TMP_Text>();
+        }
+
+        if (Break == null)
+        {
+            Debug.LogError("Break button not found or inactive.");
+        }
+
+        if (joyStick == null)
+        {
+            Debug.LogError("Joystick not found or inactive.");
         }
 
         actionQueue.Enqueue(() => {
@@ -197,7 +212,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
 
         HPBar.value = curHP;
         UpdateHPText();
-        curSpeed = rb.velocity.magnitude;
+        curSpeed = NetworkPlayer.speed;
 
         if (curSpeed >= maxSpeed)
         {
@@ -237,21 +252,26 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     private void GameOver()
     {
         Debug.Log("Game Over");
-        curSpeed = 0;
+        NetworkPlayer.speed = 0;
         smoke.SetActive(true);
         gameOverPanel.SetActive(true);
 
         if (!countdownStarted)
         {
             countdownStarted = true;
+            Debug.Log("Starting RestartCountdown coroutine");
             countdownCoroutine = StartCoroutine(RestartCountdown());
+            Debug.Log("RestartCountdown coroutine started");
         }
     }
 
+
     private IEnumerator RestartCountdown()
     {
+        Debug.Log("RestartCountdown start");
+        HPBar.gameObject.SetActive(false);
         Break.gameObject.SetActive(false);
-        dash.dashButton.gameObject.SetActive(false);
+        DashBtn.gameObject.SetActive(false);
         joyStick.gameObject.SetActive(false);
 
         while (countdown > 0)
@@ -261,47 +281,64 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
             countdown--;
         }
 
-        string userId = auth.CurrentUser?.UserId;
-
-        if (userId != null)
-        {
-            /*databaseManager.GetUserTeam(userId, team =>
-            {
-                if (!string.IsNullOrEmpty(team))
-                {
-                    databaseManager.GetTeamRespawnArea(team, respawnArea =>
-                    {
-                        GameManager.Instance.RespawnUser(userId, respawnArea);
-
-                        rb.velocity = Vector3.zero;
-                        rb.angularVelocity = Vector3.zero;
-                        transform.position = respawnArea;
-                        transform.rotation = Quaternion.identity;
-                        isGameOver = false;
-                        countdownStarted = false;
-                    });
-                }
-                else
-                {
-                    Debug.LogError("User team not found.");
-                }
-            });*/
-        }
-        else
-        {
-            Debug.LogError("User is not logged in.");
-        }
+        RespawnPlayer();
 
         gameOverPanel.SetActive(false);
+
+        HPBar.gameObject.SetActive(true);
         Break.gameObject.SetActive(true);
-        dash.dashButton.gameObject.SetActive(true);
+        DashBtn.gameObject.SetActive(true);
         joyStick.gameObject.SetActive(true);
+
         countdown = 10;
         curHP = maxHP;
 
         countdownCoroutine = null;
         yield return null;
     }
+
+    private void RespawnPlayer()
+    {
+        // GameManager3에서 플레이어의 소환 위치를 가져옴
+        int spawnIndex = PhotonNetwork.LocalPlayer.ActorNumber - 1;
+        Transform spawnPoint = SpawnManager.Instance.GetSpawnPoint(spawnIndex);
+
+        if (spawnPoint != null)
+        {
+            PhotonView photonView = GetComponent<PhotonView>();
+            if (photonView != null && photonView.IsMine)
+            {
+                // 자신의 객체라면 위치와 상태를 리셋합니다.
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+                transform.position = spawnPoint.position;
+                transform.rotation = spawnPoint.rotation;
+                isGameOver = false;
+                countdownStarted = false;
+            }
+            else
+            {
+                // 자신의 객체가 아니라면 RPC 호출을 통해 위치와 상태를 리셋합니다.
+                photonView.RPC("ResetPlayerPosition", photonView.Owner, spawnPoint.position, spawnPoint.rotation);
+            }
+        }
+        else
+        {
+            Debug.LogError("Spawn point not found for index: " + spawnIndex);
+        }
+    }
+
+    [PunRPC]
+    private void ResetPlayerPosition(Vector3 position, Quaternion rotation)
+    {
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        transform.position = position;
+        transform.rotation = rotation;
+        isGameOver = false;
+        countdownStarted = false;
+    }
+
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
