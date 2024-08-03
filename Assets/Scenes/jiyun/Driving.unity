@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -198,7 +202,7 @@ GameObject:
   - component: {fileID: 2535067}
   - component: {fileID: 2535066}
   - component: {fileID: 2535065}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,6 +442,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1680835232}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -503,7 +511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5706857}
   - component: {fileID: 5706858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +606,7 @@ GameObject:
   - component: {fileID: 5780140}
   - component: {fileID: 5780139}
   - component: {fileID: 5780138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -704,7 +712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8837703}
   - component: {fileID: 8837704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +807,7 @@ GameObject:
   - component: {fileID: 13367571}
   - component: {fileID: 13367570}
   - component: {fileID: 13367569}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 15280458}
   - component: {fileID: 15280459}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -991,7 +999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29476841}
   - component: {fileID: 29476842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1086,7 +1094,7 @@ GameObject:
   - component: {fileID: 31504869}
   - component: {fileID: 31504868}
   - component: {fileID: 31504867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1192,7 +1200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 35039705}
   - component: {fileID: 35039706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1276,6 +1284,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2077964288}
     m_Modifications:
+    - target: {fileID: 100000, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1353,7 +1377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 41729863}
   - component: {fileID: 41729864}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1537,7 +1561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 61714376}
   - component: {fileID: 61714377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1676,7 +1700,7 @@ GameObject:
   - component: {fileID: 66809896}
   - component: {fileID: 66809895}
   - component: {fileID: 66809894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1780,6 +1804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1333791078}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1845,7 +1873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 70408214}
   - component: {fileID: 70408215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1940,7 +1968,7 @@ GameObject:
   - component: {fileID: 72597599}
   - component: {fileID: 72597598}
   - component: {fileID: 72597597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2045,7 +2073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 74780551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,7 +2109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 75201699}
   - component: {fileID: 75201700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2174,7 +2202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 77773151}
   - component: {fileID: 77773152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,7 +2295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 77907389}
   - component: {fileID: 77907390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2359,7 +2387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 78061042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (98)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2395,7 +2423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 81591542}
   - component: {fileID: 81591543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2487,7 +2515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 92830643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2598,7 +2626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99641695}
   - component: {fileID: 99641696}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2686,7 +2714,7 @@ GameObject:
   - component: {fileID: 102747593}
   - component: {fileID: 102747592}
   - component: {fileID: 102747591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2794,7 +2822,7 @@ GameObject:
   - component: {fileID: 104378566}
   - component: {fileID: 104378565}
   - component: {fileID: 104378564}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2991,7 +3019,7 @@ RectTransform:
   - {fileID: 1763556807}
   - {fileID: 1641811481}
   - {fileID: 60956231}
-
+  - {fileID: 1029338317}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3009,7 +3037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 118330190}
   - component: {fileID: 118330191}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3102,7 +3130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 119585187}
   - component: {fileID: 119585188}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3187,7 +3215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 123362355}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3222,7 +3250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 124182288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3258,7 +3286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125016873}
   - component: {fileID: 125016874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3351,7 +3379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 130698749}
   - component: {fileID: 130698750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3444,7 +3472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 134378800}
   - component: {fileID: 134378801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3539,7 +3567,7 @@ GameObject:
   - component: {fileID: 135291122}
   - component: {fileID: 135291121}
   - component: {fileID: 135291120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3644,7 +3672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 137168395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3680,7 +3708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138840021}
   - component: {fileID: 138840022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3775,7 +3803,7 @@ GameObject:
   - component: {fileID: 145500469}
   - component: {fileID: 145500468}
   - component: {fileID: 145500467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3917,7 +3945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 149011058}
   - component: {fileID: 149011059}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4010,7 +4038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 149768302}
   - component: {fileID: 149768303}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4103,7 +4131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 151208680}
   - component: {fileID: 151208681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4195,7 +4223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157110983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4231,7 +4259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 158044140}
   - component: {fileID: 158044141}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4324,7 +4352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164150646}
   - component: {fileID: 164150647}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4417,7 +4445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164250970}
   - component: {fileID: 164250971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4510,7 +4538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165131067}
   - component: {fileID: 165131068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4602,7 +4630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166587571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4636,6 +4664,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 124182288}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4705,7 +4737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 178921162}
   - component: {fileID: 178921163}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4797,7 +4829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 179268980}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4833,7 +4865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185447384}
   - component: {fileID: 185447385}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4928,7 +4960,7 @@ GameObject:
   - component: {fileID: 185641870}
   - component: {fileID: 185641869}
   - component: {fileID: 185641868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5033,7 +5065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 191353801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5068,7 +5100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 193007438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5234,6 +5266,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1092608905}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5298,7 +5334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 196396320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5334,7 +5370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201138260}
   - component: {fileID: 201138261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5422,7 +5458,7 @@ GameObject:
   - component: {fileID: 201972704}
   - component: {fileID: 201972703}
   - component: {fileID: 201972702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5528,7 +5564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 203790938}
   - component: {fileID: 203790939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5621,7 +5657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 213591532}
   - component: {fileID: 213591533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5714,7 +5750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 214348214}
   - component: {fileID: 214348215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5809,7 +5845,7 @@ GameObject:
   - component: {fileID: 221019472}
   - component: {fileID: 221019471}
   - component: {fileID: 221019470}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5915,7 +5951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223457793}
   - component: {fileID: 223457794}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6008,7 +6044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 228962491}
   - component: {fileID: 228962492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6093,7 +6129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 232069273}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6131,7 +6167,7 @@ GameObject:
   - component: {fileID: 233628531}
   - component: {fileID: 233628530}
   - component: {fileID: 233628529}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6237,7 +6273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 235816029}
   - component: {fileID: 235816030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6323,7 +6359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 236808484}
   - component: {fileID: 236808485}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6409,7 +6445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 238081044}
   - component: {fileID: 238081045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6493,6 +6529,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1001760802}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6557,7 +6597,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 239392633}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (80)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6593,7 +6633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240513897}
   - component: {fileID: 240513898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6688,7 +6728,7 @@ GameObject:
   - component: {fileID: 244520772}
   - component: {fileID: 244520771}
   - component: {fileID: 244520770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6825,7 +6865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258384464}
   - component: {fileID: 258384465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6911,7 +6951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 264745963}
   - component: {fileID: 264745964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6997,7 +7037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 265384511}
   - component: {fileID: 265384512}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7085,6 +7125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -7149,7 +7193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 268704663}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: electrical-towers (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7185,7 +7229,7 @@ GameObject:
   - component: {fileID: 277175151}
   - component: {fileID: 277175150}
   - component: {fileID: 277175149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7290,7 +7334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 279916711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7326,7 +7370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 291407625}
   - component: {fileID: 291407626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7421,7 +7465,7 @@ GameObject:
   - component: {fileID: 293002898}
   - component: {fileID: 293002897}
   - component: {fileID: 293002896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7526,7 +7570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 294762426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7638,7 +7682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 307235859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7703,6 +7747,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1342751503}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7767,7 +7815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 320678346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7939,7 +7987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 323078012}
   - component: {fileID: 323078013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8024,7 +8072,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 326946345}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8058,6 +8106,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1680220443}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8125,7 +8177,7 @@ GameObject:
   - component: {fileID: 335207001}
   - component: {fileID: 335207000}
   - component: {fileID: 335206999}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8231,7 +8283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 339210941}
   - component: {fileID: 339210942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8317,7 +8369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 340041076}
   - component: {fileID: 340041077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8405,7 +8457,7 @@ GameObject:
   - component: {fileID: 340422651}
   - component: {fileID: 340422650}
   - component: {fileID: 340422649}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8511,7 +8563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344446554}
   - component: {fileID: 344446555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8599,7 +8651,7 @@ GameObject:
   - component: {fileID: 351602310}
   - component: {fileID: 351602309}
   - component: {fileID: 351602308}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8705,7 +8757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 356969454}
   - component: {fileID: 356969455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8790,7 +8842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 357776149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (83)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8825,7 +8877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358433398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8859,6 +8911,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1272429875}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8924,7 +8980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 360574766}
   - component: {fileID: 360574767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9019,6 +9075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -9084,7 +9144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 367806814}
   - component: {fileID: 367806815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9169,7 +9229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 368308592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9203,6 +9263,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1232411427}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9302,6 +9366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -9368,7 +9436,7 @@ GameObject:
   - component: {fileID: 371240265}
   - component: {fileID: 371240267}
   - component: {fileID: 371240266}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9453,7 +9521,7 @@ GameObject:
   - component: {fileID: 373473231}
   - component: {fileID: 373473233}
   - component: {fileID: 373473232}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mountain-terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9545,7 +9613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 374254347}
   - component: {fileID: 374254348}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9636,6 +9704,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1754170371}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -9700,7 +9772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 379856422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9736,7 +9808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 379933319}
   - component: {fileID: 379933320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9827,6 +9899,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080435411}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -9891,7 +9967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400524622}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9927,7 +10003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 416580065}
   - component: {fileID: 416580066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10020,7 +10096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420540592}
   - component: {fileID: 420540593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10276,7 +10352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 430158072}
   - component: {fileID: 430158073}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10369,7 +10445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 432776003}
   - component: {fileID: 432776004}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10455,7 +10531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433002760}
   - component: {fileID: 433002761}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10539,6 +10615,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1888833288}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10603,7 +10683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434515018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10641,7 +10721,7 @@ GameObject:
   - component: {fileID: 440670980}
   - component: {fileID: 440670979}
   - component: {fileID: 440670978}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10747,7 +10827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 441560041}
   - component: {fileID: 441560042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10839,7 +10919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446518974}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (108)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10952,6 +11032,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 951938540}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11019,7 +11103,7 @@ GameObject:
   - component: {fileID: 468328645}
   - component: {fileID: 468328644}
   - component: {fileID: 468328643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11125,7 +11209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469854915}
   - component: {fileID: 469854916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11209,6 +11293,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1335078989}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11272,6 +11360,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 166587571}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11411,6 +11503,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 595920897}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11478,7 +11574,7 @@ GameObject:
   - component: {fileID: 484113644}
   - component: {fileID: 484113643}
   - component: {fileID: 484113642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11584,7 +11680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 486953871}
   - component: {fileID: 486953872}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11675,6 +11771,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1621288537}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11739,7 +11839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492717069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (94)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11773,6 +11873,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 232069273}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11836,6 +11940,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1619672785}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11901,7 +12009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499259205}
   - component: {fileID: 499259206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11986,7 +12094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 501694698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12024,7 +12132,7 @@ GameObject:
   - component: {fileID: 503746707}
   - component: {fileID: 503746706}
   - component: {fileID: 503746705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12130,7 +12238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 504758543}
   - component: {fileID: 504758544}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12223,7 +12331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 506833785}
   - component: {fileID: 506833786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12307,6 +12415,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 357776149}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12372,7 +12484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513545536}
   - component: {fileID: 513545537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12457,7 +12569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 516746448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12493,7 +12605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 517776135}
   - component: {fileID: 517776136}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12586,7 +12698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519243779}
   - component: {fileID: 519243780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12672,7 +12784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 521079116}
   - component: {fileID: 521079117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12757,7 +12869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 537973359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12795,7 +12907,7 @@ GameObject:
   - component: {fileID: 542235120}
   - component: {fileID: 542235119}
   - component: {fileID: 542235118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12900,7 +13012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 547248716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12936,7 +13048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 551460101}
   - component: {fileID: 551460102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13024,7 +13136,7 @@ GameObject:
   - component: {fileID: 551992688}
   - component: {fileID: 551992687}
   - component: {fileID: 551992686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13128,6 +13240,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1442397058}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13191,6 +13307,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1162603546}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13255,7 +13375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 564641887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13289,6 +13409,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1767144211}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13354,7 +13478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574053995}
   - component: {fileID: 574053996}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13449,7 +13573,7 @@ GameObject:
   - component: {fileID: 576809263}
   - component: {fileID: 576809262}
   - component: {fileID: 576809261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13555,7 +13679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 577667392}
   - component: {fileID: 577667393}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13692,6 +13816,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1582664316}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13757,7 +13885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 579540576}
   - component: {fileID: 579540577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13850,7 +13978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 580723966}
   - component: {fileID: 580723967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13938,7 +14066,7 @@ GameObject:
   - component: {fileID: 589642928}
   - component: {fileID: 589642927}
   - component: {fileID: 589642926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14043,7 +14171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595920897}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14077,6 +14205,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1207350616}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14216,7 +14348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 604739540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14250,6 +14382,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 446518974}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14315,7 +14451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 606915885}
   - component: {fileID: 606915886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14408,7 +14544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610058808}
   - component: {fileID: 610058809}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14501,7 +14637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 612048674}
   - component: {fileID: 612048675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14587,7 +14723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 612132807}
   - component: {fileID: 612132808}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14678,6 +14814,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78061042}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14742,7 +14882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 617115594}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14778,7 +14918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 618463732}
   - component: {fileID: 618463733}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14864,7 +15004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 618514810}
   - component: {fileID: 618514811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14957,7 +15097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 621261764}
   - component: {fileID: 621261765}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15043,7 +15183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624396490}
   - component: {fileID: 624396491}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15131,6 +15271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15196,7 +15340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632627447}
   - component: {fileID: 632627448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15288,7 +15432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 633577199}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15314,6 +15458,93 @@ Transform:
   - {fileID: 1247846402}
   m_Father: {fileID: 1232411427}
   m_LocalEulerAnglesHint: {x: 0, y: 253.5629, z: 0}
+--- !u!1 &635722257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635722258}
+  - component: {fileID: 635722259}
+  m_Layer: 7
+  m_Name: MinimapIcon_Area02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635722258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635722257}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 73.54364, y: 32.790554, z: -14.381287}
+  m_LocalScale: {x: 50, y: 30, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1944531578}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!212 &635722259
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635722257}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
+    type: 3}
+  m_Color: {r: 0.9850788, g: 1, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &639030010
 GameObject:
   m_ObjectHideFlags: 0
@@ -15354,7 +15585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 641310988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: rock-boulders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15407,7 +15638,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 646474235}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (88)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15445,7 +15676,7 @@ GameObject:
   - component: {fileID: 650759987}
   - component: {fileID: 650759986}
   - component: {fileID: 650759985}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15551,7 +15782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651659707}
   - component: {fileID: 651659708}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15639,7 +15870,7 @@ GameObject:
   - component: {fileID: 654123243}
   - component: {fileID: 654123242}
   - component: {fileID: 654123241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15747,7 +15978,7 @@ GameObject:
   - component: {fileID: 658205680}
   - component: {fileID: 658205679}
   - component: {fileID: 658205678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15852,7 +16083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 666968760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15890,7 +16121,7 @@ GameObject:
   - component: {fileID: 668296070}
   - component: {fileID: 668296069}
   - component: {fileID: 668296068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15996,7 +16227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 673240929}
   - component: {fileID: 673240930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16082,7 +16313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 674632771}
   - component: {fileID: 674632772}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16175,7 +16406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675561975}
   - component: {fileID: 675561976}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16263,7 +16494,7 @@ GameObject:
   - component: {fileID: 679562547}
   - component: {fileID: 679562546}
   - component: {fileID: 679562545}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16369,7 +16600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 679884528}
   - component: {fileID: 679884529}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16455,7 +16686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 688039607}
   - component: {fileID: 688039608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16546,6 +16777,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1720863956}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -16611,7 +16846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 692890607}
   - component: {fileID: 692890608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16699,7 +16934,7 @@ GameObject:
   - component: {fileID: 693054453}
   - component: {fileID: 693054452}
   - component: {fileID: 693054451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16805,7 +17040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 693542326}
   - component: {fileID: 693542327}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16900,7 +17135,7 @@ GameObject:
   - component: {fileID: 694840208}
   - component: {fileID: 694840207}
   - component: {fileID: 694840206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17142,7 +17377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704258583}
   - component: {fileID: 704258584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17227,7 +17462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 705140270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tunnel-lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17360,7 +17595,7 @@ GameObject:
   - component: {fileID: 706927626}
   - component: {fileID: 706927625}
   - component: {fileID: 706927624}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17465,7 +17700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 707392419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: road-lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17517,7 +17752,7 @@ GameObject:
   - component: {fileID: 712880129}
   - component: {fileID: 712880128}
   - component: {fileID: 712880127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17625,7 +17860,7 @@ GameObject:
   - component: {fileID: 713305769}
   - component: {fileID: 713305768}
   - component: {fileID: 713305767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17731,7 +17966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 714465225}
   - component: {fileID: 714465226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17826,6 +18061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -17893,7 +18132,7 @@ GameObject:
   - component: {fileID: 720653928}
   - component: {fileID: 720653927}
   - component: {fileID: 720653926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17999,7 +18238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 724335624}
   - component: {fileID: 724335625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18092,7 +18331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 730342207}
   - component: {fileID: 730342208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18180,7 +18419,7 @@ GameObject:
   - component: {fileID: 738325356}
   - component: {fileID: 738325355}
   - component: {fileID: 738325354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18286,7 +18525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741257124}
   - component: {fileID: 741257125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18381,7 +18620,7 @@ GameObject:
   - component: {fileID: 742584799}
   - component: {fileID: 742584798}
   - component: {fileID: 742584797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18486,7 +18725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 744087506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18520,6 +18759,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1745029892}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -18584,7 +18827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746398407}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18619,7 +18862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747119878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18731,7 +18974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 752296233}
   - component: {fileID: 752296234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18819,6 +19062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -18886,7 +19133,7 @@ GameObject:
   - component: {fileID: 757033539}
   - component: {fileID: 757033538}
   - component: {fileID: 757033537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18992,7 +19239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759888267}
   - component: {fileID: 759888268}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19077,7 +19324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774780763}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19111,6 +19358,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2066644375}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19209,7 +19460,7 @@ GameObject:
   - component: {fileID: 790643003}
   - component: {fileID: 790643002}
   - component: {fileID: 790643001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19422,7 +19673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 794054130}
   - component: {fileID: 794054131}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19515,7 +19766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 796332503}
   - component: {fileID: 796332504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19608,7 +19859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798814262}
   - component: {fileID: 798814263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19703,7 +19954,7 @@ GameObject:
   - component: {fileID: 804853007}
   - component: {fileID: 804853006}
   - component: {fileID: 804853005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19811,7 +20062,7 @@ GameObject:
   - component: {fileID: 805960513}
   - component: {fileID: 805960512}
   - component: {fileID: 805960511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19917,7 +20168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806550107}
   - component: {fileID: 806550108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19993,6 +20244,142 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &814716061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 814716062}
+  - component: {fileID: 814716064}
+  - component: {fileID: 814716063}
+  m_Layer: 5
+  m_Name: TextMapName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &814716062
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814716061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029338317}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &814716063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814716061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: MapName
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 30
+  m_fontSizeBase: 30
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &814716064
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814716061}
+  m_CullTransparentMesh: 1
 --- !u!1 &820569058
 GameObject:
   m_ObjectHideFlags: 0
@@ -20003,7 +20390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 820569059}
   - component: {fileID: 820569060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20091,7 +20478,7 @@ GameObject:
   - component: {fileID: 826300904}
   - component: {fileID: 826300903}
   - component: {fileID: 826300902}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20199,6 +20586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -20262,6 +20653,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1969142056}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -20327,7 +20722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 834073065}
   - component: {fileID: 834073066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20422,7 +20817,7 @@ GameObject:
   - component: {fileID: 835126010}
   - component: {fileID: 835126009}
   - component: {fileID: 835126008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20528,7 +20923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836000591}
   - component: {fileID: 836000592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20621,7 +21016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836023162}
   - component: {fileID: 836023163}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20714,7 +21109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 837752701}
   - component: {fileID: 837752702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20806,7 +21201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 840267320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (96)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20840,6 +21235,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058539766}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -20907,7 +21306,7 @@ GameObject:
   - component: {fileID: 841762224}
   - component: {fileID: 841762223}
   - component: {fileID: 841762222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21011,6 +21410,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1317763174}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -21075,7 +21478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 853871191}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21111,7 +21514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 857055407}
   - component: {fileID: 857055408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21196,7 +21599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 862423151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (93)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21230,6 +21633,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 191353801}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -21295,7 +21702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 865409980}
   - component: {fileID: 865409981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21383,7 +21790,7 @@ GameObject:
   - component: {fileID: 867845729}
   - component: {fileID: 867845728}
   - component: {fileID: 867845727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21491,7 +21898,7 @@ GameObject:
   - component: {fileID: 877830556}
   - component: {fileID: 877830555}
   - component: {fileID: 877830554}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21597,7 +22004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886941704}
   - component: {fileID: 886941705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21685,7 +22092,7 @@ GameObject:
   - component: {fileID: 892443934}
   - component: {fileID: 892443933}
   - component: {fileID: 892443932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21793,7 +22200,7 @@ GameObject:
   - component: {fileID: 897232391}
   - component: {fileID: 897232390}
   - component: {fileID: 897232389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21901,6 +22308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-signs (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -21962,7 +22373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 903538278}
   - component: {fileID: 903538279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22053,6 +22464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1909363362}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -22117,7 +22532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 907739231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (87)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22152,7 +22567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 910645795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22187,7 +22602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913234324}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22223,7 +22638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919775498}
   - component: {fileID: 919775499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22307,6 +22722,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1643575194}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -22374,7 +22793,7 @@ GameObject:
   - component: {fileID: 924445778}
   - component: {fileID: 924445777}
   - component: {fileID: 924445776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22470,6 +22889,78 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924445774}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &926704719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926704720}
+  - component: {fileID: 926704722}
+  - component: {fileID: 926704721}
+  m_Layer: 5
+  m_Name: Map Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &926704720
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926704719}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029338317}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 15}
+  m_SizeDelta: {x: -40, y: -70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &926704721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926704719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 5036d5a4f59bcc94fa37be9df45234ce, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &926704722
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926704719}
+  m_CullTransparentMesh: 1
 --- !u!1001 &931299465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22478,6 +22969,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501694698}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -22543,7 +23038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 932970215}
   - component: {fileID: 932970216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22634,6 +23129,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 307235859}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -22701,6 +23200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -22766,7 +23269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 944615420}
   - component: {fileID: 944615421}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22852,7 +23355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951292499}
   - component: {fileID: 951292500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22937,7 +23440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 951938540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22973,7 +23476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952260438}
   - component: {fileID: 952260439}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23068,6 +23571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-signs (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -23131,6 +23638,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1330884933}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -23196,7 +23707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959550787}
   - component: {fileID: 959550788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23288,7 +23799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 961711887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23326,7 +23837,7 @@ GameObject:
   - component: {fileID: 975926707}
   - component: {fileID: 975926706}
   - component: {fileID: 975926705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23422,6 +23933,107 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975926703}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &977656730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_Name
+      value: Minimaptrack
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 23bfcb24ad21b4449be9d8cfb256a0fa, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 5b28cfe79ba1485488934c086342faf8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 977656732}
+  m_SourcePrefab: {fileID: 100100000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
+--- !u!1 &977656731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5b28cfe79ba1485488934c086342faf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 977656730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &977656732
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977656731}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5b28cfe79ba1485488934c086342faf8, type: 3}
 --- !u!1001 &980899574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23430,6 +24042,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 379856422}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -23494,7 +24110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 983730975}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23530,7 +24146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 987724600}
   - component: {fileID: 987724601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23621,6 +24237,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 907739231}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -23688,6 +24308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -23752,7 +24376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1001760802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23790,7 +24414,7 @@ GameObject:
   - component: {fileID: 1015289838}
   - component: {fileID: 1015289837}
   - component: {fileID: 1015289836}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23898,7 +24522,7 @@ GameObject:
   - component: {fileID: 1017290839}
   - component: {fileID: 1017290838}
   - component: {fileID: 1017290837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24002,6 +24626,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1142629784}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24057,6 +24685,61 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1027411232}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1029338316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1029338317}
+  - component: {fileID: 1029338318}
+  m_Layer: 5
+  m_Name: PanelMinimap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1029338317
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029338316}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.3333299, y: 1.3333299, z: 1.3333299}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 926704720}
+  - {fileID: 814716062}
+  m_Father: {fileID: 108129035}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 300}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1029338318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029338316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a948a5a0eace640a7f9334bd6daed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapCamera: {fileID: 1337175403}
+  zoomMin: 1
+  zoomMax: 30
+  zoomOneStep: 1
+  textMapName: {fileID: 814716063}
 --- !u!1001 &1032576774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24065,6 +24748,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 193007438}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24132,7 +24819,7 @@ GameObject:
   - component: {fileID: 1033137639}
   - component: {fileID: 1033137638}
   - component: {fileID: 1033137637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24237,7 +24924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1036039555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (89)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24273,7 +24960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1041155084}
   - component: {fileID: 1041155085}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24359,7 +25046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1050344428}
   - component: {fileID: 1050344429}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24588,7 +25275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062756849}
   - component: {fileID: 1062756850}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24672,6 +25359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1669360910}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24735,6 +25426,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1520593650}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24801,6 +25496,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_Name
       value: road-signs (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_RootOrder
@@ -24869,7 +25568,7 @@ GameObject:
   - component: {fileID: 1071034451}
   - component: {fileID: 1071034450}
   - component: {fileID: 1071034449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24977,7 +25676,7 @@ GameObject:
   - component: {fileID: 1073053356}
   - component: {fileID: 1073053355}
   - component: {fileID: 1073053354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25218,7 +25917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1080435411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (102)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25252,6 +25951,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 840267320}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -25317,7 +26020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1087992951}
   - component: {fileID: 1087992952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25412,7 +26115,7 @@ GameObject:
   - component: {fileID: 1090653981}
   - component: {fileID: 1090653980}
   - component: {fileID: 1090653979}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25517,7 +26220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1092608905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25551,6 +26254,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 239392633}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -25615,7 +26322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099703105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (107)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25651,7 +26358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1111154000}
   - component: {fileID: 1111154001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25735,6 +26442,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 633577199}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -25800,7 +26511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1112524969}
   - component: {fileID: 1112524970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25885,7 +26596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1116358176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25921,7 +26632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1116866387}
   - component: {fileID: 1116866388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26012,6 +26723,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1288241603}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -26075,6 +26790,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 400524622}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -26140,7 +26859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126021643}
   - component: {fileID: 1126021644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26233,7 +26952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127665673}
   - component: {fileID: 1127665674}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26325,7 +27044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1136738332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26359,6 +27078,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 358433398}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -26423,7 +27146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1142629784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26461,7 +27184,7 @@ GameObject:
   - component: {fileID: 1147620296}
   - component: {fileID: 1147620295}
   - component: {fileID: 1147620294}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26567,7 +27290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1153335191}
   - component: {fileID: 1153335192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26655,6 +27378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -26719,7 +27446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1160701401}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26754,7 +27481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1162603546}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (99)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26789,7 +27516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1166229862}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26823,6 +27550,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 92830643}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -26890,7 +27621,7 @@ GameObject:
   - component: {fileID: 1172574446}
   - component: {fileID: 1172574445}
   - component: {fileID: 1172574444}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26998,6 +27729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -27065,7 +27800,7 @@ GameObject:
   - component: {fileID: 1178655305}
   - component: {fileID: 1178655304}
   - component: {fileID: 1178655303}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27169,6 +27904,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 137168395}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -27234,7 +27973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182068150}
   - component: {fileID: 1182068151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27320,7 +28059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186127586}
   - component: {fileID: 1186127587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27415,6 +28154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -27480,7 +28223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188283517}
   - component: {fileID: 1188283518}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sun-light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27575,7 +28318,7 @@ GameObject:
   - component: {fileID: 1193384211}
   - component: {fileID: 1193384210}
   - component: {fileID: 1193384209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27683,7 +28426,7 @@ GameObject:
   - component: {fileID: 1194436478}
   - component: {fileID: 1194436477}
   - component: {fileID: 1194436476}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27789,7 +28532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1196625688}
   - component: {fileID: 1196625689}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27877,6 +28620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -27940,6 +28687,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 368308592}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -28003,6 +28754,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 744087506}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -28068,7 +28823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205326886}
   - component: {fileID: 1205326887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28156,7 +28911,7 @@ GameObject:
   - component: {fileID: 1205823779}
   - component: {fileID: 1205823778}
   - component: {fileID: 1205823777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28261,7 +29016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1207350616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28297,7 +29052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211879458}
   - component: {fileID: 1211879459}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28382,7 +29137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1213821378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28420,7 +29175,7 @@ GameObject:
   - component: {fileID: 1216970529}
   - component: {fileID: 1216970528}
   - component: {fileID: 1216970527}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28526,7 +29281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218453803}
   - component: {fileID: 1218453804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28614,6 +29369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -28678,7 +29437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1232411427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mountain-race-track
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28830,6 +29589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -28893,6 +29656,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1455671240}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -28956,6 +29723,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 279916711}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -29021,7 +29792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1239720605}
   - component: {fileID: 1239720606}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29114,7 +29885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1246591039}
   - component: {fileID: 1246591040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29209,7 +29980,7 @@ GameObject:
   - component: {fileID: 1247846405}
   - component: {fileID: 1247846404}
   - component: {fileID: 1247846403}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29315,7 +30086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255864236}
   - component: {fileID: 1255864237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29408,7 +30179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1265198241}
   - component: {fileID: 1265198242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29576,7 +30347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1267834277}
   - component: {fileID: 1267834278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29662,7 +30433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269035763}
   - component: {fileID: 1269035764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29748,7 +30519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1270234492}
   - component: {fileID: 1270234493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29841,7 +30612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271353024}
   - component: {fileID: 1271353025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29933,7 +30704,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1272429875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29969,7 +30740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278097729}
   - component: {fileID: 1278097730}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30064,7 +30835,7 @@ GameObject:
   - component: {fileID: 1284769511}
   - component: {fileID: 1284769510}
   - component: {fileID: 1284769509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30168,6 +30939,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1213821378}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -30231,6 +31006,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 547248716}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -30295,7 +31074,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1288241603}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30333,7 +31112,7 @@ GameObject:
   - component: {fileID: 1291188861}
   - component: {fileID: 1291188860}
   - component: {fileID: 1291188859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30429,8 +31208,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291188857}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
-
-
 --- !u!1 &1291258662
 GameObject:
   m_ObjectHideFlags: 0
@@ -30461,7 +31238,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1293536015}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -30567,7 +31344,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291258662}
   m_CullTransparentMesh: 1
-
 --- !u!1 &1292829624
 GameObject:
   m_ObjectHideFlags: 0
@@ -30578,7 +31354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1292829625}
   - component: {fileID: 1292829626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30662,6 +31438,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 492717069}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -30725,6 +31505,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 617115594}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -30790,7 +31574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300079250}
   - component: {fileID: 1300079251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30883,7 +31667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1314431423}
   - component: {fileID: 1314431424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30975,7 +31759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1317763174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31011,7 +31795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1320770342}
   - component: {fileID: 1320770343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31103,7 +31887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1330884933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31138,7 +31922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1333791078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31173,7 +31957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1335078989}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (91)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31235,6 +32019,89 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1337175402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337175404}
+  - component: {fileID: 1337175403}
+  m_Layer: 0
+  m_Name: Minimap Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &1337175403
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337175402}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 270
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 191
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8400000, guid: 5036d5a4f59bcc94fa37be9df45234ce, type: 2}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1337175404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337175402}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 457, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1342751502
 GameObject:
   m_ObjectHideFlags: 0
@@ -31244,7 +32111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1342751503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31278,6 +32145,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1940062964}
     m_Modifications:
+    - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -31337,7 +32208,7 @@ GameObject:
   - component: {fileID: 1344445005}
   - component: {fileID: 1344445004}
   - component: {fileID: 1344445003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31445,7 +32316,7 @@ GameObject:
   - component: {fileID: 1352065642}
   - component: {fileID: 1352065641}
   - component: {fileID: 1352065640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31553,7 +32424,7 @@ GameObject:
   - component: {fileID: 1352087236}
   - component: {fileID: 1352087235}
   - component: {fileID: 1352087234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31659,7 +32530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1353310557}
   - component: {fileID: 1353310558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31745,7 +32616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1354444769}
   - component: {fileID: 1354444770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31838,7 +32709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355663726}
   - component: {fileID: 1355663727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31933,7 +32804,7 @@ GameObject:
   - component: {fileID: 1357332151}
   - component: {fileID: 1357332150}
   - component: {fileID: 1357332149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32037,6 +32908,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2057359474}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -32102,7 +32977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1365583367}
   - component: {fileID: 1365583368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32190,7 +33065,7 @@ GameObject:
   - component: {fileID: 1367742616}
   - component: {fileID: 1367742615}
   - component: {fileID: 1367742614}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32298,7 +33173,7 @@ GameObject:
   - component: {fileID: 1368438052}
   - component: {fileID: 1368438051}
   - component: {fileID: 1368438050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32404,7 +33279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1368737833}
   - component: {fileID: 1368737834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32489,7 +33364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1374099877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32525,7 +33400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374309301}
   - component: {fileID: 1374309302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32610,7 +33485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1374555233}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32646,7 +33521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1375620467}
   - component: {fileID: 1375620468}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32741,7 +33616,7 @@ GameObject:
   - component: {fileID: 1387299341}
   - component: {fileID: 1387299340}
   - component: {fileID: 1387299339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32849,6 +33724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -32912,6 +33791,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894371179}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -32979,6 +33862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-signs (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -33040,7 +33927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1404662891}
   - component: {fileID: 1404662892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33133,7 +34020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409374661}
   - component: {fileID: 1409374662}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33226,7 +34113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411555460}
   - component: {fileID: 1411555461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33319,7 +34206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1412446275}
   - component: {fileID: 1412446276}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33411,7 +34298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412680206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33447,7 +34334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1430170867}
   - component: {fileID: 1430170868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33540,7 +34427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433847994}
   - component: {fileID: 1433847995}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33624,6 +34511,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1801361085}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -33689,7 +34580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1437463897}
   - component: {fileID: 1437463898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33774,7 +34665,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1442397058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33811,6 +34702,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_Name
       value: road-signs (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_RootOrder
@@ -33875,6 +34770,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 157110983}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -33939,7 +34838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455671240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33975,7 +34874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1456464122}
   - component: {fileID: 1456464123}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34061,7 +34960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461932645}
   - component: {fileID: 1461932646}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34154,7 +35053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1462999451}
   - component: {fileID: 1462999452}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34238,6 +35137,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1752534561}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -34303,7 +35206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475215096}
   - component: {fileID: 1475215097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34389,7 +35292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1478800459}
   - component: {fileID: 1478800460}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34475,7 +35378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1482209750}
   - component: {fileID: 1482209751}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34566,9 +35469,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2077964288}
     m_Modifications:
+    - target: {fileID: 100000, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
       propertyPath: m_Name
       value: electrical-towers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: d18d564b98d08d34b9597a6c2515c192, type: 3}
       propertyPath: m_RootOrder
@@ -34647,7 +35566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1492372180}
   - component: {fileID: 1492372181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34735,7 +35654,7 @@ GameObject:
   - component: {fileID: 1502377832}
   - component: {fileID: 1502377831}
   - component: {fileID: 1502377830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34841,7 +35760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1504856311}
   - component: {fileID: 1504856312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34934,7 +35853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507787413}
   - component: {fileID: 1507787414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35025,6 +35944,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1374099877}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -35090,7 +36013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1513745282}
   - component: {fileID: 1513745283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35182,7 +36105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1520593650}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (90)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35218,7 +36141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521078266}
   - component: {fileID: 1521078267}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35313,7 +36236,7 @@ GameObject:
   - component: {fileID: 1523524957}
   - component: {fileID: 1523524956}
   - component: {fileID: 1523524955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35419,7 +36342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1527858665}
   - component: {fileID: 1527858666}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35507,7 +36430,7 @@ GameObject:
   - component: {fileID: 1529102464}
   - component: {fileID: 1529102463}
   - component: {fileID: 1529102462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35615,7 +36538,7 @@ GameObject:
   - component: {fileID: 1531540919}
   - component: {fileID: 1531540918}
   - component: {fileID: 1531540917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35720,7 +36643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1534538816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35754,6 +36677,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 123362355}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -35818,7 +36745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1552279865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35856,7 +36783,7 @@ GameObject:
   - component: {fileID: 1552970475}
   - component: {fileID: 1552970474}
   - component: {fileID: 1552970473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35996,7 +36923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1559677401}
   - component: {fileID: 1559677402}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36089,7 +37016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1561313325}
   - component: {fileID: 1561313326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36175,7 +37102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1565714457}
   - component: {fileID: 1565714458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36259,6 +37186,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 910645795}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -36325,6 +37256,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_Name
       value: rocks-mountain-1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
@@ -36393,7 +37328,7 @@ GameObject:
   - component: {fileID: 1569386623}
   - component: {fileID: 1569386622}
   - component: {fileID: 1569386621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36637,7 +37572,7 @@ GameObject:
   - component: {fileID: 1572725998}
   - component: {fileID: 1572725997}
   - component: {fileID: 1572725996}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36741,6 +37676,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 646474235}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -36806,7 +37745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575303743}
   - component: {fileID: 1575303744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36892,7 +37831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1580424044}
   - component: {fileID: 1580424045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36984,7 +37923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1582664316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (101)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37020,7 +37959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583017378}
   - component: {fileID: 1583017379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37242,7 +38181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1586573264}
   - component: {fileID: 1586573265}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37333,6 +38272,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136738332}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -37398,7 +38341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1591545041}
   - component: {fileID: 1591545042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37484,7 +38427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1608161879}
   - component: {fileID: 1608161880}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37572,7 +38515,7 @@ GameObject:
   - component: {fileID: 1610519383}
   - component: {fileID: 1610519382}
   - component: {fileID: 1610519381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37676,6 +38619,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2080927564}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -37740,7 +38687,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1619672785}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (82)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37775,7 +38722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1621288537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37809,6 +38756,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1634344604}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -37872,6 +38823,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 564641887}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -37936,7 +38891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1634344604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (84)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37972,7 +38927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1637072539}
   - component: {fileID: 1637072540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38148,7 +39103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1643575194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (81)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38186,7 +39141,7 @@ GameObject:
   - component: {fileID: 1644929731}
   - component: {fileID: 1644929730}
   - component: {fileID: 1644929729}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38291,7 +39246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1647401348}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (86)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38329,7 +39284,7 @@ GameObject:
   - component: {fileID: 1649025993}
   - component: {fileID: 1649025992}
   - component: {fileID: 1649025991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38433,6 +39388,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 983730975}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38496,6 +39455,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 853871191}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38559,6 +39522,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1534538816}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38622,6 +39589,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 516746448}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38687,7 +39658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662073018}
   - component: {fileID: 1662073019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38773,7 +39744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662945555}
   - component: {fileID: 1662945556}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38857,6 +39828,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 604739540}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38921,7 +39896,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1669360910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (106)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38957,7 +39932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1669687798}
   - component: {fileID: 1669687799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39050,7 +40025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1675765810}
   - component: {fileID: 1675765811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39138,7 +40113,7 @@ GameObject:
   - component: {fileID: 1676461045}
   - component: {fileID: 1676461044}
   - component: {fileID: 1676461043}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39242,6 +40217,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1412680206}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -39307,7 +40286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1679094907}
   - component: {fileID: 1679094908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39399,7 +40378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1679338584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39434,7 +40413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1680220443}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39468,6 +40447,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 913234324}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -39532,7 +40515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1680835232}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39566,6 +40549,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1166229862}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -39629,6 +40616,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 961711887}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -39694,7 +40685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1687558040}
   - component: {fileID: 1687558041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39820,7 +40811,7 @@ GameObject:
   - component: {fileID: 1698162137}
   - component: {fileID: 1698162136}
   - component: {fileID: 1698162135}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39924,6 +40915,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2117012019}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -39988,7 +40983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1703236272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40022,6 +41017,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1374555233}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -40089,7 +41088,7 @@ GameObject:
   - component: {fileID: 1707351792}
   - component: {fileID: 1707351791}
   - component: {fileID: 1707351790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40195,7 +41194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1707802847}
   - component: {fileID: 1707802848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40286,6 +41285,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 196396320}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -40351,7 +41354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712514598}
   - component: {fileID: 1712514599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40444,7 +41447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715641804}
   - component: {fileID: 1715641805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40529,7 +41532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1720863956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40567,7 +41570,7 @@ GameObject:
   - component: {fileID: 1723685448}
   - component: {fileID: 1723685447}
   - component: {fileID: 1723685446}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40673,7 +41676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1730827457}
   - component: {fileID: 1730827458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40766,7 +41769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735557965}
   - component: {fileID: 1735557966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40905,7 +41908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738246305}
   - component: {fileID: 1738246306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41000,7 +42003,7 @@ GameObject:
   - component: {fileID: 1742050266}
   - component: {fileID: 1742050265}
   - component: {fileID: 1742050264}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41104,6 +42107,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1818365582}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -41169,7 +42176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1745002274}
   - component: {fileID: 1745002275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41261,7 +42268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1745029892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (95)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41295,6 +42302,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 666968760}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -41360,7 +42371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1746593159}
   - component: {fileID: 1746593160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41446,7 +42457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1746627204}
   - component: {fileID: 1746627205}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41539,7 +42550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1749379103}
   - component: {fileID: 1749379104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41624,7 +42635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1752534561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (97)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41659,7 +42670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1754170371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41695,7 +42706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755432267}
   - component: {fileID: 1755432268}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41790,7 +42801,7 @@ GameObject:
   - component: {fileID: 1755728022}
   - component: {fileID: 1755728021}
   - component: {fileID: 1755728020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41898,7 +42909,7 @@ GameObject:
   - component: {fileID: 1756130657}
   - component: {fileID: 1756130656}
   - component: {fileID: 1756130655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42004,7 +43015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761743523}
   - component: {fileID: 1761743524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42099,7 +43110,7 @@ GameObject:
   - component: {fileID: 1762808413}
   - component: {fileID: 1762808412}
   - component: {fileID: 1762808411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42337,7 +43348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1767144211}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (85)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42373,7 +43384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769381287}
   - component: {fileID: 1769381288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42464,6 +43475,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515018}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -42916,7 +43931,7 @@ GameObject:
   - component: {fileID: 1785479939}
   - component: {fileID: 1785479938}
   - component: {fileID: 1785479937}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43020,6 +44035,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1099703105}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -43087,7 +44106,7 @@ GameObject:
   - component: {fileID: 1797814052}
   - component: {fileID: 1797814051}
   - component: {fileID: 1797814050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43192,7 +44211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1801361085}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43226,6 +44245,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1116358176}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -43292,7 +44315,7 @@ GameObject:
   - component: {fileID: 1807232300}
   - component: {fileID: 1807232302}
   - component: {fileID: 1807232301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mist-particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48109,6 +49132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 746398407}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -48174,7 +49201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812800479}
   - component: {fileID: 1812800480}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48266,7 +49293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1818365582}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48300,6 +49327,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 74780551}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -48563,7 +49594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819606032}
   - component: {fileID: 1819606033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48656,7 +49687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821228559}
   - component: {fileID: 1821228560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48740,6 +49771,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1552279865}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -48803,6 +49838,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 747119878}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -48868,7 +49907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1828250139}
   - component: {fileID: 1828250140}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48956,6 +49995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocks-mountain-1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -49021,7 +50064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835226428}
   - component: {fileID: 1835226429}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49108,7 +50151,7 @@ GameObject:
   - component: {fileID: 1837607107}
   - component: {fileID: 1837607109}
   - component: {fileID: 1837607108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snow-particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53927,7 +54970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1844777379}
   - component: {fileID: 1844777380}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54022,7 +55065,7 @@ GameObject:
   - component: {fileID: 1847155173}
   - component: {fileID: 1847155172}
   - component: {fileID: 1847155171}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54118,6 +55161,93 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847155169}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1849461278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849461279}
+  - component: {fileID: 1849461280}
+  m_Layer: 7
+  m_Name: MinimapIcon_Area01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1849461279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849461278}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2.256363, y: 32.790554, z: -25.081284}
+  m_LocalScale: {x: 50, y: 30, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1944531578}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!212 &1849461280
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849461278}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
+    type: 3}
+  m_Color: {r: 0.9850788, g: 1, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1850671327
 GameObject:
   m_ObjectHideFlags: 0
@@ -54130,7 +55260,7 @@ GameObject:
   - component: {fileID: 1850671331}
   - component: {fileID: 1850671330}
   - component: {fileID: 1850671329}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54370,6 +55500,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1036039555}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -54435,7 +55569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1874287503}
   - component: {fileID: 1874287504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54521,7 +55655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875277639}
   - component: {fileID: 1875277640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54607,7 +55741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879185769}
   - component: {fileID: 1879185770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54695,7 +55829,7 @@ GameObject:
   - component: {fileID: 1881294716}
   - component: {fileID: 1881294715}
   - component: {fileID: 1881294714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54800,7 +55934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1888833288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (103)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54836,7 +55970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1892993140}
   - component: {fileID: 1892993141}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54921,7 +56055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1894371179}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (104)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54959,7 +56093,7 @@ GameObject:
   - component: {fileID: 1900591381}
   - component: {fileID: 1900591380}
   - component: {fileID: 1900591379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55065,7 +56199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900786277}
   - component: {fileID: 1900786278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55150,7 +56284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1900996892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55188,7 +56322,7 @@ GameObject:
   - component: {fileID: 1902732865}
   - component: {fileID: 1902732864}
   - component: {fileID: 1902732863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55292,6 +56426,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1160701401}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -55357,7 +56495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1904601012}
   - component: {fileID: 1904601013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55443,7 +56581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908309966}
   - component: {fileID: 1908309967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55535,7 +56673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1909363362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (92)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55569,6 +56707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 294762426}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -55634,7 +56776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1912216877}
   - component: {fileID: 1912216878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55722,7 +56864,7 @@ GameObject:
   - component: {fileID: 1913028251}
   - component: {fileID: 1913028250}
   - component: {fileID: 1913028249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55901,6 +57043,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 320678346}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -56238,7 +57384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1939846119}
   - component: {fileID: 1939846120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56330,7 +57476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1940062964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: road-signs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56371,7 +57517,7 @@ GameObject:
   - component: {fileID: 1941518511}
   - component: {fileID: 1941518510}
   - component: {fileID: 1941518509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56477,7 +57623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1941540961}
   - component: {fileID: 1941540962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56572,7 +57718,7 @@ GameObject:
   - component: {fileID: 1943043389}
   - component: {fileID: 1943043388}
   - component: {fileID: 1943043387}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56668,6 +57814,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943043385}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1944531577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944531578}
+  m_Layer: 7
+  m_Name: MinimapIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944531578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944531577}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -42.64364, y: -71, z: -192.41872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2058421577}
+  - {fileID: 1849461279}
+  - {fileID: 635722258}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1948908136
 GameObject:
   m_ObjectHideFlags: 0
@@ -56722,7 +57902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950181082}
   - component: {fileID: 1950181083}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56890,7 +58070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1962720271}
   - component: {fileID: 1962720272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56983,7 +58163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1964669801}
   - component: {fileID: 1964669802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57077,7 +58257,7 @@ GameObject:
   - component: {fileID: 1968525950}
   - component: {fileID: 1968525952}
   - component: {fileID: 1968525951}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57163,7 +58343,7 @@ GameObject:
   - component: {fileID: 1968566872}
   - component: {fileID: 1968566871}
   - component: {fileID: 1968566870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57268,7 +58448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1969142056}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57302,6 +58482,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1679338584}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -57367,7 +58551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1972515925}
   - component: {fileID: 1972515926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57460,7 +58644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977721836}
   - component: {fileID: 1977721837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57546,7 +58730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980766918}
   - component: {fileID: 1980766919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57630,6 +58814,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 862423151}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -57693,6 +58881,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 641310988}
     m_Modifications:
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -57756,6 +58948,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 179268980}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -57821,7 +59017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1993732676}
   - component: {fileID: 1993732677}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57916,7 +59112,7 @@ GameObject:
   - component: {fileID: 2000478954}
   - component: {fileID: 2000478953}
   - component: {fileID: 2000478952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58020,6 +59216,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2106506535}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58084,7 +59284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2008268977}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58170,7 +59370,7 @@ GameObject:
   - component: {fileID: 2013848251}
   - component: {fileID: 2013848250}
   - component: {fileID: 2013848249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58274,6 +59474,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 641310988}
     m_Modifications:
+    - target: {fileID: 100000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58339,7 +59543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022062802}
   - component: {fileID: 2022062803}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58432,7 +59636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022391584}
   - component: {fileID: 2022391585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58525,7 +59729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2025455622}
   - component: {fileID: 2025455623}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58609,6 +59813,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1647401348}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58749,7 +59957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2036466806}
   - component: {fileID: 2036466807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58840,6 +60048,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2008268977}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58905,7 +60117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2039229584}
   - component: {fileID: 2039229585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58993,6 +60205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-signs (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57799303b4acfe041b03261e4869df9a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -59054,7 +60270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2050046462}
   - component: {fileID: 2050046463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59139,7 +60355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2057359474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59165,6 +60381,92 @@ Transform:
   - {fileID: 658205677}
   m_Father: {fileID: 1232411427}
   m_LocalEulerAnglesHint: {x: 0, y: 150.9321, z: 0}
+--- !u!1 &2058421576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058421577}
+  - component: {fileID: 2058421578}
+  m_Layer: 7
+  m_Name: MinimapIcon_spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058421577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058421576}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 211.64365, y: 5.990555, z: 212.41872}
+  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1944531578}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!212 &2058421578
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058421576}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 94158818397b35545ac4585b4b0b5c46, type: 3}
+  m_Color: {r: 0, g: 0.5609827, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2058539765
 GameObject:
   m_ObjectHideFlags: 0
@@ -59174,7 +60476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2058539766}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (100)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59210,7 +60512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2061482257}
   - component: {fileID: 2061482258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59302,7 +60604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2066644375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59338,7 +60640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067721770}
   - component: {fileID: 2067721771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59431,7 +60733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2071240052}
   - component: {fileID: 2071240053}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59526,7 +60828,7 @@ GameObject:
   - component: {fileID: 2073201564}
   - component: {fileID: 2073201563}
   - component: {fileID: 2073201562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightbulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59632,7 +60934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2077294319}
   - component: {fileID: 2077294320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59724,7 +61026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2077964288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: electricalTowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59757,6 +61059,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1703236272}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -59821,7 +61127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2080927564}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59855,6 +61161,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1900996892}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -59920,7 +61230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2084406641}
   - component: {fileID: 2084406642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60006,7 +61316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089157717}
   - component: {fileID: 2089157718}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60092,7 +61402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2096949574}
   - component: {fileID: 2096949575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60185,7 +61495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100763812}
   - component: {fileID: 2100763813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60271,7 +61581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2104355536}
   - component: {fileID: 2104355537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60356,7 +61666,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2106506535}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (105)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60391,7 +61701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2107140240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60426,6 +61736,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_Name
       value: rocks-mountain-2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
       propertyPath: m_RootOrder
@@ -60490,6 +61804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 774780763}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -60554,7 +61872,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2117012019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lightpole (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60590,7 +61908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118337822}
   - component: {fileID: 2118337823}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60681,6 +61999,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 326946345}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -60746,7 +62068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128957932}
   - component: {fileID: 2128957933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60839,7 +62161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2134545123}
   - component: {fileID: 2134545124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60932,7 +62254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138389787}
   - component: {fileID: 2138389788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighthalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61016,6 +62338,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 537973359}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c3d3ef2b91750e4bbe0c3fd819b9253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -61081,7 +62407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2144279641}
   - component: {fileID: 2144279642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61169,10 +62495,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 705507995}
+  - {fileID: 1337175404}
   - {fileID: 428158784}
   - {fileID: 1554922667}
   - {fileID: 108129035}
   - {fileID: 1232411427}
+  - {fileID: 977656730}
   - {fileID: 793263017}
   - {fileID: 1948908138}
   - {fileID: 63778591}
@@ -61182,3 +62510,5 @@ SceneRoots:
   - {fileID: 303092111}
   - {fileID: 1773551172}
   - {fileID: 1928832290}
+  - {fileID: 1291258663}
+  - {fileID: 1944531578}
