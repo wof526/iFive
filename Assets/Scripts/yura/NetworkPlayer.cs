@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
@@ -9,7 +10,6 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
     private float rotationspeed = 180f;  // 회전 속도
     private float deadzone = 0.1f;   // 무감도 범위
     public static float speed;    // 속력
-    public static bool isBreak = false; // 브레이크 버튼을 눌렀는가?
     private Rigidbody rb;
     private Vector3 lastDirection = Vector3.zero;   // 회전하고 마지막 방향 저장
     private float targetSpeed;  // 목표 속도
@@ -21,8 +21,7 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
     private Quaternion networkRotation;
 
     public GameObject localCam;
-    private PhotonView photonView;
-   
+    private PhotonView photonView;   
     
 
 // Start is called before the first frame update
@@ -80,7 +79,7 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
                 return;
             }
 
-            if (!isBreak)
+            if (!GameManager3.isBreak)
             {
                 // 조이스틱의 입력을 받아와서 방향 벡터 설정
                 Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
@@ -118,6 +117,12 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
                 //transform.position += lastDirection * speed * Time.deltaTime;
                 rb.MovePosition(transform.position + lastDirection * speed * Time.deltaTime);
             }
+            
+            if(GameManager3.isBreak){   // 브레이크 버튼 클릭
+                speed = 0;
+                transform.position = Vector3.zero;
+            }
+            
             Track.speedbar.fillAmount = speed / 100;
             Track.speed_text.text = (int)speed + "km/h";
         }
@@ -132,12 +137,12 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
         }
     }
 
-    public void Break()
+    /*public void Break()
     {
         isBreak = true;
         transform.position = Vector3.zero;  // 정지!
         speed = 0;
-    }
+    }*/
 
 
     //타 클라이언트로 이동 및 회전 동기화. send & writing
