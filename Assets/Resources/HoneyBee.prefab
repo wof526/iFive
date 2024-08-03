@@ -103,15 +103,12 @@ GameObject:
   - component: {fileID: 3684014811440256370}
   - component: {fileID: 612996249614605984}
   - component: {fileID: 7530490994570375886}
-  - component: {fileID: 1819549720994511274}
   - component: {fileID: 5603788665741473503}
-  - component: {fileID: 1506561481594442430}
   - component: {fileID: 3732009244641725063}
   - component: {fileID: 4358488574240581562}
   - component: {fileID: 7736532612415222017}
   - component: {fileID: 2461548622447488010}
-  - component: {fileID: 5608321552058064206}
-  - component: {fileID: 40653397159711852}
+  - component: {fileID: 6091372843425772143}
   m_Layer: 0
   m_Name: HoneyBee
   m_TagString: Car
@@ -195,20 +192,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1819549720994511274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2467334754930353371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d18032e5f5e0fcc4da0e41c4d0145e9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationspeed: 360
-  deadzone: 0.1
 --- !u!114 &5603788665741473503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,24 +206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 726856530397547608}
   smoke: {fileID: 6033951534612111290}
+  maxHP: 0
   curHP: 0
   curSpeed: 0
---- !u!114 &1506561481594442430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2467334754930353371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88c1722933565244af0ec491fc2eef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 350
-  maxSpeed: 70
-  dashSpeed: 50
-  zeroBaek: 2
 --- !u!64 &3732009244641725063
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -288,7 +256,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &7736532612415222017
 MonoBehaviour:
@@ -309,8 +277,8 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 0
   ObservedComponents:
-  - {fileID: 5608321552058064206}
-  - {fileID: 40653397159711852}
+  - {fileID: 2461548622447488010}
+  - {fileID: 5603788665741473503}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -327,38 +295,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   localCam: {fileID: 1427723858671781499}
---- !u!114 &5608321552058064206
-MonoBehaviour:
+--- !u!65 &6091372843425772143
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2467334754930353371}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &40653397159711852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2467334754930353371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3469503, y: 1.4778923, z: 5.3798285}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2604146733998114814
 GameObject:
   m_ObjectHideFlags: 0
