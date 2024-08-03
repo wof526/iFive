@@ -170,7 +170,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     {
         bool thisCarIsDashing = GameManager.Instance.dash.isDash;
 
-        if (collision.transform.CompareTag("Car"))
+        if (collision.transform.CompareTag("Team Red"))
         {
             PhotonView myPhotonView = GetComponent<PhotonView>();
             PhotonView otherPhotonView = collision.transform.GetComponent<PhotonView>();

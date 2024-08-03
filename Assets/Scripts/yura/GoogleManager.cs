@@ -35,6 +35,10 @@ public class GoogleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Play BGM
+        AudioManager.instance.PlayBgm(true);
+
+
         emailField.gameObject.SetActive(false);
         passwordField.gameObject.SetActive(false);
         signButton.gameObject.SetActive(false);
@@ -159,6 +163,10 @@ public class GoogleManager : MonoBehaviour
 
     public void EmailSignin() // sign in 버튼 눌렀을 떄 이메일 방법으로 로그인 시도
     {
+        // Play SFX
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.StartBtn);
+
+
         if (!IsFirebaseReady || IsSignInOnProgress || User != null)
         {
             return;
