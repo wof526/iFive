@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/jiyun/jyLoading.unity
     guid: a35fb7f5890aeee47b315bacefb3215b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/yura/googleScene.unity
     guid: ea9638d76b924d045bbf160ec7405ab2
   - enabled: 1
@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/jiyun/Minimapj.unity
     guid: 13d4e302f17765846a861d0efda6aff8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/jiyun/Driving.unity
     guid: 5e3ba60f9563a514687d1d9c6928cc09
   - enabled: 0
@@ -38,7 +38,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Chaekang/DrivingCK.unity
     guid: b82f3926320a28a449b4f9e2b0cd2bf3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Chaekang/Driving_Temp.unity
     guid: 162600f64c240d943b38a47d00c40044
   m_configObjects: {}

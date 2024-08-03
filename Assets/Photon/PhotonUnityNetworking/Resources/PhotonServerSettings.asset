@@ -19,7 +19,7 @@ MonoBehaviour:
     AppIdVoice: 
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: asia
+    FixedRegion: 
     Server: 
     Port: 0
     ProxyServer: 
@@ -50,7 +50,7 @@ MonoBehaviour:
   - UpdateArea
   - RPCUpdateArea
   - ResetPlayerPosition
-
+  - 
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0
