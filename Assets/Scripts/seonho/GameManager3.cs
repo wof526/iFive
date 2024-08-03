@@ -5,6 +5,7 @@ using Photon.Realtime;
 public class GameManager3 : MonoBehaviourPunCallbacks
 {
     public GameObject playerPrefab;
+    public static bool isBreak = false; // 버튼이 클릭되었는가
 
     void Start()
     {
@@ -18,6 +19,10 @@ public class GameManager3 : MonoBehaviourPunCallbacks
         {
             Debug.LogError("Player Prefab is not assigned.");
         }
+    }
+
+    public void BreakBtn(){ // 브레이크 버튼 클릭 시
+        isBreak = true;
     }
 
     void SpawnPlayer()
