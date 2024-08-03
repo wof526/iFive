@@ -7,7 +7,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
 {   // 조이스틱 조작 스크립트
 
     [Header("Settings")]
-    [SerializeField, Range(1, 15)]private float Radio = 5;  // 조이스틱의 이동 범위
+    [SerializeField, Range(1, 100)]private float Radio = 50;  // 조이스틱의 이동 범위
     [SerializeField, Range(0.01f, 1)]private float SmoothTime = 0.5f;   // 조이스틱이 중앙으로 돌아가는 속도
     public Color NormalColor = new Color(1, 1, 1, 1);   // 조이스틱의 기본 색상
     public Color PressColor = new Color(1, 1, 1, 1);    // 조이스틱을 눌렀을 때의 색상
