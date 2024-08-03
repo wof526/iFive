@@ -743,6 +743,7 @@ MonoBehaviour:
   circleSlider: {fileID: 1226935012}
   exValue: 60
   exvalTxt: {fileID: 1806005632}
+  winText: {fileID: 488453027}
   presentTime: 0
 --- !u!114 &1226935012
 MonoBehaviour:
