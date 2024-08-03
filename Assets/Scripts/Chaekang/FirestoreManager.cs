@@ -49,8 +49,6 @@ public class FirestoreManager : MonoBehaviour
             DataSnapshot snapshot = task.Result;
             if (snapshot.Exists)
             {
-                Debug.Log($"Document data for {carName} retrieved successfully!");
-
                 // 데이터를 float로 변환하여 할당
                 Dash = snapshot.Child("Dash").Value != null ? Convert.ToSingle(snapshot.Child("Dash").Value) : 0;
                 Hp = snapshot.Child("hp").Value != null ? Convert.ToSingle(snapshot.Child("hp").Value) : 0;

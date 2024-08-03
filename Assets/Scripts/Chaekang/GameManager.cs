@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
             if (car == null)
             {
                 Debug.LogWarning("Car object not found. Retrying...");
-                yield return new WaitForSeconds(0.1f); // 1�� �Ŀ� �ٽ� �õ�
+                yield return new WaitForSeconds(0.1f); 
             }
             else
             {
