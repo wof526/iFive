@@ -17740,7 +17740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 18, y: 5}
+  m_AnchoredPosition: {x: 74, y: 5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571345251
@@ -17797,7 +17797,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -24164,6 +24164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82bc3b84bcab0042a8744a6a8a39540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bluecount: {fileID: 571345251}
+  redcount: {fileID: 1708698399}
+  teamCircle: {fileID: 354131800}
   mapFXManager: {fileID: 570751817}
   areaSecBlue: 60
   areaSecRed: 60
@@ -48471,7 +48474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: 5}
+  m_AnchoredPosition: {x: -71, y: 5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708698399
@@ -48528,7 +48531,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -56740,6 +56743,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82bc3b84bcab0042a8744a6a8a39540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bluecount: {fileID: 0}
+  redcount: {fileID: 0}
+  teamCircle: {fileID: 0}
   mapFXManager: {fileID: 570751817}
   areaSecBlue: 60
   areaSecRed: 60

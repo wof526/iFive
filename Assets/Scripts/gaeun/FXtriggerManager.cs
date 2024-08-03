@@ -1,307 +1,135 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using Photon.Pun;
 
-public class FXtriggerManager : MonoBehaviour
+public class CaptureZone : MonoBehaviourPunCallbacks
 {
+    public TextMeshProUGUI bluecount;
+    public TextMeshProUGUI redcount;
+    public Image teamCircle;
+
     public MapFXManager mapFXManager;
     public float areaSecBlue = 60.0f;
     public float areaSecRed = 60.0f;
 
-    private bool nowEnter = false;
-    private bool blueEnter = false;
-    private bool redEnter = false;
+    private string nowColor;
 
-    private bool isPaused = false;
+    private List<GameObject> redObjects = new List<GameObject>();
+    private List<GameObject> blueObjects = new List<GameObject>();
 
-    private List<string> carList = new List<string>();
-
-
-
-    //안에 오브젝트가 계속 있을때 업데이트 식으로 불러 
-    private void OnTriggerEnter(Collider collider)
+    void Update()
     {
-        string coltag = collider.gameObject.tag;
-        Debug.Log("nowtag " + coltag);
-        // ���
 
-        if (nowEnter = false) //아무도 들어온 사람이 없을떄 
-        {
-            if (coltag == "Team Blue")//파란팀이면
-            {
-                mapFXManager.FXchangerBlue();
-                blueEnter = true;
-                nowEnter = true;
-            }
-            else if (coltag == "Team Red")//빨간팀이면 
-            {
-                mapFXManager.FXchangerRed();
-                redEnter = true;
-                nowEnter = true;
-            }
-        }
-        else //들어온 사람이 있을때
-        {
-            if (blueEnter == true) //파란팀이 들어와 있을때 
-            {
-                if (coltag == "Team Red") //빨간팀이 들어오면 
-                {
-                    //파란팀 카운팅 멈춤
-                    mapFXManager.FXchangerYellow(); //노란색으로 바꿈
-                }
-            }
-            else if (redEnter == true) //레드팀이 들어와 있을때
-            {
-                if (coltag == "Team Blue")
-                {
-                    //레드팀 카운팅 멈
-                    mapFXManager.FXchangerYellow();
-                }
-            }
-
-        }
+        checkCountdown();
     }
 
+    void checkCountdown(){
 
-    private void OnTriggerStay(Collider collider)
-    {
-        string coltag = collider.gameObject.tag;
-    }
-
-    public void CountSecBlue()
-    {
-        areaSecBlue -= Time.deltaTime;
-    }
-
-    public void CountSecRed()
-    {
-        areaSecRed -= Time.deltaTime;
-    }
-
-
-    /*
-    if (coltag == "Team Blue")
-    {
-        isPaused = true;
-        mapFXManager.FXchangerBlue();
-        CountSecBlue();
-    }
-
-    else if (coltag == "Team Red")
-    {
-        isPaused = true;
-        mapFXManager.FXchangerRed();
-        CountSecRed();
-    }
-
-    else//clotag 3개 -> untagged
-    {
-        if (isPaused)
-        {
-            if (coltag == "Team Blue") // stop yellow
-            {
-                StartCoroutine(PauseCoroutineBlue(coltag));
-                Debug.Log("pause yellow");
-                isPaused = false; // restart yellowFX
-            }
-
-            else if (coltag == "Team Red") // stop yellow
-            {
-                StartCoroutine(PauseCoroutineRed(coltag));
-                Debug.Log("pause yellow");
-                isPaused = false; // restart yellowFX
-            }
-            //else if (��̿� ��Ұ� > 2) // when car >= 2
-            else if (carList.Count > 2)
-            {
-                carList.RemoveAt(0);
-                carList.RemoveAt(0);
-                carList.RemoveAt(0);
-
-                Debug.Log("in count 0");
-
-                isPaused = false;
-            }
-
-        }
-
-        else
-        {
-            mapFXManager.FXchangerYellow();
-            Debug.Log("case Yellow");
-        }
-    }
-}
-
-
-
-//닿았을 때.
-private void OnTriggerEnter(Collider other)
-{
-    string coltag = other.gameObject.tag;
-
-
-    if (coltag == "Team Blue")
-    {
-
-        // array�� �̸��߰�
-        carList.Add("Team Blue");
-
-
-    }
-
-    else if (coltag == "Team Red")
-    {
-        carList.Add("Team Red");
-
-    }
-
-}
-
-*/
-
-
-    //--------------------------------------------------------
-
-
-    /*
-
-    private IEnumerator PauseCoroutineBlue(string coltag) // Coroutine : pause yellow
-    {
-        Debug.Log("blue - in coroutine");
-        // ������ �ٲٰ� ����
-        yield return new WaitUntil(() => coltag == "Team Blue");
-    }
-
-    private IEnumerator PauseCoroutineRed(string coltag)
-    {
-        Debug.Log("red - in coroutine");
-
-        yield return new WaitUntil(() => coltag == "Team Red");
-    }
-    */
-
-    /*
-    private void OnTriggerEnter(Collider other)
-    {
-        GameObject obj = other.gameObject;
-
-        if ((filterTags?.Count ?? 0) > 0 && !filterTags.Contains(obj.tag))
+        if (!PhotonNetwork.IsMasterClient)
         {
             return;
         }
 
-        if (host)
+        if (nowColor == "Red")
         {
-            host.OnTriggerEnter(other);
+            areaSecRed -= Time.deltaTime;
+            photonView.RPC("UpdateRedCountdown", RpcTarget.All, areaSecRed);
+            
+        }
+        else if(nowColor == "Blue")
+        {
+            
+            areaSecBlue -= Time.deltaTime;
+            photonView.RPC("UpdateBlueCountdown", RpcTarget.All, areaSecBlue);
+        }
+        
+    }
+
+    [PunRPC]
+    void UpdateBlueCountdown()
+    {
+        areaSecBlue= Mathf.Floor(areaSecBlue * 100f) / 100f;
+        bluecount.text = areaSecBlue.ToString();
+        
+    }
+
+    [PunRPC]
+    void UpdateRedCountdown()
+    {
+        areaSecRed = Mathf.Floor(areaSecRed * 100f) / 100f;
+        redcount.text = areaSecRed.ToString();
+
+    }
+    
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (!PhotonNetwork.IsMasterClient)
+        {
+            return;
+        }
+        
+        if (other.CompareTag("Team Red"))
+        {
+            redObjects.Add(other.gameObject);
+        }
+        else if (other.CompareTag("Team Blue"))
+        {
+            blueObjects.Add(other.gameObject);
         }
 
-        if (detectCounter.TryGetValue(obj, out var cnt))
+        photonView.RPC("UpdateZoneColor",RpcTarget.All, redObjects,blueObjects);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (!PhotonNetwork.IsMasterClient)
         {
-            detectCounter[obj] = ++cnt;
+            return;
+        }
+
+        if (other.CompareTag("Team Red"))
+        {
+            redObjects.Remove(other.gameObject);
+        }
+        else if (other.CompareTag("Team Blue"))
+        {
+            blueObjects.Remove(other.gameObject);
+        }
+
+        photonView.RPC("UpdateZoneColor", RpcTarget.All, redObjects, blueObjects);
+    }
+
+    [PunRPC]
+    private void UpdateZoneColor(List<GameObject> redObjects, List<GameObject> blueObjects)
+    {
+        if (redObjects.Count > 0 && blueObjects.Count > 0)
+        {
+            mapFXManager.FXchangerYellow();  // 두 색상이 모두 있을 때 노란색
+            teamCircle.color = Color.yellow;
+            nowColor = "Yellow";
+        }
+        else if (redObjects.Count > 0)
+        {
+            mapFXManager.FXchangerRed();  // 빨간색 오브젝트만 있을 때 빨간색
+            teamCircle.color = Color.red;
+            nowColor = "Red";
+        }
+        else if (blueObjects.Count > 0)
+        {
+            mapFXManager.FXchangerBlue();  // 파란색 오브젝트만 있을 때 파란색
+            teamCircle.color = Color.blue;
+            nowColor = "Blue";
         }
         else
         {
-            detectCounter[obj] = 1;
-            onEnter.Invoke(obj);
+            mapFXManager.FXchangerYellow();  // 아무도 없을 때 노란색
+            teamCircle.color = Color.yellow;
+            nowColor = "Yellow";
         }
     }
-    */
-    //--------------------------------------------------------
-
-    /*switch (coltag)
-    {
-        case "Team Blue":
-            isPaused = true;
-            mapFXManager.FXchangerBlue();
-            CountSecBlue();
-            Debug.Log(coltag);
-            if (coltag == "Untagged")
-            {
-                isPaused = false;
-            }
-            break;   
-
-
-        case "Team Red":
-            isPaused = true;
-
-            mapFXManager.FXchangerRed();
-            CountSecRed();
-            break;
-
-
-        case "Untagged": // �ǳ�?
-
-            mapFXManager.FXchangerYellow();
-            Debug.Log("case Yellow");
-            break;
-
-        default:
-
-            if (isPaused) // pause yellow
-            { /// if���ƴ϶� case�� �ؾ�? �ϴ� ����׷� ������ Ȯ��
-                //Debug.Log(isPaused);
-                //Debug.Log(collider.gameObject.tag);
-                //Debug.Log(coltag);
-
-
-                /*
-                switch (collider.gameObject.tag)
-                {
-                    case "Team Blue":
-                        Debug.Log("isPaused == true, case blue");
-
-                        StartCoroutine(PauseCoroutineBlue(collider.gameObject.tag));
-                        isPaused = false; // restart yellowFX
-
-                        break;
-
-                    case "Team Red":
-                        Debug.Log("isPaused == true, case red");
-
-                        StartCoroutine(PauseCoroutineRed(collider.gameObject.tag));
-                        isPaused = false; // restart yellowFX
-
-                        break;
-
-                    default:
-                        Debug.Log("Unhandled coltag value: " + collider.gameObject.tag);
-                        break;
-                        // blue && red �Ѵ� �����ϸ� ��������� ó���ϴ� ���̽� �߰�?
-                        // �ٵ� case�� ���ǹ����� �۵��ϴ��� �𸣰ھ Ȯ���غ���
-                }
-
-            }
-
-            else // �۵�����
-            {
-                mapFXManager.FXchangerYellow();
-                Debug.Log("case Yellow");
-            }
-            break;  */
-
-
-    /*
-    private void OnTriggerExit(Collider other) // yellow ����
-    {
-        string coltag = other.gameObject.tag;
-        Debug.Log(coltag);
-
-        if (coltag == "Team Blue")
-        {
-            mapFXManager.FXchangerYellow();
-            Debug.Log("case Yellow");
-        }
-
-        else
-        {
-            mapFXManager.FXchangerYellow();
-            Debug.Log("case Yellow");
-        }
-    }*/
-
-
-
-
 }
+
