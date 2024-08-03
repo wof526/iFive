@@ -23,6 +23,10 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
          // 자동 씬 동기화 활성화
         PhotonNetwork.AutomaticallySyncScene = true;
+
+        // Play BGM
+        AudioManager.instance.PlayBgm(true);
+
     }
 
     public override void OnConnectedToMaster()
@@ -37,6 +41,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
     }
 
     public void SetRoom(){  // 버튼 클릭 시 방 생성
+        // Play SFX
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.StartBtn);
+
         roomName = roomName_input.text;
         if(!string.IsNullOrEmpty(roomName)){
             CreateRoomListing(roomName, 0);

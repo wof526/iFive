@@ -20,8 +20,9 @@ public class AudioManager : MonoBehaviour
     int channelIndex;
 
 
-    public enum Sfx {Select, StartBtn, Hit, Lose, Melee, Range=5, Win}
-    
+    public enum Sfx { Select, StartBtn, Win, Experience, Circle, Hit, Lose }
+
+
 
 
     void Awake()

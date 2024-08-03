@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.Burst.CompilerServices;
 
 public class CircleSlider : MonoBehaviour
 {
@@ -17,8 +18,13 @@ public class CircleSlider : MonoBehaviour
 
     void Start()
     {
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.Win);
+
         circleSlider.fillAmount = 0.0f;
         exvalTxt.enabled = false;
+
+        Invoke("EnableEx", 2f);
+
     }
 
     private void Update()
@@ -26,16 +32,16 @@ public class CircleSlider : MonoBehaviour
         if (presentTime > circleTime)
         {
             presentTime = 10.0f;
-            //Debug.Log("case end");
         }
 
         else
         {
-            presentTime += Time.deltaTime;
-            circleSlider.fillAmount = (Mathf.Lerp(0, 100, presentTime / circleTime) * (exValue / 10000));
-            //Debug.Log(circleSlider.fillAmount);
 
-            Invoke("EnableEx", 2f);
+            presentTime += Time.deltaTime;
+            AudioManager.instance.PlaySfx(AudioManager.Sfx.Circle);
+
+            circleSlider.fillAmount = (Mathf.Lerp(0, 100, presentTime / circleTime) * (exValue / 10000));
+
 
         }
     }
@@ -43,5 +49,7 @@ public class CircleSlider : MonoBehaviour
     public void EnableEx()
     {
         exvalTxt.enabled = true;
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.Experience);
+
     }
 }
