@@ -25,7 +25,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     public float curSpeed;
     float maxSpeed;
 
-    int countdown = 10;
+    int countdown = 30;
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
@@ -286,7 +286,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         DashBtn.gameObject.SetActive(true);
         joyStick.gameObject.SetActive(true);
 
-        countdown = 10;
+        countdown = 30;
         curHP = maxHP;
 
         countdownCoroutine = null;

@@ -64,6 +64,8 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
                 Destroy(canvasObject);
             }
         }
+
+        Track.speedbar.value = 0;
     }
  
     void Update()
@@ -125,8 +127,9 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
                     rb.angularVelocity = Vector3.zero;
                 }
             }
-            
-            Track.speedbar.fillAmount = speed / 100;
+
+            Track.speedbar.maxValue = GameManager.Instance.firestoreManager.MaxSpeed;
+            Track.speedbar.value = speed;
             Track.speed_text.text = (int)speed + "km/h";
         }
         else //내 포톤뷰가 아니면 포지션 가져오기, lerp로 부드럽게

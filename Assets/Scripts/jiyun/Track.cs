@@ -9,11 +9,11 @@ public class Track : MonoBehaviourPunCallbacks
 {
     public Joystick jsInstance;
     public TextMeshProUGUI speed_textInstance;
-    public Image speedbarInstance;
+    public Slider speedBar;
 
     public static Joystick js;
     public static TextMeshProUGUI speed_text;
-    public static Image speedbar;
+    public static Slider speedbar;
 
     private bool hasSpawned = false;    // 스폰되었는가?
     public static string team;  // 팀 이름
@@ -23,7 +23,7 @@ public class Track : MonoBehaviourPunCallbacks
     {
         js = jsInstance;
         speed_text = speed_textInstance;
-        speedbar = speedbarInstance;
+        speedbar = speedBar;
 
         team = PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Team") 
             ? (string)PhotonNetwork.LocalPlayer.CustomProperties["Team"] 
