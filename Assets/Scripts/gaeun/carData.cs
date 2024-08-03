@@ -29,6 +29,8 @@ public class carData : MonoBehaviour
     Slider sliderC;
     Slider sliderD;
 
+    public static string carString;
+
     private void Awake()
     {
         cardic = GetComponent<carDic>();
@@ -64,6 +66,8 @@ public class carData : MonoBehaviour
 
     public void ShowData()
     {
+        carString = this.carName;
+
         tmp_maxSpeed = GameObject.Find("maxSpeedTmp").GetComponent<TextMeshProUGUI>();
         tmp_atk = GameObject.Find("atkTmp").GetComponent<TextMeshProUGUI>();
         tmp_hp = GameObject.Find("hpTmp").GetComponent<TextMeshProUGUI>();
