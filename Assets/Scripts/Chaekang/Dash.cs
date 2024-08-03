@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,22 +14,41 @@ public class Dash : MonoBehaviour
     public Button dashButton; // Unity UI Button reference
 
     // Script
-    Car car;
     FirestoreManager firestoreManager;
-
-    private void Awake()
-    {
-        car = GameManager.Instance.GetCar();
-        firestoreManager = GameManager.Instance.firestoreManager;
-    }
+    Car carScript; // Reference to the car script
 
     private void Start()
     {
+        firestoreManager = GameManager.Instance.firestoreManager;
+
         maxSpeed = firestoreManager.MaxSpeed;
-        curSpeed = car.curSpeed;
+        curSpeed = NetworkPlayer.speed;
         zeroBaek = firestoreManager.ZeroBaek;
 
-        fire = car.fire;
+        // Start the coroutine to find the car script
+        StartCoroutine(FindCarScript());
+    }
+
+    private IEnumerator FindCarScript()
+    {
+        // Keep trying to find the car script until it's found
+        while (carScript == null)
+        {
+            carScript = FindObjectOfType<Car>();
+
+            if (carScript != null)
+            {
+                fire = carScript.fire; // Access the fire GameObject from the car script
+                Debug.Log("Car script found!");
+            }
+            else
+            {
+                Debug.LogWarning("Car script not found, retrying...");
+            }
+
+            // Wait for the next frame before trying again
+            yield return null;
+        }
     }
 
     void Update()
@@ -36,25 +56,32 @@ public class Dash : MonoBehaviour
         // Enable or disable the dash button based on the current speed
         if (curSpeed >= maxSpeed)
         {
-            //dashButton.interactable = true;
+            dashButton.interactable = true;
         }
         else
         {
-            //dashButton.interactable = false;
+            dashButton.interactable = false;
+        }
+
+        if (!isDash)
+        {
+            StopCoroutine(ResetDashAfterDelay());
         }
     }
 
     public void OnDashButtonClick()
     {
         isDash = true;
+        Debug.Log("Dash Button Click");
         StartCoroutine(ResetDashAfterDelay());
     }
 
     private IEnumerator ResetDashAfterDelay()
     {
+        Debug.Log("Start Dash Coroutine");
         fire.SetActive(true);
         dashButton.interactable = false;
-        yield return new WaitForSeconds(zeroBaek);
+        yield return new WaitForSeconds(5f);
         dashButton.interactable = true;
         fire.SetActive(false);
         isDash = false;

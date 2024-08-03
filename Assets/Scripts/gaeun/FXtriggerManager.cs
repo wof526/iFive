@@ -17,6 +17,7 @@ public class FXtriggerManager : MonoBehaviour
     private List<string> carList = new List<string>();
 
 
+
     //안에 오브젝트가 계속 있을때 업데이트 식으로 불러 
     private void OnTriggerEnter(Collider collider)
     {
@@ -60,6 +61,7 @@ public class FXtriggerManager : MonoBehaviour
 
         }
     }
+
 
     private void OnTriggerStay(Collider collider)
     {

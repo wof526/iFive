@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public FirestoreManager firestoreManager;
     public Dash dash;
-    public NetworkPlayer drive;
 
     private Car car;
     private FirebaseAuth auth;
