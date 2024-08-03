@@ -65,7 +65,7 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
             }
         }
     }
-
+ 
     void Update()
     {
         
@@ -120,7 +120,10 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
             
             if(GameManager3.isBreak){   // 브레이크 버튼 클릭
                 speed = 0;
-                transform.position = Vector3.zero;
+                if(rb != null){
+                    rb.velocity = Vector3.zero;
+                    rb.angularVelocity = Vector3.zero;
+                }
             }
             
             Track.speedbar.fillAmount = speed / 100;
