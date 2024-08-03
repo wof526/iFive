@@ -109,12 +109,14 @@ public class NetworkPlayer : MonoBehaviourPunCallbacks, IPunObservable
                 {   // 전진 시에만 회전 및 lastDirection 갱신
                     float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;  // 조이스틱의 방향에 따라 회전
                     float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, speedSmoothTime);
-                    transform.rotation = Quaternion.Euler(0, angle, 0);
+                    //transform.rotation = Quaternion.Euler(0, angle, 0);
+                    rb.MoveRotation(Quaternion.Euler(0, angle, 0));
                     lastDirection = Quaternion.Euler(0, angle, 0) * Vector3.forward;
                 }
 
                 // 마지막 방향을 따라 이동
-                transform.position += lastDirection * speed * Time.deltaTime;
+                //transform.position += lastDirection * speed * Time.deltaTime;
+                rb.MovePosition(transform.position + lastDirection * speed * Time.deltaTime);
             }
             Track.speedbar.fillAmount = speed / 100;
             Track.speed_text.text = (int)speed + "km/h";
