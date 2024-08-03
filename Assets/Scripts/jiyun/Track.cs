@@ -8,7 +8,7 @@ using System.Collections.Generic;
 public class Track : MonoBehaviourPunCallbacks
 {
     public Joystick jsInstance;
-    public TextMeshProUGUI speed_textInstance, Team_name;
+    public TextMeshProUGUI speed_textInstance;
     public Image speedbarInstance;
 
     public static Joystick js;
@@ -28,13 +28,6 @@ public class Track : MonoBehaviourPunCallbacks
         team = PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Team") 
             ? (string)PhotonNetwork.LocalPlayer.CustomProperties["Team"] 
             : "Unknown";
-        Debug.Log($"Local player team: {team}");
-
-        // 서버가 스폰 지점을 결정하도록 요청
-        if (PhotonNetwork.IsMasterClient)
-        {
-            Debug.Log("master");
-        }
     }
 
     private void Update() {
@@ -46,7 +39,6 @@ public class Track : MonoBehaviourPunCallbacks
                 else if(team == "Enemy"){
                     player.tag = "Team Red";
                 }
-                //Team_name.text = player.tag;
                 isfind = false;
             }    
         }                
