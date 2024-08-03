@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 4281936092193120903}
   - component: {fileID: -8154329966504653766}
   - component: {fileID: 2481514716374685292}
+  - component: {fileID: 4572429247902602719}
   m_Layer: 3
   m_Name: Buggy-0
   m_TagString: Car
@@ -560,6 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 5253485624221517351}
   smoke: {fileID: 6785549549818973853}
+  maxHP: 0
   curHP: 0
   curSpeed: 0
 --- !u!54 &4281936092193120903
@@ -570,8 +572,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7231110081095710484}
   serializedVersion: 4
-  m_Mass: 1000
-  m_Drag: 100
+  m_Mass: 10
+  m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -587,7 +589,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &-8154329966504653766
 MonoBehaviour:
@@ -609,6 +611,7 @@ MonoBehaviour:
   observableSearch: 0
   ObservedComponents:
   - {fileID: 2481514716374685292}
+  - {fileID: 6808780833599108002}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -624,10 +627,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6930d8d032e40fd8f8161ef7a6d293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationspeed: 180
-  deadzone: 0.1
-  speedSmoothTime: 1
   localCam: {fileID: 7361181004886917192}
+--- !u!65 &4572429247902602719
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7231110081095710484}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3978353, y: 2.1061645, z: 4.79008}
+  m_Center: {x: 0, y: 1.3792493, z: 0.11698833}
 --- !u!1 &7361181004886917192
 GameObject:
   m_ObjectHideFlags: 0
