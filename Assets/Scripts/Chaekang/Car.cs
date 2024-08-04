@@ -14,8 +14,9 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     private GameObject gameOverPanel;
     private TMP_Text gameOverTxt;
     private Button Break;
-    private Button DashBtn;
+    private GameObject DashBtn;
     private GameObject joyStick;
+    private GameObject speedBar;
 
     public GameObject fire;
     public GameObject smoke;
@@ -25,7 +26,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
     public float curSpeed;
     float maxSpeed;
 
-    int countdown = 30;
+    int countdown = 10;
     private bool isGameOver = false;
     private bool countdownStarted = false;
 
@@ -49,8 +50,9 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         HPText = FindInActiveObjectByName("HPText")?.GetComponent<TMP_Text>();
         gameOverPanel = FindInActiveObjectByName("GameOverPanel");
         Break = FindInActiveObjectByName("Break")?.GetComponent<Button>();
-        DashBtn = FindInActiveObjectByName("Dash")?.GetComponent<Button>();
+        DashBtn = FindInActiveObjectByName("Dash");
         joyStick = FindInActiveObjectByName("Joystick");
+        speedBar = FindInActiveObjectByName("SpeedBar");
 
         if (HPBar == null)
         {
@@ -277,6 +279,7 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         Break.gameObject.SetActive(false);
         DashBtn.gameObject.SetActive(false);
         joyStick.gameObject.SetActive(false);
+        speedBar.gameObject.SetActive(false);
 
         while (countdown > 0)
         {
@@ -293,8 +296,9 @@ public class Car : MonoBehaviourPunCallbacks, IPunObservable
         Break.gameObject.SetActive(true);
         DashBtn.gameObject.SetActive(true);
         joyStick.gameObject.SetActive(true);
+        speedBar.gameObject.SetActive(true);
 
-        countdown = 30;
+        countdown = 10;
         curHP = maxHP;
 
         countdownCoroutine = null;
