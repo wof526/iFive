@@ -19,7 +19,7 @@ public class CircleSlider : MonoBehaviour
 
     void Start()
     {
-        if (CaptureZone.bluewin)
+        if (FXtriggerManger.bluewin)
         {
             winText.text = "Blue win";
         }
