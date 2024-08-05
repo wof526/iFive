@@ -47,7 +47,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         roomName = roomName_input.text;
         if(!string.IsNullOrEmpty(roomName)){
             CreateRoomListing(roomName, 0);
-            PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = 2, IsVisible = true, IsOpen = true });
+            PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = 6, IsVisible = true, IsOpen = true });
         }
     }
 
@@ -57,7 +57,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
         if (roomText != null)
         {
-            roomText.text = $"{roomName} ({playerCount}/2)";
+            roomText.text = $"{roomName} ({playerCount}/6)";
         }
         else
         {
@@ -107,7 +107,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public void OnClickJoinRoom(string roomName)
     {   // 방 누르면 들어가짐
-        PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions{ MaxPlayers = 2, IsVisible = true, IsOpen = true}, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions{ MaxPlayers = 6, IsVisible = true, IsOpen = true}, TypedLobby.Default);
     }
 
     public override void OnJoinedRoom()
