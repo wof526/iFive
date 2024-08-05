@@ -4,8 +4,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
-public class CaptureZone : MonoBehaviourPunCallbacks
+public class FXtriggerManger : MonoBehaviourPunCallbacks
 {
     public GameObject[] areas;
 
@@ -14,8 +15,8 @@ public class CaptureZone : MonoBehaviourPunCallbacks
     public Image teamCircle;
 
     public MapFXManager mapFXManager;
-    public float areaSecBlue = 60.0f;
-    public float areaSecRed = 60.0f;
+    public float areaSecBlue = 25.0f;
+    public float areaSecRed = 25.0f;
 
     private string nowColor;
 
@@ -27,6 +28,12 @@ public class CaptureZone : MonoBehaviourPunCallbacks
     public Material areaRed;
 
     static public bool bluewin;
+
+    void Start()
+    {
+        PhotonNetwork.AutomaticallySyncScene = true;
+        Debug.Log(areaSecBlue);
+    }
 
     void Update()
     {
@@ -44,13 +51,16 @@ public class CaptureZone : MonoBehaviourPunCallbacks
 
         if (nowColor == "Red")
         {
+
             areaSecRed -= Time.deltaTime;
+            Debug.Log(areaSecRed);
             photonView.RPC("UpdateRedCountdown", RpcTarget.All, areaSecRed);
 
             if (areaSecRed <= 0)
             {
                 bluewin = false;
-                photonView.RPC("LoadNextScene", RpcTarget.All); // "RedWinsScene"을 원하는 씬 이름으로 교체
+                PhotonNetwork.LoadLevel("GameOver"); ; // "RedWinsScene"을 원하는 씬 이름으로 교체
+                SceneManager.LoadScene("GameOver");
             }
 
         }
@@ -62,21 +72,18 @@ public class CaptureZone : MonoBehaviourPunCallbacks
             if (areaSecBlue <= 0)
             {
                 bluewin = true;
-                photonView.RPC("LoadNextScene", RpcTarget.All); // "BlueWinsScene"을 원하는 씬 이름으로 교체
+                PhotonNetwork.LoadLevel("GameOver");
+                SceneManager.LoadScene("GameOver");
+                // "BlueWinsScene"을 원하는 씬 이름으로 교체
             }
         }
 
     }
 
     [PunRPC]
-    private void LoadNextScene()
-    {
-        PhotonNetwork.LoadLevel("GameOver");
-    }
-    [PunRPC]
     void UpdateBlueCountdown(float areaSecBlue)
     {
-        areaSecBlue = Mathf.Floor(areaSecBlue * 100f) / 100f;
+        areaSecBlue = Mathf.FloorToInt(areaSecBlue);
         bluecount.text = areaSecBlue.ToString();
 
     }
@@ -84,7 +91,7 @@ public class CaptureZone : MonoBehaviourPunCallbacks
     [PunRPC]
     void UpdateRedCountdown(float areaSecRed)
     {
-        areaSecRed = Mathf.Floor(areaSecRed * 100f) / 100f;
+        areaSecRed = Mathf.FloorToInt(areaSecRed);
         redcount.text = areaSecRed.ToString();
 
     }

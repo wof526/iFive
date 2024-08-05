@@ -46,21 +46,17 @@ public class GoogleManager : MonoBehaviour
         loadingBar.SetActive(false);
         startButton.SetActive(false);
 
-        /*PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
+        PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder()
             .RequestIdToken()
             .RequestEmail()
             .Build());
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
-        */
+        
         fbauth = FirebaseAuth.DefaultInstance;
 
-        //TryGoogleLogin();
-
-        loadingBar.SetActive(true); //새로 추가. 구글로그인시 시작되면 없애기
-        EmailLogin();
-
-        
+        TryGoogleLogin();
+      
     }
 
     public void TryGoogleLogin()
@@ -69,7 +65,7 @@ public class GoogleManager : MonoBehaviour
 
        loadingBar.SetActive(true);
 
-        /*PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (success) =>
+        PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (success) =>
         {
             if (success == SignInStatus.Success)
             {
@@ -84,10 +80,10 @@ public class GoogleManager : MonoBehaviour
                
                 
             }
-        });*/
+        });
     }
 
-    /*IEnumerator TryFirebaseLogin()
+    IEnumerator TryFirebaseLogin()
     {
         while (string.IsNullOrEmpty(((PlayGamesLocalUser)Social.localUser).GetIdToken()))
         {
@@ -101,9 +97,15 @@ public class GoogleManager : MonoBehaviour
         fbauth.SignInWithCredentialAsync(credential).ContinueWith(task =>
         {
             if (task.IsCanceled)
+            {
                 firebaseLog.text = "Firebase Cancles";
+                EmailLogin();
+            }
             else if (task.IsFaulted)
+            {
                 firebaseLog.text = "firebase Faulted";
+                EmailLogin();
+            }
             else
             {
                 firebaseLog.text = "Firebase success";
@@ -116,7 +118,7 @@ public class GoogleManager : MonoBehaviour
 
         loadingBar.SetActive(false);
         startButton.SetActive(true);
-    }*/
+    }
 
     public void GameStartButton()
     {
